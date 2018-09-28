@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir -p ${MODULE_RUNTIME_HOME}/var/influxdb/meta
+mkdir -p ${MODULE_RUNTIME_HOME}/var/influxdb/data
+cat ${MODULE_HOME}/config/influxdb.conf |envtpl >${MODULE_RUNTIME_HOME}/tmp/config_auto/influxdb.conf
+if test -s ${MODULE_RUNTIME_HOME}/tmp/config_auto/influxdb.conf; then
+    exit 0
+else
+    exit 1
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm -Rf "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning"
+mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources"
+mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards"
+cat "${MODULE_HOME}/config/grafana_provisioning/datasources/datasource.yaml" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources/datasource.yaml"
+cat "${MODULE_HOME}/config/grafana_provisioning/dashboards/dashboard.yaml" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards/dashboard.yaml"
+
+cat "${MODULE_HOME}/config/grafana.ini" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"
+if test -s "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"; then
+    exit 0
+else
+    exit 1
+fi

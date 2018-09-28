@@ -1,0 +1,30 @@
+{% extends "mfxxx.status" %}
+{% block custom %}
+
+circus_status_watcher.sh influxdb || RES=1
+circus_status_watcher.sh grafana || RES=1
+
+if test "${RES}" = "0"; then
+    echo -n "- Waiting/testing grafana service..."
+    echo_running
+    _wait_grafana.py >/dev/null 2>&1
+    if test $? -eq 0; then
+        echo_ok
+    else
+        echo_nok
+        RES=1
+    fi
+fi
+if test "${RES}" = "0"; then
+    echo -n "- Waiting/testing influxdb service..."
+    echo_running
+    _wait_influxdb.py >/dev/null 2>&1
+    if test $? -eq 0; then
+        echo_ok
+    else
+        echo_nok
+        RES=1
+    fi
+fi
+
+{% endblock %}

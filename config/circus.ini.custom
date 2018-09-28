@@ -1,0 +1,33 @@
+{% extends "circus.ini" %}
+{% block custom %}
+{% raw %}
+
+[watcher:influxdb]
+cmd=influxd
+args=run -config {{MODULE_RUNTIME_HOME}}/tmp/config_auto/influxdb.conf
+hooks.before_start=circus_hooks.before_start_shell
+hooks.after_start=circus_hooks.after_start_shell
+copy_env = True
+autostart = True
+respawn = True
+stdout_stream.class = FileStream
+stdout_stream.filename = {{MODULE_RUNTIME_HOME}}/log/influxdb.log
+stderr_stream.class = FileStream
+stderr_stream.filename = {{MODULE_RUNTIME_HOME}}/log/influxdb.log
+numprocesses=1
+
+[watcher:grafana]
+cmd={{MFADMIN_HOME}}/opt/monitoring/opt/grafana/bin/grafana-server
+args=-config {{MODULE_RUNTIME_HOME}}/tmp/config_auto/grafana.ini -homepath {{MFADMIN_HOME}}/opt/monitoring/opt/grafana --pidfile {{MODULE_RUNTIME_HOME}}/var/grafana.pid
+hooks.before_start=circus_hooks.before_start_shell
+copy_env = True
+autostart = True
+respawn = True
+stdout_stream.class = FileStream
+stdout_stream.filename = {{MODULE_RUNTIME_HOME}}/log/grafana.log
+stderr_stream.class = FileStream
+stderr_stream.filename = {{MODULE_RUNTIME_HOME}}/log/grafana.log
+numprocesses=1
+
+{% endraw %}
+{% endblock %} 

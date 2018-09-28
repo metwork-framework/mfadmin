@@ -1,0 +1,4 @@
+{% extends "interactive_profile" %}
+{% block custom %}
+alias influx="influx -database metrics -host localhost -port ${MFADMIN_INFLUXDB_HTTP_PORT}"
+{% endblock %}
