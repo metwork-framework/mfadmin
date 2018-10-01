@@ -41,8 +41,8 @@ pipeline:
     environment:
       - MFCOM_BRANCH=integration
     <<: *bootstrap_common
-  volumes:
-    - /buildcache:/buildcache
+    volumes:
+      - /buildcache:/buildcache
     when:
       event: push
       branch: integration
@@ -59,8 +59,8 @@ pipeline:
     environment:
       - MFCOM_BRANCH=master
     <<: *bootstrap_common
-  volumes:
-    - /buildcache:/buildcache
+    volumes:
+      - /buildcache:/buildcache
     when:
       event: push
       branch: [ master, ci_*, pci_* ]
