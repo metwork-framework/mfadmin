@@ -5,7 +5,7 @@ import os
 import json
 
 ADMIN_USERNAME = "admin"
-ADMIN_PASSWORD = "admin"
+ADMIN_PASSWORD = os.environ['MFADMIN_GRAFANA_ADMIN_PASSWORD']
 GRAFANA_PORT = int(os.environ['MFADMIN_GRAFANA_PORT'])
 GRAFANA_HOST = "localhost"
 HOME_DASHBOARD_UID = "lCmsjhHik"
