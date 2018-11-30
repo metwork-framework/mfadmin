@@ -29,6 +29,9 @@ while True:
                          timeout=10)
         if r.status_code == 200:
             break
+        if r.status_code == 401:
+            # maybe the password is not updated
+            os.system("_force_grafana_admin_password.sh")
     except Exception:
         pass
     time.sleep(1)
