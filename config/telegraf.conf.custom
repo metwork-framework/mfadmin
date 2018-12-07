@@ -5,7 +5,7 @@
 # Read metrics about influxdb
 [[inputs.influxdb]]
   urls = [
-    "http://localhost:{{MFADMIN_INFLUXDB_HTTP_PORT}}/debug/vars
+    "http://localhost:{{MFADMIN_INFLUXDB_HTTP_PORT}}/debug/vars"
   ]
   timeout = "10s"
 {% endraw %}
