@@ -8,6 +8,11 @@
     "http://localhost:{{MFADMIN_INFLUXDB_HTTP_PORT}}/debug/vars"
   ]
   timeout = "10s"
+
+[[inputs.procstat]]
+  pattern = "influxd.run..config.{{MODULE_RUNTIME_HOME}}.tmp.config_auto.influxdb.conf"
+  user = "{{MODULE_RUNTIME_USER}}"
+  process_name = "influxdb"
 {% endraw %}
 
 {% endblock %}
