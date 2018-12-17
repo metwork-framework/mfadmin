@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=influxdb
-export VERSION=1.5.4-1
+export VERSION=1.7.2-1
 export EXTENSION=tar.gz
 export CHECKTYPE=SHA256
-export CHECKSUM=44cfb706cbb1e80c7ee15b515a7549afe26f7b1737b8fab76adf525555a089fb
+export CHECKSUM=e021c6bff61751ec224543924126340ad5ce13470eb7236a99a2fe18feaef7c4
 DESCRIPTION=\
 INFLUXDB is an open source time series database with no external dependencies. It's useful for recording metrics, events, and performing analytics
 WEBSITE=https://www.influxdata.com
