@@ -4,3 +4,4 @@ monitoring@mfadmin
 python3@mfcom
 -python3_devtools@mfext
 python3@mfadmin
+-monitoring@mfext
