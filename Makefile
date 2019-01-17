@@ -5,7 +5,6 @@ MODULE_LOWERCASE=mfadmin
 -include $(MFEXT_HOME)/share/main_root.mk
 
 all:: directories
-	echo "root@mfcom" >$(MFADMIN_HOME)/.layerapi2_dependencies
 	cd adm && $(MAKE)
 	cd config && $(MAKE)
 	cd layers && $(MAKE)
