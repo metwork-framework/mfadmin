@@ -2,6 +2,7 @@
 ## [Unreleased]
 
 ### Feat
+- Changes in management of layer dependencies and metapackage names (only minimal and full) Associated with changes in mfext _metwork.spec, this reduces the number of layers installed by default when installing mfadmin (only necessary mfext layers are installed) Metapackage metwork-mfadmin-minimal only installs the necessary layers for mfadmin to work properly Metapackage metwork-mfadmin or metwork-mfserv-full installs all mfadmin layers
 - add influxdb system monitoring
 - better mfdata dashboard
 - better mfserv dashboard
