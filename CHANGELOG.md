@@ -7,6 +7,7 @@
 - better mfdata dashboard
 - better mfserv dashboard
 - better system dashboard
+- execute integration tests directly from mfadmin module and launch them on a pull request on the module
 - influxdb upgrade (=>1.7.2)
 
 <a name="v0.4.1"></a>
