@@ -1,6 +1,14 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="v0.5.2"></a>
+## [v0.5.2] - 2019-01-31
+
+<a name="v0.5.1"></a>
+## [v0.5.1] - 2019-01-29
+
+<a name="v0.5.0"></a>
+## [v0.5.0] - 2019-01-29
 ### Feat
 - Changes in management of layer dependencies and metapackage names (only minimal and full) Associated with changes in mfext _metwork.spec, this reduces the number of layers installed by default when installing mfadmin (only necessary mfext layers are installed) Metapackage metwork-mfadmin-minimal only installs the necessary layers for mfadmin to work properly Metapackage metwork-mfadmin or metwork-mfserv-full installs all mfadmin layers
 - add influxdb system monitoring
