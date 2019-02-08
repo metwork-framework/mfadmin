@@ -795,7 +795,7 @@
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
-      "stack": false,
+      "stack": true,
       "steppedLine": false,
       "targets": [
         {
@@ -852,6 +852,12 @@
               "key": "plugin",
               "operator": "=~",
               "value": "/^$plugin$/"
+            },
+            {
+              "condition": "AND",
+              "key": "module",
+              "operator": "=",
+              "value": "mfserv"
             }
           ]
         }
@@ -859,7 +865,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "mfserv max memory usage [not filtered by app]",
+      "title": "cumulative mfserv max memory usage [not filtered by app]",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -933,7 +939,7 @@
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
-      "stack": false,
+      "stack": true,
       "steppedLine": false,
       "targets": [
         {
@@ -990,6 +996,12 @@
               "key": "plugin",
               "operator": "=~",
               "value": "/^$plugin$/"
+            },
+            {
+              "condition": "AND",
+              "key": "module",
+              "operator": "=",
+              "value": "mfserv"
             }
           ]
         }
@@ -997,7 +1009,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "mfserv max cpu usage  (100% = 1 core) [not filtered by app]",
+      "title": "cumulative mfserv max cpu usage  (100% = 1 core) [not filtered by app]",
       "tooltip": {
         "shared": true,
         "sort": 0,
