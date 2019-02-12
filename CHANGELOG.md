@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Fix
+- mfserv module metrics about cpu/mem
+
 <a name="v0.5.4"></a>
 ## [v0.5.4] - 2019-02-06
 
