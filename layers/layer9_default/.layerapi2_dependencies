@@ -1,4 +1,7 @@
 root@mfadmin
-monitoring@mfadmin
-python@mfadmin
+python3@mfadmin
+-python3_devtools@mfext
 default@mfcom
+-metrics@mfadmin
+-logs@mfadmin
+monitoring@mfext

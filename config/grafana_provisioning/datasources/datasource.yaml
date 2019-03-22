@@ -9,3 +9,11 @@ datasources:
   database: metrics
   isDefault: true
   editable: false
+- name: es_nginx
+  type: elasticsearch
+  access: proxy
+  database: "nginx-*"
+  url: http://127.0.0.1:{{MFADMIN_ELASTICSEARCH_HTTP_PORT}}
+  jsonData:
+    timeField: "@timestamp"
+    esVersion: 60

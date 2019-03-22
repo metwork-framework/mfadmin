@@ -1,0 +1,26 @@
+#!/bin/bash
+
+mkdir -p "${MODULE_RUNTIME_HOME}/var/kibana"
+rm -Rf "${MODULE_RUNTIME_HOME}/tmp/kibana"
+mkdir -p "${MODULE_RUNTIME_HOME}/tmp/kibana/optimize"
+cp -Rf "${MODULE_HOME}/opt/logs/opt/kibana/config" "${MODULE_RUNTIME_HOME}/tmp/kibana"
+cp -Rf "${MODULE_HOME}/opt/logs/opt/kibana/src" "${MODULE_RUNTIME_HOME}/tmp/kibana"
+cp -f "${MODULE_HOME}/opt/logs/opt/kibana/package.json" "${MODULE_RUNTIME_HOME}/tmp/kibana"
+cp -f "${MODULE_HOME}/opt/logs/opt/kibana/optimize/.babelcache.json" "${MODULE_RUNTIME_HOME}/tmp/kibana/optimize/"
+for DIR in bin node node_modules optimize/bundles webpackShims; do
+    ln -s "${MODULE_HOME}/opt/logs/opt/kibana/${DIR}" "${MODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
+done
+for DIR in plugins data; do
+    mkdir -p "${MODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
+done
+
+cat "${MODULE_HOME}/config/kibana.conf" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
+rm -f "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
+ln -s "${MODULE_RUNTIME_HOME}/tmp/kibana/config" "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
+
+export KIBANA_HOME="${MODULE_RUNTIME_HOME}/tmp/kibana"
+if test -s "${MODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"; then
+    exit 0
+else
+    exit 1
+fi

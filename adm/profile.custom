@@ -1,0 +1,9 @@
+{% extends "profile" %}
+
+{% block custom %}
+if test "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1"; then
+    # we force these params to null to avoid telegraf launch
+    export MFADMIN_ADMIN_HOSTNAME=null
+    export MFADMIN_ADMIN_HOSTNAME_IP=null
+fi
+{% endblock %}

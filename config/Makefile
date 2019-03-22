@@ -1,4 +1,4 @@
-CONFIGS=config.ini influxdb.conf grafana.ini mflog_override.conf
+CONFIGS=config.ini influxdb.conf grafana.ini elasticsearch.conf elasticsearch_jvm_options.conf elasticsearch_log4j2_properties.conf mflog_override.conf kibana.conf
 
 include ../adm/root.mk
 include $(MFEXT_HOME)/share/subdir_root.mk
