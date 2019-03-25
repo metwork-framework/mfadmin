@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=grafana
-export VERSION=5.1.3
+export VERSION=5.4.2
 export EXTENSION=tar.gz
 export CHECKTYPE=SHA256
-export CHECKSUM=86605013e69ed47bb4a8ee1e2420373edee23a94885c07988152c36fe5ed2d8c
+export CHECKSUM=6228b755fb07d76f8b47f489c07a45af1c64fa9edfb2dc232b2f05431006f866
 DESCRIPTION=\
 GRAFANA is an open source software for time series analytics
 WEBSITE=https://grafana.com

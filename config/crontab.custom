@@ -1,0 +1,8 @@
+{% extends "crontab" %}
+
+{% block custom %}
+{% raw %}
+# ElasticSearch cleaning
+30 3,9,15,21 * * * {{RUNTIME_SUFFIX}} {{MODULE_HOME}}/bin/cronwrap.sh --lock --low --timeout=3600 -- elasticsearch.clean >>{{MODULE_RUNTIME_HOME}}/log/elasticsearch_clean.log 2>&1
+{% endraw %}
+{% endblock %}

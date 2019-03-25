@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import requests
+from datetime import datetime
+from mflog import getLogger
+
+ES_PORT = int(os.environ['MFADMIN_ELASTICSEARCH_HTTP_PORT'])
+BASE_URL = "http://127.0.0.1:%i" % ES_PORT
+PREFIXES = ["nginx-"]
+LOGGER = getLogger("elasticsearch.clean")
+LIFETIME = int(os.environ['MFADMIN_ELASTICSEARCH_INDICES_LIFETIME'])
+
+
+def index_list():
+    response = requests.get("%s/_mapping" % BASE_URL)
+    response.raise_for_status()
+    mappings = response.json()
+    return mappings.keys()
+
+
+def delete_index(index):
+    response = requests.delete("%s/%s" % (BASE_URL, index))
+    response.raise_for_status()
+
+
+def index_age(index):
+    date_parts = None
+    for prefix in PREFIXES:
+        if index.startswith(prefix):
+            date_parts = index.replace(prefix, '').split('-')[-1].split('.')
+            break
+    if date_parts is None:
+        raise Exception("can't calculate index_age(%s)" % index)
+    index_date = datetime(*[int(part) for part in date_parts])
+    return (datetime.utcnow() - index_date).days
+
+
+if __name__ == '__main__':
+    if int(os.environ.get('MFADMIN_LAYER_LOGS_LOADED', '0')) != 1:
+        LOGGER.info("ELASTICSEARCH support is not installed")
+        sys.exit(0)
+    if LIFETIME < 0:
+        LOGGER.info("MFADMIN_ELASTICSEARCH_INDICES_LIFETIME < 0 "
+                    "=> no cleaning")
+        sys.exit(0)
+    indices = index_list()
+    for index in indices:
+        if any([index.startswith(x) for x in PREFIXES]):
+            LOGGER.info("testing index: %s" % index)
+            age = index_age(index)
+            LOGGER.info("  - age: %i day(s)" % age)
+            if index_age(index) > LIFETIME:
+                LOGGER.info("    => cleaning")
+                try:
+                    delete_index(index)
+                except Exception as e:
+                    LOGGER.exception("    => can't clean %s index" % index)

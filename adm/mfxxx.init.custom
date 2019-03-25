@@ -12,20 +12,32 @@ else
     exit 1
 fi
 
-echo -n "- Creating influxdb database..."
-echo_running
-influx -port ${MFADMIN_INFLUXDB_HTTP_PORT} -precision rfc3339 -execute 'CREATE DATABASE metrics WITH DURATION 24h REPLICATION 1 NAME fullres'
-influx -port ${MFADMIN_INFLUXDB_HTTP_PORT} -precision rfc3339 -execute 'CREATE RETENTION POLICY medres ON metrics DURATION 7d REPLICATION 1'
-influx -port ${MFADMIN_INFLUXDB_HTTP_PORT} -precision rfc3339 -execute 'CREATE RETENTION POLICY lowres ON metrics DURATION 52w REPLICATION 1'
-echo_ok
-
-echo -n "- Provisioning home dashboard..."
-echo_running
-_provision_home_dashboard.py >/dev/null 2>&1
-if test $? -eq 0; then
+if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
+    echo -n "- Creating influxdb database..."
+    echo_running
+    influx -port ${MFADMIN_INFLUXDB_HTTP_PORT} -precision rfc3339 -execute 'CREATE DATABASE metrics WITH DURATION 24h REPLICATION 1 NAME fullres'
+    influx -port ${MFADMIN_INFLUXDB_HTTP_PORT} -precision rfc3339 -execute 'CREATE RETENTION POLICY medres ON metrics DURATION 7d REPLICATION 1'
+    influx -port ${MFADMIN_INFLUXDB_HTTP_PORT} -precision rfc3339 -execute 'CREATE RETENTION POLICY lowres ON metrics DURATION 52w REPLICATION 1'
     echo_ok
-else
-    echo_nok
+
+    echo -n "- Provisioning home dashboard..."
+    echo_running
+    _provision_home_dashboard.py >/dev/null 2>&1
+    if test $? -eq 0; then
+        echo_ok
+    else
+        echo_nok
+    fi
+fi
+if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
+    echo -n "- Provisionning nginx ES template..."
+    echo_running
+    _provision_nginx_template.py >/dev/null 2>&1
+    if test $? -eq 0; then
+        echo_ok
+    else
+        echo_nok
+    fi
 fi
 
 echo -n "- Stopping mfadmin services..."
