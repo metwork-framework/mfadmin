@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Feat
+- introduce logs management with ES and kibana
+
 ### Fix
 - mfserv module metrics about cpu/mem
 
