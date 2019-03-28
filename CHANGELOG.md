@@ -5,6 +5,7 @@
 - introduce logs management with ES and kibana
 
 ### Fix
+- fix grafana-cli location for admin password change
 - mfserv module metrics about cpu/mem
 
 <a name="v0.5.7"></a>
