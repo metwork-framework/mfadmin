@@ -1,5 +1,8 @@
 #!/bin/bash
-
+cp -r "${MODULE_HOME}/config/grafana_dashboards" "${MODULE_RUNTIME_HOME}/tmp/config_auto/."
+if test -s "/etc/metwork.config.d/mfadmin/grafana_dashboards"; then
+   cp /etc/metwork.config.d/mfadmin/grafana_dashboards/* "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_dashboards/."
+fi
 rm -Rf "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning"
 mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources"
 mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards"
