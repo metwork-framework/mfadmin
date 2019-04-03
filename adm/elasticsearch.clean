@@ -8,7 +8,7 @@ from mflog import getLogger
 
 ES_PORT = int(os.environ['MFADMIN_ELASTICSEARCH_HTTP_PORT'])
 BASE_URL = "http://127.0.0.1:%i" % ES_PORT
-PREFIXES = ["nginx-"]
+PREFIXES = ["nginx-", "mflog-"]
 LOGGER = getLogger("elasticsearch.clean")
 LIFETIME = int(os.environ['MFADMIN_ELASTICSEARCH_INDICES_LIFETIME'])
 
