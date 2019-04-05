@@ -2,6 +2,11 @@
 ## [Unreleased]
 
 ### Feat
+- introduce mflog indices rotation
+
+<a name="v0.6.0"></a>
+## [v0.6.0] - 2019-04-03
+### Feat
 - introduce logs management with ES and kibana
 
 ### Fix
