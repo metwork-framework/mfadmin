@@ -13,6 +13,15 @@
   pattern = "influxd.run..config.{{MODULE_RUNTIME_HOME}}.tmp.config_auto.influxdb.conf"
   user = "{{MODULE_RUNTIME_USER}}"
   process_name = "influxdb"
+
+[[inputs.filecount]]
+  directories = ["{{MODULE_RUNTIME_HOME}}/var/influxdb"]
+  name = "*"
+  recursive = true
+  regular_only = true
+  size = "0B"
+  mtime = "0s"
+
 {% endraw %}
 
 {% endblock %}
