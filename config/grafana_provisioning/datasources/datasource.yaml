@@ -12,8 +12,18 @@ datasources:
 - name: es_nginx
   type: elasticsearch
   access: proxy
-  database: "nginx-*"
+  database: "[nginx-]YYYY.MM.DD"
   url: http://127.0.0.1:{{MFADMIN_ELASTICSEARCH_HTTP_PORT}}
   jsonData:
+    interval: Daily
     timeField: "@timestamp"
+    esVersion: 60
+- name: es_mflog
+  type: elasticsearch
+  access: proxy
+  database: "[mflog-]YYYY.MM.DD"
+  url: http://127.0.0.1:{{MFADMIN_ELASTICSEARCH_HTTP_PORT}}
+  jsonData:
+    interval: Daily
+    timeField: "timestamp"
     esVersion: 60
