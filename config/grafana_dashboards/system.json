@@ -15,7 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1545130169706,
+  "id": 5,
+  "iteration": 1554472790095,
   "links": [],
   "panels": [
     {
@@ -619,119 +620,6 @@
       "colorBackground": false,
       "colorValue": false,
       "colors": [
-        "#f9e2d2",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": "influxdb",
-      "format": "percent",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": true,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 5,
-        "w": 4,
-        "x": 20,
-        "y": 1
-      },
-      "id": 21,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": true
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "mem",
-          "orderByTime": "ASC",
-          "policy": "$resolution",
-          "query": "SELECT min(\"usage_idle_min\") * -1 + 100 FROM \"$resolution\".\"cpu\" WHERE \"host\" =~ /^$host$/ AND $timeFilter GROUP BY time($__interval) fill(null)",
-          "rawQuery": true,
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "max_used_percent"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "max"
-              }
-            ]
-          ],
-          "tags": []
-        }
-      ],
-      "thresholds": "100,100,100",
-      "timeFrom": null,
-      "title": "CPU usage (single core)",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "max"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": false,
-      "colors": [
         "#299c46",
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
@@ -974,7 +862,6 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": null,
       "format": "Bps",
       "gauge": {
         "maxValue": 100,
@@ -1085,7 +972,6 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": null,
       "format": "Bps",
       "gauge": {
         "maxValue": 100,
@@ -1345,6 +1231,7 @@
         }
       ],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Load by cpu core",
       "tooltip": {
@@ -1541,6 +1428,7 @@
         }
       ],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Memory usage",
       "tooltip": {
@@ -1690,6 +1578,7 @@
         }
       ],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Disk usage",
       "tooltip": {
@@ -1839,6 +1728,7 @@
         }
       ],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Swap usage",
       "tooltip": {
@@ -2046,6 +1936,7 @@
         }
       ],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "CPU usage (whole server)",
       "tooltip": {
@@ -2195,6 +2086,7 @@
         }
       ],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "CPU usage (single core)",
       "tooltip": {
@@ -2373,6 +2265,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Mean/Max number of processes",
       "tooltip": {
@@ -2551,6 +2444,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Mean/Max number of threads",
       "tooltip": {
@@ -2741,6 +2635,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "diskio (read)",
       "tooltip": {
@@ -2931,6 +2826,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "diskio (write)",
       "tooltip": {
@@ -3123,6 +3019,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "netio (bytes sent per second)",
       "tooltip": {
@@ -3315,6 +3212,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "netio (bytes received per second)",
       "tooltip": {
@@ -3507,6 +3405,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "netio (drop in/out percent)",
       "tooltip": {
@@ -3699,6 +3598,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "netio (number of errors in/out per second)",
       "tooltip": {
@@ -3788,8 +3688,8 @@
           "scopedVars": {
             "host": {
               "selected": false,
-              "text": "beaufort",
-              "value": "beaufort"
+              "text": "kalmar",
+              "value": "kalmar"
             }
           },
           "seriesOverrides": [
@@ -3950,8 +3850,8 @@
           "scopedVars": {
             "host": {
               "selected": false,
-              "text": "beaufort",
-              "value": "beaufort"
+              "text": "kalmar",
+              "value": "kalmar"
             }
           },
           "seriesOverrides": [
@@ -4262,8 +4162,8 @@
           "scopedVars": {
             "host": {
               "selected": false,
-              "text": "beaufort",
-              "value": "beaufort"
+              "text": "kalmar",
+              "value": "kalmar"
             }
           },
           "seriesOverrides": [
@@ -4492,8 +4392,8 @@
           "scopedVars": {
             "host": {
               "selected": false,
-              "text": "beaufort",
-              "value": "beaufort"
+              "text": "kalmar",
+              "value": "kalmar"
             }
           },
           "seriesOverrides": [
@@ -4769,8 +4669,8 @@
       "scopedVars": {
         "host": {
           "selected": false,
-          "text": "beaufort",
-          "value": "beaufort"
+          "text": "kalmar",
+          "value": "kalmar"
         }
       },
       "title": "Detailled system metrics for host $host",
@@ -4818,6 +4718,13 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
+          "scopedVars": {
+            "host": {
+              "selected": false,
+              "text": "kalmar",
+              "value": "kalmar"
+            }
+          },
           "seriesOverrides": [],
           "spaceLength": 10,
           "stack": true,
@@ -4954,6 +4861,13 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
+          "scopedVars": {
+            "host": {
+              "selected": false,
+              "text": "kalmar",
+              "value": "kalmar"
+            }
+          },
           "seriesOverrides": [],
           "spaceLength": 10,
           "stack": true,
@@ -5090,6 +5004,13 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
+          "scopedVars": {
+            "host": {
+              "selected": false,
+              "text": "kalmar",
+              "value": "kalmar"
+            }
+          },
           "seriesOverrides": [],
           "spaceLength": 10,
           "stack": true,
@@ -5226,6 +5147,13 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
+          "scopedVars": {
+            "host": {
+              "selected": false,
+              "text": "kalmar",
+              "value": "kalmar"
+            }
+          },
           "seriesOverrides": [],
           "spaceLength": 10,
           "stack": true,
@@ -5335,8 +5263,8 @@
       "scopedVars": {
         "host": {
           "selected": false,
-          "text": "beaufort",
-          "value": "beaufort"
+          "text": "kalmar",
+          "value": "kalmar"
         }
       },
       "title": "Metwork modules global metrics for host $host",
@@ -5344,7 +5272,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 16,
+  "schemaVersion": 18,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -5380,6 +5308,7 @@
           }
         ],
         "query": "fullres,medres,lowres",
+        "skipUrlSync": false,
         "type": "custom"
       },
       {
@@ -5389,6 +5318,7 @@
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -5398,6 +5328,7 @@
         "query": "SHOW TAG VALUES WITH KEY = \"host\"",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -5439,5 +5370,5 @@
   "timezone": "",
   "title": "System Dashboard",
   "uid": "NTN8DENiz",
-  "version": 6
+  "version": 1
 }
