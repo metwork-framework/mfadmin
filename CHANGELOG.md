@@ -2,7 +2,9 @@
 ## [Unreleased]
 
 ### Feat
+- influxdb and grafana update
 - introduce mflog indices rotation
+- remove "CPU usage single core" from system dashboard overview
 
 <a name="v0.6.0"></a>
 ## [v0.6.0] - 2019-04-03
