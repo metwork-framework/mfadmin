@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+import os
+import json
+import sys
+import requests
+from mflog import get_logger
+
+ES_PORT = int(os.environ['MFADMIN_ELASTICSEARCH_HTTP_PORT'])
+ES_BASE_URL = "http://127.0.0.1:%i" % ES_PORT
+LOG = get_logger("_provision_mflog_template")
+
+url = "%s/_template/template_mflog" % ES_BASE_URL
+template = {
+    "index_patterns": ["mflog-*"],
+    "settings": {
+        "number_of_replicas": 1
+    },
+    "mappings": {
+        "_doc": {
+            "dynamic_templates": [
+                {
+                    "strings_as_keyword": {
+                        "match_mapping_type": "string",
+                        "mapping": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    }
+                }
+            ],
+            "date_detection": False,
+            "properties": {
+                "@timestamp": {
+                    "type": "date"
+                },
+                "timestamp": {
+                    "type": "date"
+                },
+                "event": {
+                    "type": "text"
+                },
+                "pid": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
+
+res = requests.put(url, data=json.dumps(template),
+                   headers={"Content-Type": "application/json"})
+if res.status_code == 200:
+    LOG.info("Template: %s set" % url)
+    sys.exit(0)
+else:
+    LOG.warning("HTTP/%i during PUT %s with reply: %s" % (res.status_code, url,
+                                                          res.text))
+    sys.exit(1)
