@@ -2,9 +2,12 @@
 ## [Unreleased]
 
 ### Feat
+- add debug message in case of mfadmin.init silent crash
 - influxdb and grafana update
 - introduce mflog indices rotation
+- monitor influxdb db size
 - remove "CPU usage single core" from system dashboard overview
+- secure kibana behind a password protected nginx location
 
 <a name="v0.6.0"></a>
 ## [v0.6.0] - 2019-04-03
