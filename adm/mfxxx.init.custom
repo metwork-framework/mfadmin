@@ -38,6 +38,7 @@ if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     echo -n "- Provisionning nginx ES template..."
     echo_running
     _provision_nginx_template.py >/dev/null 2>&1
+    _provision_mflog_template.py >/dev/null 2>&1
     if test $? -eq 0; then
         echo_ok
     else
