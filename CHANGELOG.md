@@ -2,6 +2,8 @@
 ## [Unreleased]
 
 ### Feat
+- add ES datasources in grafana provisionning
+- add ES template for mflog
 - add debug message in case of mfadmin.init silent crash
 - influxdb and grafana update
 - introduce mflog indices rotation
