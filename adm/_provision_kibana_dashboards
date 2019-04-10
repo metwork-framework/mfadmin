@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for F in ${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards/*.json; do
+    cat "${F}" |import_kibana_dashboard.py
+done
