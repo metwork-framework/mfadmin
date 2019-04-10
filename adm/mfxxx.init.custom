@@ -44,6 +44,15 @@ if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     else
         echo_nok
     fi
+    echo -n "- Provisionning kibana dashboards..."
+    echo_running
+    _provision_kibana_dashboards >/dev/null 2>&1
+    if test $? -eq 0; then
+        echo_ok
+    else
+        echo_nok
+        echo_bold "ERROR: see _provision_kibana_dashboards output for details"
+    fi
 fi
 
 echo -n "- Stopping mfadmin services..."

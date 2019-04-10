@@ -3,6 +3,15 @@
 mkdir -p "${MODULE_RUNTIME_HOME}/var/kibana"
 rm -Rf "${MODULE_RUNTIME_HOME}/tmp/kibana"
 mkdir -p "${MODULE_RUNTIME_HOME}/tmp/kibana/optimize"
+rm -Rf "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
+mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
+cp -r "${MODULE_HOME}/config/kibana_dashboards" "${MODULE_RUNTIME_HOME}/tmp/config_auto/"
+if test -d /etc/metwork.config.d/mfadmin/kibana_dashboards; then
+    N=$(ls /etc/metwork.config.d/mfadmin/kibana_dashboards 2>/dev/null |wc -l)
+    if test "${N}" -gt 0; then
+        cp -f /etc/metwork.config.d/mfadmin/kibana_dashboards/* "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards/"
+    fi
+fi
 cp -Rf "${MODULE_HOME}/opt/logs/opt/kibana/config" "${MODULE_RUNTIME_HOME}/tmp/kibana"
 cp -Rf "${MODULE_HOME}/opt/logs/opt/kibana/src" "${MODULE_RUNTIME_HOME}/tmp/kibana"
 cp -f "${MODULE_HOME}/opt/logs/opt/kibana/package.json" "${MODULE_RUNTIME_HOME}/tmp/kibana"

@@ -1,0 +1,164 @@
+{
+  "version": "6.5.3",
+  "objects": [
+    {
+      "id": "dd6ebf10-5b98-11e9-9665-71e62f12de10",
+      "type": "visualization",
+      "updated_at": "2019-04-10T14:30:05.186Z",
+      "version": 2,
+      "attributes": {
+        "title": "nginx pie hostname",
+        "visState": "{\"title\":\"nginx pie hostname\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":false,\"values\":true,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"hostname\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "16cc4340-5b99-11e9-9665-71e62f12de10",
+      "type": "visualization",
+      "updated_at": "2019-04-10T14:29:49.761Z",
+      "version": 2,
+      "attributes": {
+        "title": "nginx pie from",
+        "visState": "{\"title\":\"nginx pie from\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":false,\"values\":true,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"from\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "45431960-5b99-11e9-9665-71e62f12de10",
+      "type": "visualization",
+      "updated_at": "2019-04-10T14:02:26.166Z",
+      "version": 1,
+      "attributes": {
+        "title": "nginx pie method",
+        "visState": "{\"title\":\"nginx pie method\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":false,\"values\":true,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"method\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "4230bb30-5b97-11e9-9665-71e62f12de10",
+      "type": "search",
+      "updated_at": "2019-04-10T13:48:02.019Z",
+      "version": 1,
+      "attributes": {
+        "title": "nginx_logs",
+        "description": "",
+        "hits": 0,
+        "columns": [
+          "hostname",
+          "module",
+          "from",
+          "method",
+          "uri",
+          "request_length",
+          "reply_length",
+          "duration",
+          "status"
+        ],
+        "sort": [
+          "@timestamp",
+          "desc"
+        ],
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "b5a751c0-5b9f-11e9-9665-71e62f12de10",
+      "type": "visualization",
+      "updated_at": "2019-04-10T14:48:31.708Z",
+      "version": 1,
+      "attributes": {
+        "title": "nginx pie http status",
+        "visState": "{\"title\":\"nginx pie http status\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":false,\"values\":true,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"status\",\"ranges\":[{\"from\":0,\"to\":199},{\"from\":200,\"to\":299},{\"from\":300,\"to\":399},{\"from\":400,\"to\":499},{\"from\":500}]}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "10688110-5ba0-11e9-9665-71e62f12de10",
+      "type": "visualization",
+      "updated_at": "2019-04-10T14:51:03.969Z",
+      "version": 1,
+      "attributes": {
+        "title": "nginx pie duration",
+        "visState": "{\"title\":\"nginx pie duration\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":false,\"values\":true,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"duration\",\"ranges\":[{\"from\":0,\"to\":0.01},{\"from\":0.01,\"to\":0.1},{\"from\":0.1,\"to\":1},{\"from\":1,\"to\":10},{\"from\":10,\"to\":100},{\"from\":100}]}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "ea08d360-5ba1-11e9-9665-71e62f12de10",
+      "type": "visualization",
+      "updated_at": "2019-04-10T15:04:18.581Z",
+      "version": 1,
+      "attributes": {
+        "title": "nginx histogram",
+        "visState": "{\"title\":\"nginx histogram\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"time_zone\":\"Europe/Berlin\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+        "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"2e90ea60-5a0b-11e9-8a39-bb97e247f617\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }
+      }
+    },
+    {
+      "id": "2e90ea60-5a0b-11e9-8a39-bb97e247f617",
+      "type": "index-pattern",
+      "updated_at": "2019-04-10T14:51:29.950Z",
+      "version": 26,
+      "attributes": {
+        "title": "nginx-*",
+        "timeFieldName": "@timestamp",
+        "fields": "[{\"name\":\"@timestamp\",\"type\":\"date\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"duration\",\"type\":\"number\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"from\",\"type\":\"string\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"hostname\",\"type\":\"string\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"method\",\"type\":\"string\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"module\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"module_version\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"reply_length\",\"type\":\"number\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"request_length\",\"type\":\"number\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"status\",\"type\":\"number\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"uri\",\"type\":\"string\",\"count\":2,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false}]",
+        "fieldFormatMap": "{\"duration\":{\"id\":\"duration\",\"params\":{\"outputFormat\":\"asSeconds\",\"outputPrecision\":3}},\"request_length\":{\"id\":\"bytes\"},\"reply_length\":{\"id\":\"bytes\"}}"
+      },
+      "migrationVersion": {
+        "index-pattern": "6.5.0"
+      }
+    },
+    {
+      "id": "93dcdd40-5b99-11e9-9665-71e62f12de10",
+      "type": "dashboard",
+      "updated_at": "2019-04-10T15:05:30.252Z",
+      "version": 5,
+      "attributes": {
+        "title": "nginx logs",
+        "hits": 0,
+        "description": "",
+        "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":0,\"y\":0,\"w\":9,\"h\":9,\"i\":\"1\"},\"id\":\"dd6ebf10-5b98-11e9-9665-71e62f12de10\",\"panelIndex\":\"1\",\"title\":\"hostname pie\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":9,\"y\":0,\"w\":9,\"h\":9,\"i\":\"2\"},\"id\":\"16cc4340-5b99-11e9-9665-71e62f12de10\",\"panelIndex\":\"2\",\"title\":\"from pie\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":18,\"y\":0,\"w\":9,\"h\":9,\"i\":\"3\"},\"id\":\"45431960-5b99-11e9-9665-71e62f12de10\",\"panelIndex\":\"3\",\"title\":\"http method pie\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":19,\"w\":48,\"h\":37,\"i\":\"4\"},\"id\":\"4230bb30-5b97-11e9-9665-71e62f12de10\",\"panelIndex\":\"4\",\"type\":\"search\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":27,\"y\":0,\"w\":9,\"h\":9,\"i\":\"5\"},\"id\":\"b5a751c0-5b9f-11e9-9665-71e62f12de10\",\"panelIndex\":\"5\",\"title\":\"http status pie\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":36,\"y\":0,\"w\":9,\"h\":9,\"i\":\"6\"},\"id\":\"10688110-5ba0-11e9-9665-71e62f12de10\",\"panelIndex\":\"6\",\"title\":\"duration pie\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"gridData\":{\"x\":0,\"y\":9,\"w\":48,\"h\":10,\"i\":\"7\"},\"version\":\"6.5.3\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"id\":\"ea08d360-5ba1-11e9-9665-71e62f12de10\",\"embeddableConfig\":{},\"title\":\"date histogram\"}]",
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "version": 1,
+        "timeRestore": false,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }
+      }
+    }
+  ]
+}

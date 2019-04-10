@@ -34,6 +34,9 @@ template = {
                 "@timestamp": {
                     "type": "date"
                 },
+                "from": {
+                    "type": "ip"
+                },
                 "duration": {
                     "type": "float"
                 },
