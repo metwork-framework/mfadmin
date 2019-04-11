@@ -5,6 +5,7 @@
 - add ES datasources in grafana provisionning
 - add ES template for mflog
 - add debug message in case of mfadmin.init silent crash
+- add kibana dashboards import/export/provisionning
 - influxdb and grafana update
 - introduce mflog indices rotation
 - monitor influxdb db size
