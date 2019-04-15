@@ -3,3 +3,6 @@
 for F in ${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards/*.json; do
     cat "${F}" |import_kibana_dashboard.py
 done
+
+# We set the default index pattern
+curl -XPOST "http://localhost:${MFADMIN_KIBANA_HTTP_PORT}/api/kibana/settings" -H "Content-type: application/json" -H "Accept: application/json" -H "kbn-xsrf: reporting" -d '{"changes":{"defaultIndex":"2e90ea60-5a0b-11e9-8a39-bb97e247f617"}}'
