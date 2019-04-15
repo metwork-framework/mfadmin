@@ -60,10 +60,14 @@ template = {
 
 res = requests.put(url, data=json.dumps(template),
                    headers={"Content-Type": "application/json"})
-if res.status_code == 200:
-    LOG.info("Template: %s set" % url)
-    sys.exit(0)
-else:
+if res.status_code != 200:
     LOG.warning("HTTP/%i during PUT %s with reply: %s" % (res.status_code, url,
                                                           res.text))
     sys.exit(1)
+
+LOG.info("Template: %s set" % url)
+
+# We prefere to delete all nginx indices after changing the mapping
+requests.delete("%s/nginx-*" % ES_BASE_URL)
+
+sys.exit(0)
