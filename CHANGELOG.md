@@ -6,11 +6,16 @@
 - add ES template for mflog
 - add debug message in case of mfadmin.init silent crash
 - add kibana dashboards import/export/provisionning
+- drop es indices after changing es mapping
 - influxdb and grafana update
 - introduce mflog indices rotation
+- kibana dashboard update
 - monitor influxdb db size
 - remove "CPU usage single core" from system dashboard overview
 - secure kibana behind a password protected nginx location
+
+### Fix
+- set kibana default index
 
 <a name="v0.6.0"></a>
 ## [v0.6.0] - 2019-04-03
