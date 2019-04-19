@@ -1,50 +1,60 @@
-<a name="unreleased"></a>
-## [Unreleased]
+# release_0.5 CHANGELOG
 
-<a name="v0.5.7"></a>
-## [v0.5.7] - 2019-03-16
 
-<a name="v0.5.6"></a>
-## [v0.5.6] - 2019-02-16
 
-<a name="v0.5.5"></a>
-## [v0.5.5] - 2019-02-09
+## v0.5.8 (2019-03-23)
 
-<a name="v0.5.4"></a>
-## [v0.5.4] - 2019-02-06
+- No interesting change
 
-<a name="v0.5.3"></a>
-## [v0.5.3] - 2019-01-31
 
-<a name="v0.5.2"></a>
-## [v0.5.2] - 2019-01-31
+## v0.5.7 (2019-03-16)
 
-<a name="v0.5.1"></a>
-## [v0.5.1] - 2019-01-29
+- No interesting change
 
-<a name="v0.5.0"></a>
-## [v0.5.0] - 2019-01-29
-### Feat
-- Changes in management of layer dependencies and metapackage names (only minimal and full) Associated with changes in mfext _metwork.spec, this reduces the number of layers installed by default when installing mfadmin (only necessary mfext layers are installed) Metapackage metwork-mfadmin-minimal only installs the necessary layers for mfadmin to work properly Metapackage metwork-mfadmin or metwork-mfserv-full installs all mfadmin layers
+
+## v0.5.6 (2019-02-16)
+
+- No interesting change
+
+
+## v0.5.5 (2019-02-09)
+
+- No interesting change
+
+
+## v0.5.4 (2019-02-06)
+
+- No interesting change
+
+
+## v0.5.3 (2019-01-31)
+
+- No interesting change
+
+
+## v0.5.2 (2019-01-31)
+
+- No interesting change
+
+
+## v0.5.1 (2019-01-29)
+
+- No interesting change
+
+
+## v0.5.0 (2019-01-29)
+
+### New Features
 - add influxdb system monitoring
-- better mfdata dashboard
-- better mfserv dashboard
-- better system dashboard
-- execute integration tests directly from mfadmin module and launch them on a pull request on the module
 - influxdb upgrade (=>1.7.2)
+- better mfserv dashboard
+- better mfdata dashboard
+- better system dashboard
+- Changes in management of layer dependencies and metapackage names
+- execute integration tests directly from mfadmin module
 
-<a name="v0.4.1"></a>
-## [v0.4.1] - 2019-01-09
 
-<a name="v0.4.0"></a>
-## [v0.4.0] - 2019-01-08
-### Feat
-- add a first version of telegraf dashboard
-- add influxdb local monitoring
-- add options to be able to run grafana behind a reverse proxy
-- better system dashboard (add diskio stats)
-- the grafana admin password is now a configuration option
 
-### Fix
-- fix mfadmin.init with a changed grafana admin password
+
+
 
