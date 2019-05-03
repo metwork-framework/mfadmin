@@ -15,6 +15,7 @@
 - add kibana dashboards import/export/provisionning
 - kibana dashboard update
 - drop es indices after changing es mapping
+- Add a dashboard for mfbase
 
 
 ### Bug Fixes
