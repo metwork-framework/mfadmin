@@ -1,2 +1,0 @@
-influxdb==5.0.0
-python-dateutil==2.7.3
