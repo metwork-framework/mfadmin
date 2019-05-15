@@ -4,3 +4,12 @@ doc/layer_*.md
 doc/layer_*.rst
 doc/_build
 layers/layer5_python3/0500_extra_packages/src
+doc/api
+doc/configure_a_metwork_package.md
+doc/configure_a_metwork_package.rst
+doc/configure_metwork_repo.md
+doc/configure_metwork_repo.rst
+doc/install_a_metwork_package.md
+doc/install_a_metwork_package.rst
+CHANGELOG*.md
+CHANGELOG*.rst

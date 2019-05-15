@@ -1,13 +1,25 @@
-.. mfbus documentation master file, created by
-   sphinx-quickstart on Fri May  5 17:31:54 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to mfbus's documentation!
-=================================
+MFADMIN documentation
+#####################
 
 .. toctree::
+   :numbered:
+   :caption: Table of Contents
+   :name: mfadmintoc
+   :maxdepth: 3
 
-    layer_root
-    layer_monitoring
-    layer_default
+   configure_metwork_repo
+   install_a_metwork_package
+   configure_a_metwork_package
+   layer_root
+   layer_logs
+   layer_metrics
+   layer_python3
+   layer_default
+   todo
+   changelogs
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
