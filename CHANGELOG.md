@@ -20,6 +20,7 @@
 
 ### Bug Fixes
 - set kibana default index
+- fix building issues with proxy
 
 
 
