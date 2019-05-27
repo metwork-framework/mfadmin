@@ -1,25 +1,4 @@
 {
-  "__inputs": [],
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "dashlist",
-      "name": "Dashboard list",
-      "version": "5.0.0"
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "5.1.3"
-    },
-    {
-      "type": "panel",
-      "id": "text",
-      "name": "Text",
-      "version": "5.0.0"
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -36,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": null,
   "links": [],
   "panels": [
     {
@@ -54,27 +32,29 @@
       "type": "text"
     },
     {
-      "folderId": 0,
+      "folderId": null,
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 17,
+        "w": 23,
         "x": 0,
         "y": 3
       },
       "headings": true,
-      "id": 2,
-      "limit": 10,
+      "id": 6,
+      "limit": 15,
       "links": [],
       "query": "",
       "recent": true,
-      "search": false,
-      "starred": true,
+      "search": true,
+      "starred": false,
       "tags": [],
-      "title": "Favorite dashboards",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Dashboards",
       "type": "dashlist"
     }
   ],
-  "schemaVersion": 16,
+  "schemaVersion": 18,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -112,5 +92,5 @@
   "timezone": "",
   "title": "home",
   "uid": "lCmsjhHik",
-  "version": 2
+  "version": 1
 }
