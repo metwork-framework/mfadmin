@@ -4,6 +4,7 @@
 ## [Unreleased]
 
 ### New Features
+- dashboards update
 - Add a dashboard for mfbase
 - drop es indices after changing es mapping
 - kibana dashboard update
