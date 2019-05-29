@@ -23,7 +23,7 @@ for DIR in plugins data; do
     mkdir -p "${MODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
 done
 
-cat "${MODULE_HOME}/config/kibana.conf" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
+cat "${MODULE_HOME}/config/kibana.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
 rm -f "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
 ln -s "${MODULE_RUNTIME_HOME}/tmp/kibana/config" "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
 

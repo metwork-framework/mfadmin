@@ -28,7 +28,7 @@ $(MODULE_HOME)/config/grafana_dashboards/%.json: grafana_dashboards/%.json
 
 $(MODULE_HOME)/config/kibana_dashboards/%.json: kibana_dashboards/%.json
 	@mkdir -p $(MODULE_HOME)/config/kibana_dashboards
-	cat $< |envtpl >$@ || { rm -f $@ ; false ; }
+	cat $< |envtpl --reduce-multi-blank-lines >$@ || { rm -f $@ ; false ; }
 
 $(MODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml: grafana_provisioning/datasources/datasource.yaml
 	mkdir -p `dirname $@`

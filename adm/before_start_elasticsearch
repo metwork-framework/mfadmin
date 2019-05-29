@@ -10,9 +10,9 @@ done
 for DIR in plugins logs; do
     mkdir -p "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/${DIR}"
 done
-cat "${MODULE_HOME}/config/elasticsearch.conf" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/elasticsearch.yml"
-cat "${MODULE_HOME}/config/elasticsearch_jvm_options.conf" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/jvm.options"
-cat "${MODULE_HOME}/config/elasticsearch_log4j2_properties.conf" |envtpl >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/log4j2.properties"
+cat "${MODULE_HOME}/config/elasticsearch.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/elasticsearch.yml"
+cat "${MODULE_HOME}/config/elasticsearch_jvm_options.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/jvm.options"
+cat "${MODULE_HOME}/config/elasticsearch_log4j2_properties.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/log4j2.properties"
 rm -f "${MODULE_RUNTIME_HOME}/tmp/config_auto/elasticsearch"
 ln -s "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config" "${MODULE_RUNTIME_HOME}/tmp/config_auto/elasticsearch"
 
