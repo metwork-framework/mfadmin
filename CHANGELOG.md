@@ -4,6 +4,7 @@
 ## [Unreleased]
 
 ### New Features
+- use envtpl new option --reduce-multi-blank-lines
 - dashboards update
 - Add a dashboard for mfbase
 - drop es indices after changing es mapping
