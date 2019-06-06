@@ -208,6 +208,10 @@ man_pages = [
 ]
 
 intersphinx_mapping = {'mfext': (build_intersphinx_mapping_url(project, 'mfext'), None),
+                       'mfdata': (build_intersphinx_mapping_url(project, 'mfdata'), None),
+                       'mfsysmon': (build_intersphinx_mapping_url(project, 'mfsysmon'), None),
+                       'mfbase': (build_intersphinx_mapping_url(project, 'mfbase'), None),
+                       'mfserv': (build_intersphinx_mapping_url(project, 'mfserv'), None),
                        }
 
 # -- Options for Texinfo output -------------------------------------------
