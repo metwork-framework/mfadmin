@@ -17,10 +17,10 @@
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="561.2" width="930.7999999999998" x="-44.07839999999976" y="52.19600166320794"/>
-          <y:Fill color="#CCCCCC" transparent="false"/>
+          <y:Geometry height="142.61679833679216" width="186.29999999999984" x="754.5066631347659" y="633.6349864423114"/>
+          <y:Fill color="#FFCCCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="20" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="63.28125" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#000000" topInset="10" verticalTextPosition="bottom" visible="true" width="199.7265625" x="10.0" xml:space="preserve" y="10.0">MFADMIN</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="56.296875" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#800080" topInset="10" verticalTextPosition="bottom" visible="true" width="156.3359375" x="10.0" xml:space="preserve" y="10.0">MFDATA</y:NodeLabel>
           <y:Shape type="rectangle3d"/>
         </y:ShapeNode>
       </data>
@@ -28,23 +28,23 @@
     <node id="n1">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="87.61679833679216" width="214.29999999999984" x="-281.281299786377" y="50.62340291061375"/>
+          <y:Geometry height="139.81679833679217" width="201.4999999999999" x="699.117350106812" y="-142.5036000381468"/>
           <y:Fill color="#FFCCCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="20" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="63.28125" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#000000" topInset="10" verticalTextPosition="bottom" visible="true" width="220.498046875" x="10.0" xml:space="preserve" y="10.0">MFSYSMON</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="56.296875" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#800080" topInset="10" verticalTextPosition="bottom" visible="true" width="154.7568359375" x="10.0" xml:space="preserve" y="10.0">MFSERV</y:NodeLabel>
           <y:Shape type="rectangle3d"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n2">
       <data key="d6">
-        <y:ImageNode>
-          <y:Geometry height="32.0" width="32.0" x="-261.7412997863773" y="63.240201247405906"/>
-          <y:Fill color="#CCCCFF" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="14.0" y="36.0"/>
-          <y:Image alphaImage="true" refid="1"/>
-        </y:ImageNode>
+        <y:ShapeNode>
+          <y:Geometry height="561.2" width="930.7999999999998" x="-44.07839999999976" y="52.19600166320794"/>
+          <y:Fill color="#CCCCCC" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="20" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="63.28125" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#800080" topInset="10" verticalTextPosition="bottom" visible="true" width="199.7265625" x="10.0" xml:space="preserve" y="10.0">MFADMIN</y:NodeLabel>
+          <y:Shape type="rectangle3d"/>
+        </y:ShapeNode>
       </data>
     </node>
     <node id="n3">
@@ -111,10 +111,10 @@
     <node id="n8">
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="45.56999588012695" width="67.49800109863281" x="214.45099945068364" y="664.4150020599366"/>
+          <y:Geometry height="66.66784097294722" width="98.74800109863281" x="146.09162445068364" y="660.5087520599366"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="31.749000549316406" y="49.56999588012695">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="47.374000549316406" y="70.66784097294726">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -134,7 +134,7 @@
       <data key="d5" xml:space="preserve"><![CDATA[Go to ElasticSearch site]]></data>
       <data key="d6">
         <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="123.08000000000004" x="581.06" y="203.8720033264159"/>
+          <y:Geometry height="30.0" width="123.08000000000004" x="661.06" y="148.07600166320793"/>
           <y:Fill color="#33CCCC" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.966796875" x="14.056601562499964" xml:space="preserve" y="6.015625">ElasticSearch<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -180,7 +180,7 @@
     <node id="n13">
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="46.887996673583984" width="39.527000427246094" x="734.14" y="242.6720033264159"/>
+          <y:Geometry height="46.887996673583984" width="39.527000427246094" x="760.64" y="259.12600166320794"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.462890625" x="-11.55144531250005" xml:space="preserve" y="50.887996673583984">ElasticSearch 
@@ -195,10 +195,10 @@ database<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:M
     <node id="n14">
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="45.56999588012695" width="67.49800109863281" x="768.1209994506835" y="491.7460057830808"/>
+          <y:Geometry height="66.66784097294722" width="98.74800109863281" x="723.1209994506835" y="411.7460057830808"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.865234375" x="4.816383361816406" xml:space="preserve" y="49.56999588012695">localhost<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.865234375" x="20.441383361816406" xml:space="preserve" y="70.66784097294726">localhost<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="3"/>
@@ -238,10 +238,10 @@ management<y:LabelModel><y:SmartNodeLabelModel distance="1.0"/></y:LabelModel><y
       <data key="d4" xml:space="preserve"/>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="34.48000000000002" width="110.44639999999998" x="575.8867999999998" y="263.8720033264159"/>
+          <y:Geometry height="34.48000000000002" width="110.44639999999998" x="655.8867999999998" y="208.07600166320793"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="1.0" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.09765625" x="10.17437187500002" xml:space="preserve" y="4.509953441990774">Search and analytics 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="1.0" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.09765625" x="10.17437187500002" xml:space="preserve" y="4.509953441990746">Search and analytics 
 management<y:LabelModel><y:SmartNodeLabelModel distance="1.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="-0.3692008862531684" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="53.22320000000002" y="-8.0"/>
           <y:Shape type="rectangle3d"/>
@@ -305,32 +305,9 @@ metrics management
       </data>
     </node>
     <node id="n22">
-      <data key="d4" xml:space="preserve"><![CDATA[https://www.influxdata.com/time-series-platform/telegraf/]]></data>
-      <data key="d5" xml:space="preserve"><![CDATA[Go to Telegraf site]]></data>
-      <data key="d6">
-        <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="123.08000000000004" x="-218.061299786377" y="95.2402012474059"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.40234375" x="31.33882812500002" xml:space="preserve" y="6.015625">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n23">
-      <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="87.61679833679216" width="214.29999999999984" x="-281.28129978637713" y="158.33920332641566"/>
-          <y:Fill color="#FFCCCC" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="20" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="63.28125" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#000000" topInset="10" verticalTextPosition="bottom" visible="true" width="184.765625" x="10.0" xml:space="preserve" y="10.0">MFDATA</y:NodeLabel>
-          <y:Shape type="rectangle3d"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n24">
       <data key="d6">
         <y:ImageNode>
-          <y:Geometry height="32.0" width="32.0" x="-261.7412997863773" y="170.95600166320781"/>
+          <y:Geometry height="32.0" width="32.0" x="718.6573501068116" y="-130.88680170135464"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="14.0" y="36.0"/>
@@ -338,25 +315,49 @@ metrics management
         </y:ImageNode>
       </data>
     </node>
-    <node id="n25">
+    <node id="n23">
       <data key="d4" xml:space="preserve"><![CDATA[https://www.influxdata.com/time-series-platform/telegraf/]]></data>
       <data key="d5" xml:space="preserve"><![CDATA[Go to Telegraf site]]></data>
       <data key="d6">
         <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="93.64639999999991" x="-188.62769978637687" y="202.95600166320781"/>
+          <y:Geometry height="30.0" width="135.0" x="736.1573501068116" y="-100.36420126647937"/>
           <y:Fill color="#33CCCC" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.40234375" x="16.622028124999957" xml:space="preserve" y="6.015625">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.001953125" x="41.9990234375" xml:space="preserve" y="7.1796875">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n24">
+      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/jsonlog2elasticsearch]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to jsonlog2elasticsearch site]]></data>
+      <data key="d6">
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="754.2073501068116" y="-69.13680170135464"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.2900390625" x="4.35498046875" xml:space="preserve" y="7.1796875">jsonlog2elasticsearch<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n25">
+      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/mflog]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to mflog site]]></data>
+      <data key="d6">
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="714.3073501068118" y="-37.20050148391701"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.828125" x="21.0859375" xml:space="preserve" y="7.1796875">mflog2mfadmin<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n26">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="87.61679833679216" width="353.26449978637737" x="135.26350021362285" y="-67.61239750518814"/>
+          <y:Geometry height="116.11679833679216" width="189.29999999999984" x="480.81735010681194" y="-76.5536000381468"/>
           <y:Fill color="#FFCCCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="20" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="63.28125" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#000000" topInset="10" verticalTextPosition="bottom" visible="true" width="182.509765625" x="10.0" xml:space="preserve" y="10.0">MFSERV</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="56.296875" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#800080" topInset="10" verticalTextPosition="bottom" visible="true" width="181.3486328125" x="10.0" xml:space="preserve" y="10.0">MFSYSMON</y:NodeLabel>
           <y:Shape type="rectangle3d"/>
         </y:ShapeNode>
       </data>
@@ -364,7 +365,7 @@ metrics management
     <node id="n27">
       <data key="d6">
         <y:ImageNode>
-          <y:Geometry height="32.0" width="32.0" x="154.80350021362256" y="-54.995599168395984"/>
+          <y:Geometry height="32.0" width="32.0" x="500.20735010681165" y="-64.93680170135464"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="14.0" y="36.0"/>
@@ -377,28 +378,29 @@ metrics management
       <data key="d5" xml:space="preserve"><![CDATA[Go to Telegraf site]]></data>
       <data key="d6">
         <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="96.27230021362288" x="154.80350021362256" y="-22.995599168395984"/>
+          <y:Geometry height="30.0" width="135.0" x="493.70735010681165" y="2.235798733520639"/>
           <y:Fill color="#33CCCC" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.40234375" x="17.934978231811442" xml:space="preserve" y="6.015625">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.001953125" x="41.9990234375" xml:space="preserve" y="7.1796875">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n29">
+      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/mflog]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to mflog site]]></data>
       <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="87.61679833679216" width="214.29999999999984" x="-281.2812997863771" y="262.07600166320776"/>
-          <y:Fill color="#FFCCCC" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="20" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="63.28125" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#000000" topInset="10" verticalTextPosition="bottom" visible="true" width="182.353515625" x="10.0" xml:space="preserve" y="10.0">MFBASE</y:NodeLabel>
-          <y:Shape type="rectangle3d"/>
-        </y:ShapeNode>
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="524.7073501068116" y="-32.850501483917"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.828125" x="21.0859375" xml:space="preserve" y="7.1796875">mflog2mfadmin<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
       </data>
     </node>
     <node id="n30">
       <data key="d6">
         <y:ImageNode>
-          <y:Geometry height="32.0" width="32.0" x="-261.74129978637734" y="274.6927999999999"/>
+          <y:Geometry height="32.0" width="32.0" x="774.0466631347654" y="645.2517847791037"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="14.0" y="36.0"/>
@@ -407,27 +409,25 @@ metrics management
       </data>
     </node>
     <node id="n31">
-      <data key="d4" xml:space="preserve"><![CDATA[https://www.influxdata.com/time-series-platform/telegraf/]]></data>
-      <data key="d5" xml:space="preserve"><![CDATA[Go to Telegraf site]]></data>
       <data key="d6">
-        <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="87.08000000000004" x="-182.06129978637705" y="306.6927999999999"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.40234375" x="13.33882812500002" xml:space="preserve" y="6.015625">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
-        </y:GenericNode>
+        <y:ShapeNode>
+          <y:Geometry height="113.61679833679216" width="189.29999999999984" x="446.9516000000004" y="652.2697530002592"/>
+          <y:Fill color="#FFCCCC" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="10.0" bottomInset="30" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="56.296875" horizontalTextPosition="center" iconTextGap="4" leftInset="60" modelName="internal" modelPosition="tl" rightInset="30" textColor="#800080" topInset="10" verticalTextPosition="bottom" visible="true" width="154.6474609375" x="10.0" xml:space="preserve" y="10.0">MFBASE</y:NodeLabel>
+          <y:Shape type="rectangle3d"/>
+        </y:ShapeNode>
       </data>
     </node>
     <node id="n32">
-      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/jsonlog2elasticsearch]]></data>
-      <data key="d5" xml:space="preserve"><![CDATA[Go to jsonlog2elasticsearch site]]></data>
       <data key="d6">
-        <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="159.08000000000004" x="317.4480000000002" y="-54.995599168395984"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="150.748046875" x="4.1659765625000205" xml:space="preserve" y="6.015625">jsonlog2elasticsearch<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
-        </y:GenericNode>
+        <y:ImageNode>
+          <y:Geometry height="32.0" width="32.0" x="466.34160000000014" y="663.8865513370514"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="14.0" y="36.0"/>
+          <y:Image alphaImage="true" refid="1"/>
+        </y:ImageNode>
       </data>
     </node>
     <node id="n33">
@@ -435,10 +435,58 @@ metrics management
       <data key="d5" xml:space="preserve"><![CDATA[Go to Telegraf site]]></data>
       <data key="d6">
         <y:GenericNode configuration="BevelNode2">
-          <y:Geometry height="30.0" width="134.76319999999987" x="281.07580042724544" y="-22.995599168395984"/>
+          <y:Geometry height="30.0" width="135.0" x="455.34160000000014" y="729.0591517719267"/>
           <y:Fill color="#33CCCC" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.59375" x="12.084724999999935" xml:space="preserve" y="6.015625">mflog2mfadmin<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.001953125" x="41.99902343750006" xml:space="preserve" y="7.1796875">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n34">
+      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/mflog]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to mflog site]]></data>
+      <data key="d6">
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="486.34160000000014" y="693.972851554489"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.828125" x="21.085937500000057" xml:space="preserve" y="7.1796875">mflog2mfadmin<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n35">
+      <data key="d4" xml:space="preserve"><![CDATA[https://www.influxdata.com/time-series-platform/telegraf/]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to Telegraf site]]></data>
+      <data key="d6">
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="767.0466631347654" y="739.4243852139789"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.001953125" x="41.9990234375" xml:space="preserve" y="7.1796875">Telegraf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n36">
+      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/jsonlog2elasticsearch]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to jsonlog2elasticsearch site]]></data>
+      <data key="d6">
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="792.7966631347654" y="675.2517847791037"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.2900390625" x="4.35498046875" xml:space="preserve" y="7.1796875">jsonlog2elasticsearch<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n37">
+      <data key="d4" xml:space="preserve"><![CDATA[https://github.com/metwork-framework/mflog]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Go to mflog site]]></data>
+      <data key="d6">
+        <y:GenericNode configuration="BevelNode2">
+          <y:Geometry height="30.0" width="135.0" x="782.7966631347654" y="708.3380849965413"/>
+          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="15.640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.828125" x="21.0859375" xml:space="preserve" y="7.1796875">mflog2mfadmin<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -471,13 +519,13 @@ metrics management
     <edge id="e2" source="n4" target="n9">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="69.20145507812515" sy="0.0" tx="-22.979999999999905" ty="-10.13200332641594">
-            <y:Point x="581.1046752929688" y="177.79852294921875"/>
+          <y:Path sx="69.20145507812515" sy="0.0" tx="-50.862786865234284" ty="3.924199584197993">
+            <y:Point x="602.7002563476562" y="151.35597229003906"/>
           </y:Path>
           <y:LineStyle color="#FF6600" type="line" width="1.0"/>
           <y:Arrows source="standard" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#FF6600" verticalTextPosition="bottom" visible="true" width="53.001953125" x="21.275634765625" xml:space="preserve" y="3.4954376220703125">manage<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="1.0" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:Arc height="10.331599235534668" ratio="0.4277017414569855" type="fixedRatio"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#FF6600" verticalTextPosition="bottom" visible="true" width="53.001953125" x="42.8623046875" xml:space="preserve" y="-22.932159423828125">manage<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="1.0" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:Arc height="14.80322551727295" ratio="0.4277017414569855" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
@@ -537,14 +585,14 @@ default port 18088<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
     <edge id="e7" source="n8" target="n7">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="0.6176151613947809" sy="-22.815481152942084" tx="7.097782472883949" ty="15.03045664378476">
-            <y:Point x="169.85690307617188" y="542.6146240234375"/>
+          <y:Path sx="0.903556574169119" sy="-33.37851671584087" tx="7.097782472883949" ty="15.03045664378476">
+            <y:Point x="144.2178955078125" y="532.8253173828125"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-137.77531805160044" xml:space="preserve" y="-199.83358364105231">HTTP  
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-100.13346514076191" xml:space="preserve" y="-200.80788784027106">HTTP  
 Default port 15602<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="false" position="center" ratio="0.5" segment="-1"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:Arc height="41.5173454284668" ratio="0.5970935821533203" type="fixedRatio"/>
+          <y:Arc height="39.44391632080078" ratio="0.5970935821533203" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
@@ -552,25 +600,25 @@ Default port 15602<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="329.2698059082031" y="603.227294921875"/>
+            <y:Point x="303.8304748535156" y="613.9147338867188"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="5.07804468190875" xml:space="preserve" y="-46.87524056252505">HTTP  
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="16.630419322037767" xml:space="preserve" y="-42.993019330681136">HTTP  
 Default port 15605<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:Arc height="-31.405277252197266" ratio="-0.5587313771247864" type="fixedRatio"/>
+          <y:Arc height="-36.23017883300781" ratio="-0.5587313771247864" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
     <edge id="e9" source="n9" target="n13">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="61.51461914062486" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="736.6238403320312" y="234.46897888183594"/>
+          <y:Path sx="39.137213134765716" sy="8.924199584197993" tx="0.0" ty="0.0">
+            <y:Point x="788.89208984375" y="224.2764434814453"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="27.206836219579372" y="-21.252892908531948">
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="34.85136795033827" y="7.26546369808014">
             <y:LabelModel>
               <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
             </y:LabelModel>
@@ -579,11 +627,11 @@ Default port 15605<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
             </y:ModelParameter>
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
-          <y:Arc height="11.06285285949707" ratio="0.6447241902351379" type="fixedRatio"/>
+          <y:Arc height="18.07393455505371" ratio="0.6447241902351379" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e10" source="n9" target="n0">
+    <edge id="e10" source="n9" target="n2">
       <data key="d10">
         <y:GenericEdge configuration="com.yworks.edge.framed">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -606,7 +654,7 @@ Default port 18086<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e12" source="n10" target="n0">
+    <edge id="e12" source="n10" target="n2">
       <data key="d10">
         <y:GenericEdge configuration="com.yworks.edge.framed">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -619,17 +667,17 @@ Default port 18086<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="12.060033807706077" sy="-14.974880961684619" tx="-32.23839030020713" ty="14.983837639007561">
-            <y:Point x="525.3856811523438" y="290.2475280761719"/>
+            <y:Point x="552.2044677734375" y="243.45037841796875"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-52.843183971915664" xml:space="preserve" y="-77.16289943695074">HTTP  
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-37.878180707998126" xml:space="preserve" y="-100.54600185394293">HTTP  
 Default port 15603<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="40.027291367152735" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:Arc height="43.567596435546875" ratio="0.9449583292007446" type="fixedRatio"/>
+          <y:Arc height="65.29722595214844" ratio="0.9449583292007446" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e14" source="n11" target="n0">
+    <edge id="e14" source="n11" target="n2">
       <data key="d10">
         <y:GenericEdge configuration="com.yworks.edge.framed">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -638,7 +686,7 @@ Default port 15603<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
         </y:GenericEdge>
       </data>
     </edge>
-    <edge id="e15" source="n11" target="n0">
+    <edge id="e15" source="n11" target="n2">
       <data key="d10">
         <y:GenericEdge configuration="com.yworks.edge.framed">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -665,13 +713,13 @@ Default port 15604<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="41.72160000000008" ty="3.1659183367921173">
-            <y:Point x="687.8832397460938" y="426.2572326660156"/>
+            <y:Point x="663.4945678710938" y="395.6348876953125"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-92.41226377645557" xml:space="preserve" y="-72.44053022346475">HTTP  
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-106.20850809189483" xml:space="preserve" y="-63.22923023421578">HTTP  
 Default port 15604<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:Arc height="-38.79110336303711" ratio="-0.5587313771247864" type="fixedRatio"/>
+          <y:Arc height="-32.20442581176758" ratio="-0.5587313771247864" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
@@ -723,7 +771,7 @@ Default port 15604<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="631.1099853515625" y="281.11199951171875"/>
+            <y:Point x="711.1099853515625" y="225.3159942626953"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -829,27 +877,27 @@ Default port 15604<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e32" source="n22" target="n6">
+    <edge id="e32" source="n23" target="n6">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="61.51461914062503" sy="0.0" tx="-61.51461914062503" ty="0.0">
-            <y:Point x="-6.848125457763672" y="140.8950958251953"/>
+          <y:Path sx="-67.47132679464175" sy="-5.1460067662116415" tx="0.0" ty="0.0">
+            <y:Point x="390.1962890625" y="-49.532264709472656"/>
           </y:Path>
           <y:LineStyle color="#993366" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:Arc height="9.031011581420898" ratio="0.19442790746688843" type="fixedRatio"/>
+          <y:Arc height="-108.29226684570312" ratio="-0.6540359258651733" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e33" source="n25" target="n6">
+    <edge id="e33" source="n24" target="n9">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="0.0" sy="0.0" tx="-60.855860539479835" ty="11.74259202742519">
-            <y:Point x="-33.03834915161133" y="216.60601806640625"/>
+          <y:Path sx="46.609725588703895" sy="15.000152835615651" tx="35.020833333333485" ty="-10.238300415802058">
+            <y:Point x="891.583251953125" y="102.18107604980469"/>
           </y:Path>
           <y:LineStyle color="#993366" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:Arc height="-7.806405067443848" ratio="-0.14390476047992706" type="fixedRatio"/>
+          <y:Arc height="90.74722290039062" ratio="1.638015627861023" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
@@ -857,48 +905,106 @@ Default port 15604<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="162.05523681640625" y="87.54571533203125"/>
+            <y:Point x="323.7010803222656" y="41.37596130371094"/>
           </y:Path>
           <y:LineStyle color="#993366" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:Arc height="-7.458118438720703" ratio="-0.14390476047992706" type="fixedRatio"/>
+          <y:Arc height="-65.95433807373047" ratio="-0.5749197006225586" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e35" source="n31" target="n6">
+    <edge id="e35" source="n29" target="n9">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="0.0" sy="0.0" tx="-46.651865755299056" ty="15.010732158025121">
-            <y:Point x="-13.433051109313965" y="284.3663330078125"/>
+          <y:Path sx="40.22598322652175" sy="3.650702731322923" tx="28.733333333333462" ty="-4.075800415802007">
+            <y:Point x="702.6926879882812" y="64.97968292236328"/>
           </y:Path>
           <y:LineStyle color="#993366" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:Arc height="-24.865360260009766" ratio="-0.38807088136672974" type="fixedRatio"/>
+          <y:Arc height="13.11131477355957" ratio="0.24963903427124023" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e36" source="n32" target="n9">
+    <edge id="e36" source="n25" target="n9">
       <data key="d10">
         <y:ArcEdge>
-          <y:Path sx="79.527958984375" sy="0.0" tx="12.756974444179718" ty="-14.965146711845819">
-            <y:Point x="619.2095947265625" y="42.8931884765625"/>
+          <y:Path sx="15.50264989318839" sy="3.0073764839170565" tx="61.5282630162327" ty="-0.9979502138838825">
+            <y:Point x="844.6064453125" y="75.36106872558594"/>
           </y:Path>
           <y:LineStyle color="#993366" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:Arc height="66.05985260009766" ratio="0.8736797571182251" type="fixedRatio"/>
+          <y:Arc height="54.029640197753906" ratio="1.1890991926193237" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e37" source="n33" target="n9">
+    <edge id="e37" source="n35" target="n6">
       <data key="d10">
-        <y:ArcEdge>
-          <y:Path sx="67.36884414062501" sy="0.0" tx="13.427963007908033" ty="-15.03450516488374">
-            <y:Point x="585.7741088867188" y="41.39845657348633"/>
+        <y:SplineEdge>
+          <y:Path sx="-29.546663134765367" sy="4.122489786021106" tx="-49.30255208333318" ty="6.0439983367921855">
+            <y:Point x="-25.99849446614587" y="718.7908935546875"/>
+            <y:Point x="-77.0" y="291.546875"/>
           </y:Path>
           <y:LineStyle color="#993366" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:Arc height="75.36256408691406" ratio="0.9412504434585571" type="fixedRatio"/>
-        </y:ArcEdge>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e38" source="n36" target="n9">
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="51.75021186523463" sy="2.196131887562956" tx="61.521065955607696" ty="0.670917421908996">
+            <y:Point x="933.7472534179688" y="399.0028381347656"/>
+          </y:Path>
+          <y:LineStyle color="#993366" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e39" source="n37" target="n9">
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="54.75021186523463" sy="-1.1401683298746548" tx="0.0" ty="0.0">
+            <y:Point x="999.92578125" y="613.3125"/>
+            <y:Point x="951.991455078125" y="258.39251708984375"/>
+          </y:Path>
+          <y:LineStyle color="#993366" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e40" source="n33" target="n6">
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="-67.52905790092683" sy="4.684761592926861" tx="-61.56292205356252" ty="6.511054400667405">
+            <y:Point x="-36.08380126953125" y="677.9623413085938"/>
+            <y:Point x="-57.0" y="311.546875"/>
+          </y:Path>
+          <y:LineStyle color="#993366" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e41" source="n34" target="n9">
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="61.55618220457927" ty="3.8592202592702165">
+            <y:Point x="782.11328125" y="608.0625"/>
+            <y:Point x="883.63427734375" y="414.7122802734375"/>
+          </y:Path>
+          <y:LineStyle color="#993366" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e42" source="n33" target="n31">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
       </data>
     </edge>
   </graph>
