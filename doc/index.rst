@@ -16,7 +16,6 @@ MFADMIN documentation
    layer_root
    layer_logs
    layer_metrics
-   layer_python3
    layer_default
    todo
    changelogs

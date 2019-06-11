@@ -3,7 +3,9 @@
 
 This section shows how to configure MetWork modules so that you can monitor your plugin and display dashboards through the :ref:`tools offered in MFADMIN <mfadmin_intro:How it works?>`:
 
-In order to do this, you have to:
+## Configuration
+
+In order to monitor MetWork plugins, you have to:
 
 - install Metwork MFADMIN and MFSYSMON modules
 - configure the `[admin]` section of the `config/config.ini` in the root directory of the MetWork module (i.e. MFDATA, MFSERV, MFBASE,...), 
@@ -54,7 +56,7 @@ send_nginx_logs=1
 service metwork restart mfdata
 ```
 
-### Grafana Time-series dashboards
+## Grafana Time-series dashboards
 Dashboards are available from MFADMIN :index:`Grafana GUI Interface` which is displayed through HTTP on `http://{your_mfadmin_host}:15602`(default login is `admin/admin`), e.g. http://localhost:15602.
 
 ![Grafana login](./_images/grafana_login.jpg)
@@ -63,9 +65,20 @@ Then, click on the module you want display dashboards.
 
 ![Grafana home](./_images/grafana_home.jpg)
 
-You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to :ref:`mfadmin_miscellaneous:Create specific dashboards` and the :ref:`mfdata_additional_tutorials:Implement custom monitoring and metrics in a plugin`.
 
-### Kibana dashboards
+- Some default MFDATA dashboards:
+
+![MFDATA dashboards](./_images/grafana_mfdata_dashboard.jpg)
+
+
+- Some default MFBASE dashboards:
+
+![MFBASE dashboards](./_images/grafana_mfbase_dashboard.jpg)
+
+.. tip::
+    You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to :ref:`mfadmin_miscellaneous:Create specific dashboards` and the :ref:`mfdata_additional_tutorials:Implement custom monitoring and metrics in a plugin`.
+
+## Kibana dashboards
 
 .. todo:: fill up the documentation + add tutorial
 
