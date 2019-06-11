@@ -24,3 +24,12 @@ MFADMIN relies on the following components :
 - :doc:`MFSYSMON <mfsysmon:index>` monitors the overall resources of the operating system on which Metwork is running.
 - :doc:`MFBASE <mfbase:index>` is the storage Metwork module.
 - :doc:`MFDATA <mfdata:index>` is the "incoming files processing" MetWork module.
+
+.. seealso::
+    | `Sending StatsD Metrics to Telegraf & InfluxDB <https://www.influxdata.com/blog/getting-started-with-sending-statsd-metrics-to-telegraf-influxdb/>`_
+    | `StatsD : a simple protocol for sending application metrics via UDP <https://github.com/statsd/statsd>`_
+    | `Telegraf StatsD input plugin <https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd>`_ 
+
+<!--
+Intentional comment to prevent m2r from generating bad rst statements when the file ends with a block .. xxx ::
+-->
