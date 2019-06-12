@@ -1,6 +1,15 @@
 # release_0.7 CHANGELOG
 
 
+## [Unreleased]
+
+### New Features
+- add some smtp options for grafana
+
+
+
+
+
 
 ## v0.7.0 (2019-05-28)
 
