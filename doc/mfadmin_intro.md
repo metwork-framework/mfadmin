@@ -9,9 +9,9 @@ MFADMIN is a Metwork module which contains **tools, libraries and dashboards** u
 
 ![image](./_images/overall_architecture.svg)
 
-MFADMIN relies on the following components :
+**MFADMIN relies on the following components:**
 
-- [Circus](https://circus.readthedocs.io/en/latest/) monitors and controls processes and sockets.
+- [Circus](https://circus.readthedocs.io/en/latest/) monitors and controls processes and sockets. Circus acts as a process watcher and runner. You may check the full `circus.ini` configuration file in the `tmp/config_auto/` in the root directory of the `mfadmin` user. Check the [Circus architecture](https://circus.readthedocs.io/en/latest/design/architecture/)
 - [Grafana](http://docs.grafana.org/) allows time eries Data visualization and monitoring.
 - [InfluxDB](https://docs.influxdata.com/influxdb/) manages time series data.
 - [Telegraf](https://docs.influxdata.com/telegraf/) acts as a server agent for collecting and sending metrics and events from databases, systems, and IoT sensors.
@@ -29,6 +29,12 @@ MFADMIN relies on the following components :
     | `Sending StatsD Metrics to Telegraf & InfluxDB <https://www.influxdata.com/blog/getting-started-with-sending-statsd-metrics-to-telegraf-influxdb/>`_
     | `StatsD : a simple protocol for sending application metrics via UDP <https://github.com/statsd/statsd>`_
     | `Telegraf StatsD input plugin <https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd>`_ 
+    | :ref:`mfadmin_miscellaneous:Circus hooks` 
+
+
+## MFADMIN configuration
+
+The configuration of the MFADMIN and its components is stored in the `config/config.ini` file of the root directory of the `mfadmin` user. Check this file for further information.
 
 <!--
 Intentional comment to prevent m2r from generating bad rst statements when the file ends with a block .. xxx ::
