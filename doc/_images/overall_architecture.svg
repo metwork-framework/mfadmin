@@ -940,18 +940,6 @@
         </g>
       </g>
     </g>
-    <g id="y.edge.46">
-      <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,141,158)" stroke-linecap="butt">
-        <path fill="none" d="M225.0038 383.4727 L274.3106 371.0533 L336.1039 351.8772 L396.3799 329.4715 L455.1386 303.8362 L512.3799 274.9715 L568.1039 242.8772 L622.3106 207.5534 L657.4039 181.8753"/>
-        <path d="M663.8601 177.1512 L651.2232 180.2021 L656.5969 182.4658 L657.1283 188.2724 Z" stroke="none"/>
-      </g>
-      <g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,141,158)" stroke-linecap="butt">
-          <text x="467.253" xml:space="preserve" y="281.7561" stroke="none">HTTP  </text>
-          <text x="429.4043" xml:space="preserve" y="295.7249" stroke="none">Default port 15603</text>
-        </g>
-      </g>
-    </g>
     <g id="y.edge.10"/>
     <g id="y.edge.3">
       <g stroke-linecap="butt" transform="matrix(1,0,0,1,141,158)" fill="rgb(255,102,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(255,102,0)" stroke-miterlimit="1.45">

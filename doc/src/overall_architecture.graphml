@@ -234,7 +234,7 @@ management<y:LabelModel><y:SmartNodeLabelModel distance="1.0"/></y:LabelModel><y
           <y:Geometry height="34.48000000000002" width="110.44639999999998" x="674.8867999999998" y="231.07600166320793"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="1.0" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.09765625" x="10.17437187500002" xml:space="preserve" y="4.509953441990746">Search and analytics 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="1.0" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.09765625" x="10.17437187500002" xml:space="preserve" y="4.509953441990717">Search and analytics 
 management<y:LabelModel><y:SmartNodeLabelModel distance="1.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="-0.3692008862531684" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="53.22320000000002" y="-8.0"/>
           <y:Shape type="rectangle3d"/>
@@ -1068,20 +1068,6 @@ Default port 15604<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="fals
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="-57.289907162912385" xml:space="preserve" y="-96.30581169262496">HTTP  
 Default port 18086<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="40.21892599028045" distanceToCenter="true" position="right" ratio="0.17061169137941687" segment="-1"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:Arc height="42.891841888427734" ratio="0.909701406955719" type="fixedRatio"/>
-        </y:ArcEdge>
-      </data>
-    </edge>
-    <edge id="e46" source="n7" target="n9">
-      <data key="d10">
-        <y:ArcEdge>
-          <y:Path sx="47.519999999999925" sy="4.543998336792129" tx="-47.59999999999991" ty="5.923998336792067">
-            <y:Point x="455.1385803222656" y="303.83624267578125"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.24609375" x="202.40057071447308" xml:space="preserve" y="-114.85532953603382">HTTP  
-Default port 15603<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="40.027291367152735" distanceToCenter="true" position="center" ratio="0.18369883110806196" segment="-1"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:Arc height="-28.54568862915039" ratio="-0.22272619605064392" type="fixedRatio"/>
         </y:ArcEdge>
       </data>
     </edge>
