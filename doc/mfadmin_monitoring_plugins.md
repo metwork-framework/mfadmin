@@ -4,9 +4,9 @@
 This section shows how to configure MetWork modules so that you can monitor your plugin and display dashboards through the :ref:`tools offered in MFADMIN <mfadmin_intro:How it works?>`:
 
 .. seealso::
-    :ref:`mfadmin_miscellaneous:Create specific dashboards`
-    :doc:`layer_metrics`
-    :doc:`layer_logs`
+    | :ref:`mfadmin_miscellaneous:Create specific dashboards`
+    | :doc:`layer_metrics`
+    | :doc:`layer_logs`
 
 ## Configuration
 
@@ -44,7 +44,7 @@ hostname=localhost
 ### Enable monitoring based on standard logs and mflog logs 
 
 .. index:: send_mflog_logs parameter, json_file, json_minimal_level, standard logs, mflog logs 
-Now, if you want to monitor your plugins through standard library’s [logging](https://docs.python.org/3/library/logging.html) logs and/or [mflog](https://github.com/metwork-framework/mflog) logs, in addition you have to set in the `[log]` section of the `config/config.ini`, the following parameters:
+Now, if you want to monitor your plugins through [mflog](https://github.com/metwork-framework/mflog) logs, in addition you have to set in the `[log]` section of the `config/config.ini`, the following parameters:
 - the `send_mflog_logs` parameter to `1`
 - the `json_file` parameter to `AUTO`
 - the `json_minimal_level` parameter to the desired level
@@ -108,7 +108,7 @@ send_nginx_logs=1
     If :ref:`monitoring is not enabled <mfadmin_monitoring_plugins:Enable monitoring>` , the above configuration will have no effect.
 
 
-.. index:: Time-series dashboards, Grafana dashboards
+.. index:: Time-series dashboards, Grafana dashboards, ElasticSearch
 ## Grafana Time-series dashboards
 
 Grafana dashboards are available from MFADMIN :index:`Grafana GUI Interface` which is displayed through HTTP on `http://{your_mfadmin_host}:15602`(default login is `admin/admin`), e.g. http://localhost:15602.
@@ -138,12 +138,20 @@ Then, click on the module you want display dashboards.
 .. tip::
     You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to :ref:`mfadmin_miscellaneous:Create specific dashboards` and the :ref:`mfdata_additional_tutorials:Implement custom monitoring and metrics in a plugin`.
 
+.. tip::
+    | You can implement your own dashboard from ElasticSearch database. 
+    | By default ElasticSearch `mflog <https://github.com/metwork-framework/mflog>`_ logs and ElasticSearch **nginx access logs** datasources are configured in Grafana.
+    | When you create your Grafana query, select either the `es_mflog` or `es_nginx` datasource in the `Queries to` field.
+    
+![Grafana queries datasources](./_images/grafana_queries_datasources.jpg)
 
 .. seealso::
-    `Grafana documentation <https://grafana.com/docs/>`_
-    `Grafana - Getting started guide <https://grafana.com/docs/guides/getting_started>`_  
+    | `Grafana documentation <https://grafana.com/docs/>`_
+    | `Grafana - Getting started guide <https://grafana.com/docs/guides/getting_started>`_  
+    | `Using InfluxDB in Grafana <https://grafana.com/docs/features/datasources/influxdb>`_  
+    | `Using Elasticsearch in Grafana <https://grafana.com/docs/features/datasources/elasticsearch/>`_
 
-.. index:: Logs dashboards, Kibana dashboards
+.. index:: Logs dashboards, Kibana dashboards, ElasticSearch
 ## Kibana dashboards
 
 Kibana dashboards are available from MFADMIN :index:`Kibana GUI Interface` which is displayed through HTTP on `http://{your_mfadmin_host}:15605` from a remote host and also `http://localhost:156054` from the MFADMIN local host. The default login is `admin/admin`.
@@ -225,6 +233,10 @@ Add filters: `plugins:"move_image"` and `level:"warning"`:
 .. seealso::
     | For further, refer to `Kibana documentation <https://www.elastic.co/guide/en/kibana/current>`_   
 
+
+.. note::
+    You may edit any Kibana dashboards, either data table or graphs.
+    
 <!--
 Intentional comment to prevent m2r from generating bad rst statements when the file ends with a block .. xxx ::
 -->
