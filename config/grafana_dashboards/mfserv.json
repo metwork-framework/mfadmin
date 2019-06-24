@@ -15,7 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1545126773504,
+  "id": 7,
+  "iteration": 1561365379906,
   "links": [],
   "panels": [
     {
@@ -47,13 +48,13 @@
       },
       "id": 2,
       "legend": {
-        "avg": false,
+        "avg": true,
         "current": false,
         "max": false,
         "min": false,
         "show": false,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -128,8 +129,9 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
-      "title": "Number of requests processed by nginx per second (cumulated graph by host) [not filtered by plugin/app]",
+      "title": "Number of requests processed by nginx per second (cumulated graph by host) [not filtered by plugin/app/status]",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -181,15 +183,15 @@
         "x": 0,
         "y": 9
       },
-      "id": 6,
+      "id": 14,
       "legend": {
-        "avg": false,
+        "avg": true,
         "current": false,
         "max": false,
         "min": false,
         "show": false,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -205,7 +207,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "active_$tag_host",
+          "alias": "requests_$tag_host",
           "groupBy": [
             {
               "params": [
@@ -224,20 +226,26 @@
           "orderByTime": "ASC",
           "policy": "$resolution",
           "query": "SELECT max(\"active_max\") FROM \"$resolution\".\"nginx\" WHERE (\"host\" =~ /^$host$/ AND \"module\" = 'mfserv') AND $timeFilter GROUP BY time($__interval), \"host\"",
-          "rawQuery": false,
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
             [
               {
                 "params": [
-                  "active_max"
+                  "requests_sum"
                 ],
                 "type": "field"
               },
               {
                 "params": [],
                 "type": "max"
+              },
+              {
+                "params": [
+                  "1s"
+                ],
+                "type": "non_negative_derivative"
               }
             ]
           ],
@@ -258,8 +266,9 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
-      "title": "Number of active connections on nginx (cumulated graph by host) [not filtered by plugin/app]",
+      "title": "Number of active connections on nginx (cumulated graph by host) [not filtered by plugin/app/status_code]",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -313,13 +322,13 @@
       },
       "id": 3,
       "legend": {
-        "avg": false,
+        "avg": true,
         "current": false,
         "max": false,
         "min": false,
         "show": false,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -360,12 +369,18 @@
                 "app"
               ],
               "type": "tag"
+            },
+            {
+              "params": [
+                "status_code"
+              ],
+              "type": "tag"
             }
           ],
           "measurement": "request_counter",
           "orderByTime": "ASC",
           "policy": "$resolution",
-          "query": "SELECT 0.1 * mean(\"value_mean\") FROM \"$resolution\".\"request_counter\" WHERE (\"host\" =~ /^$host$/ AND \"plugin\" =~ /^$plugin$/ AND \"app\" =~ /^$app$/ AND \"type\" = 'dynamic') AND $timeFilter GROUP BY time($__interval), \"host\", \"plugin\", \"app\"",
+          "query": "SELECT 0.1 * mean(\"value_mean\") FROM \"$resolution\".\"request_counter\" WHERE (\"host\" =~ /^$host$/ AND \"plugin\" =~ /^$plugin$/ AND \"app\" =~ /^$app$/ AND \"type\" = 'dynamic' AND \"status_code\" =~ /^$status_code$/) AND $timeFilter GROUP BY time($__interval), \"host\", \"plugin\", \"app\", \"status_code\"",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -412,6 +427,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Number of (dynamic) requests per second processed by plugins (cumulated graph)",
       "tooltip": {
@@ -514,6 +530,12 @@
                 "app"
               ],
               "type": "tag"
+            },
+            {
+              "params": [
+                "status_code"
+              ],
+              "type": "tag"
             }
           ],
           "measurement": "request_timer",
@@ -560,12 +582,19 @@
               "key": "type",
               "operator": "=",
               "value": "dynamic"
+            },
+            {
+              "condition": "AND",
+              "key": "status_code",
+              "operator": "=~",
+              "value": "/^$status_code$/"
             }
           ]
         }
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Mean execution time of (dynamic) requests",
       "tooltip": {
@@ -668,6 +697,12 @@
                 "app"
               ],
               "type": "tag"
+            },
+            {
+              "params": [
+                "status_code"
+              ],
+              "type": "tag"
             }
           ],
           "measurement": "request_timer",
@@ -714,12 +749,19 @@
               "key": "type",
               "operator": "=",
               "value": "dynamic"
+            },
+            {
+              "condition": "AND",
+              "key": "status_code",
+              "operator": "=~",
+              "value": "/^$status_code$/"
             }
           ]
         }
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Max execution time of (dynamic) requests",
       "tooltip": {
@@ -864,8 +906,9 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
-      "title": "cumulative mfserv max memory usage [not filtered by app]",
+      "title": "cumulative mfserv max memory usage [not filtered by app/status_code]",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -1008,8 +1051,9 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
-      "title": "cumulative mfserv max cpu usage  (100% = 1 core) [not filtered by app]",
+      "title": "cumulative mfserv max cpu usage  (100% = 1 core) [not filtered by app/status_code]",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -1049,7 +1093,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 16,
+  "schemaVersion": 18,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -1084,6 +1128,7 @@
           }
         ],
         "query": "fullres,medres,lowres",
+        "skipUrlSync": false,
         "type": "custom"
       },
       {
@@ -1093,6 +1138,7 @@
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -1102,6 +1148,7 @@
         "query": "show tag values FROM \"request_counter\" with key=\"host\"",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -1116,6 +1163,7 @@
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "show tag values FROM \"request_counter\" with key=\"plugin\"",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -1125,6 +1173,7 @@
         "query": "show tag values FROM \"request_counter\" with key=\"plugin\"",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -1139,6 +1188,7 @@
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -1148,6 +1198,32 @@
         "query": "show tag values FROM \"request_counter\" with key=\"app\" where \"plugin\" =~ /^$plugin$/",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": ".*",
+        "current": {
+          "text": "200",
+          "value": "200"
+        },
+        "datasource": "influxdb",
+        "definition": "show tag values FROM \"request_counter\" with key=\"status_code\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": null,
+        "multi": false,
+        "name": "status_code",
+        "options": [],
+        "query": "show tag values FROM \"request_counter\" with key=\"status_code\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -1158,7 +1234,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-6h",
     "to": "now"
   },
   "timepicker": {
@@ -1188,6 +1264,6 @@
   },
   "timezone": "",
   "title": "mfserv",
-  "uid": "mZB0XRvmk",
-  "version": 6
+  "uid": "Lk9DmSVZz",
+  "version": 1
 }
