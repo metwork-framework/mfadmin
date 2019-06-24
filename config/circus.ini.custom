@@ -48,6 +48,22 @@ hooks.after_stop=circus_hooks.after_stop_shell
 working_dir = {{MODULE_RUNTIME_HOME}}/tmp
 async_kill = True
 
+[watcher:mflog2mfadmin]
+cmd=layer_wrapper
+args=--layers=monitoring@mfext -- jsonlog2elasticsearch --transform-func=jsonlog2elasticsearch_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d {{MODULE_RUNTIME_HOME}}/log/json_logs.log
+numprocesses = 1
+stdout_stream.class = FileStream
+stdout_stream.filename = {{MODULE_RUNTIME_HOME}}/log/jsonlog2elasticsearch_mflog.log
+stderr_stream.class = FileStream
+stderr_stream.filename = {{MODULE_RUNTIME_HOME}}/log/jsonlog2elasticsearch_mflog.log
+copy_env = True
+autostart = True
+respawn = True
+hooks.before_start=circus_hooks.before_start_shell
+hooks.after_stop=circus_hooks.after_stop_shell
+working_dir = {{MODULE_RUNTIME_HOME}}/tmp
+async_kill = True
+
 [watcher:elasticsearch]
 cmd={{MODULE_RUNTIME_HOME}}/tmp/elasticsearch/bin/elasticsearch
 args=
