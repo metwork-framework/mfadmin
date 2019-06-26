@@ -1,6 +1,16 @@
 # release_0.7 CHANGELOG
 
 
+## [Unreleased]
+
+### New Features
+- better mfserv dashboard
+- send mfadmin mflog logs to itself
+
+
+
+
+
 
 ## v0.7.1 (2019-06-12)
 
