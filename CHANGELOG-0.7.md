@@ -1,7 +1,8 @@
 # release_0.7 CHANGELOG
 
 
-## [Unreleased]
+
+## v0.7.2 (2019-06-26)
 
 ### New Features
 - better mfserv dashboard
