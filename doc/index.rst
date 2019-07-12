@@ -17,7 +17,6 @@ MFADMIN documentation
    layer_logs
    layer_metrics
    layer_default
-   todo
    changelogs
 
 Indices and tables
