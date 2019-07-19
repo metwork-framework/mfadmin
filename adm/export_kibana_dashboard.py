@@ -5,6 +5,7 @@ import requests
 import os
 import sys
 from mflog import get_logger
+import logging
 
 DESCRIPTION = "export a kibana dashboard on stdout"
 KIBANA_PORT = int(os.environ['MFADMIN_KIBANA_HTTP_PORT'])
@@ -18,6 +19,9 @@ parser.add_argument("DASHBOARD_ID", help="dashboard id")
 args = parser.parse_args()
 
 url = KIBANA_PATTERN % args.DASHBOARD_ID
+#  change the log level of the urllib3 library for not having the debug
+#  messages on the stdin output
+logging.getLogger('urllib3').setLevel(logging.WARNING)
 r = requests.get(url, timeout=30)
 if r.status_code != 200:
     LOGGER.warning("can't get %s with status_code: %i" % (url, r.status_code))
