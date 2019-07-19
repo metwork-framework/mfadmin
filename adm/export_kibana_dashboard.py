@@ -20,7 +20,7 @@ args = parser.parse_args()
 
 url = KIBANA_PATTERN % args.DASHBOARD_ID
 #  change the log level of the urllib3 library for not having the debug
-#  messages on the stdin output
+#  messages on the stdout output
 logging.getLogger('urllib3').setLevel(logging.WARNING)
 r = requests.get(url, timeout=30)
 if r.status_code != 200:
