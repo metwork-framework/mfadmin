@@ -1,3 +1,4 @@
+.idea
 adm/root.mk
 layers/layer*/*/build
 doc/layer_*.md

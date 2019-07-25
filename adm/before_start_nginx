@@ -1,0 +1,16 @@
+#!/bin/bash
+
+${MFCOM_HOME}/bin/before_start_nginx
+
+rm -Rf "${MODULE_RUNTIME_HOME}/tmp/www"
+mkdir -p "${MODULE_RUNTIME_HOME}/tmp/www"
+cat "${MODULE_HOME}/config/www/index.html" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/www/index.html"
+cat "${MODULE_HOME}/config/www/index.css" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/www/index.css"
+cp -rf "${MODULE_HOME}/config/www/images" "${MODULE_RUNTIME_HOME}/tmp/www/"
+
+
+if test -s "${MODULE_RUNTIME_HOME}/tmp/www/index.html"; then
+    exit 0
+else
+    exit 1
+fi

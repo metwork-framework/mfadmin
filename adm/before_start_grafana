@@ -16,8 +16,16 @@ cat "${MODULE_HOME}/config/grafana_provisioning/dashboards/dashboard.yaml" |envt
 
 cat "${MODULE_HOME}/config/grafana.ini" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"
 
+
+mkdir -p "${MODULE_RUNTIME_HOME}/tmp/www"
+cat "${MODULE_HOME}/config/www/index.html" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/www/index.html"
+cat "${MODULE_HOME}/config/www/index.css" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/www/index.css"
+cp -rf "${MODULE_HOME}/config/www/images" "${MODULE_RUNTIME_HOME}/tmp/www/"
+
+
 if test -s "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"; then
     exit 0
 else
     exit 1
 fi
+
