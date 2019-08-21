@@ -1,14 +1,15 @@
 # release_0.8 CHANGELOG
 
 
-## [Unreleased]
+
+## v0.8.0 (2019-08-14)
 
 ### New Features
-- send mfadmin mflog logs to itself
-- better mfserv dashboard
-- add some smtp options for grafana
-- use envtpl new option --reduce-multi-blank-lines
 - dashboards update
+- use envtpl new option --reduce-multi-blank-lines
+- add some smtp options for grafana
+- better mfserv dashboard
+- send mfadmin mflog logs to itself
 
 
 
