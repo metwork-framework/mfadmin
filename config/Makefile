@@ -8,9 +8,8 @@ GRAFANA_DASHBOARDS=$(wildcard grafana_dashboards/*.json)
 KIBANA_DASHBOARDS=$(wildcard kibana_dashboards/*.json)
 TARGET_GRAFANA_DASHBOARDS=$(addprefix $(MODULE_HOME)/config/,$(GRAFANA_DASHBOARDS))
 TARGET_KIBANA_DASHBOARDS=$(addprefix $(MODULE_HOME)/config/,$(KIBANA_DASHBOARDS))
-TARGET_WWW=$(MODULE_HOME)/config/www
 
-all:: $(MODULE_HOME)/config/circus.ini $(MODULE_HOME)/config/telegraf.conf $(MODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(TARGET_WWW)
+all:: $(MODULE_HOME)/config/circus.ini $(MODULE_HOME)/config/telegraf.conf $(MODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS)
 
 # because of a problem with the subdir_root.mk default rule overriding
 $(PREFIX)/config/%: %
