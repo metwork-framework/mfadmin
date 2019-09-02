@@ -77,8 +77,7 @@ integration_tests_common: &integration_tests_common
     - su --command="mfadmin.init" - mfadmin
     - su --command="mfadmin.start" - mfadmin
     - su --command="mfadmin.status" - mfadmin
-    - if test -d "integration_tests"; then chown -R mfadmin integration_tests; fi
-    - su --command="cd `pwd`; ./run_integration_tests.sh" - mfadmin
+    - if test -d "integration_tests"; then chown -R mfadmin integration_tests; cd integration_tests; su --command="cd `pwd`; ./run_integration_tests.sh" - mfadmin; cd ..; fi
     - su --command="mfadmin.stop" - mfadmin
 
 

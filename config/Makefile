@@ -37,7 +37,3 @@ $(MODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml: grafana_
 $(MODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml: grafana_provisioning/dashboards/dashboard.yaml
 	mkdir -p `dirname $@`
 	cp -f $< $@
-
-$(MODULE_HOME)/config/www:
-	mkdir -p $@
-	cp -rf www/* $@
