@@ -3,16 +3,16 @@
 
 echo -n "- (pre)Starting mfadmin services..."
 echo_running
-mfadmin.start NOINIT >"${MODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$" 2>&1
+mfadmin.start NOINIT >"${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$" 2>&1
 mfadmin.status >/dev/null 2>&1
 if test $? -eq 0; then
     echo_ok
-    rm -f "${MODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
+    rm -f "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
 else
     echo_nok
     echo_bold "=============== DEBUG OUTPUT =================================="
-    cat "${MODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
-    rm -f "${MODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
+    cat "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
+    rm -f "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
     echo_bold "==============================================================="
     exit 1
 fi

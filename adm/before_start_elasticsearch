@@ -1,25 +1,25 @@
 #!/bin/bash
 
-mkdir -p "${MODULE_RUNTIME_HOME}/var/elasticsearch"
-rm -Rf "${MODULE_RUNTIME_HOME}/tmp/elasticsearch"
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/elasticsearch"
-cp -Rf "${MODULE_HOME}/opt/logs/opt/elasticsearch/config" "${MODULE_RUNTIME_HOME}/tmp/elasticsearch"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/elasticsearch"
+rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch"
+cp -Rf "${MFMODULE_HOME}/opt/logs/opt/elasticsearch/config" "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch"
 for DIR in bin lib modules; do
-    ln -s "${MODULE_HOME}/opt/logs/opt/elasticsearch/${DIR}" "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/${DIR}"
+    ln -s "${MFMODULE_HOME}/opt/logs/opt/elasticsearch/${DIR}" "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/${DIR}"
 done
 for DIR in plugins logs; do
-    mkdir -p "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/${DIR}"
+    mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/${DIR}"
 done
-cat "${MODULE_HOME}/config/elasticsearch.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/elasticsearch.yml"
-cat "${MODULE_HOME}/config/elasticsearch_jvm_options.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/jvm.options"
-cat "${MODULE_HOME}/config/elasticsearch_log4j2_properties.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/log4j2.properties"
-rm -f "${MODULE_RUNTIME_HOME}/tmp/config_auto/elasticsearch"
-ln -s "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config" "${MODULE_RUNTIME_HOME}/tmp/config_auto/elasticsearch"
+cat "${MFMODULE_HOME}/config/elasticsearch.conf" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/config/elasticsearch.yml"
+cat "${MFMODULE_HOME}/config/elasticsearch_jvm_options.conf" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/config/jvm.options"
+cat "${MFMODULE_HOME}/config/elasticsearch_log4j2_properties.conf" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/config/log4j2.properties"
+rm -f "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/elasticsearch"
+ln -s "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/config" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/elasticsearch"
 
-export ES_PATH_CONF="${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config"
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/tmp"
-export ES_TMPDIR="${MODULE_RUNTIME_HOME}/tmp/elasticsearch/tmp"
-if test -s "${MODULE_RUNTIME_HOME}/tmp/elasticsearch/config/elasticsearch.yml"; then
+export ES_PATH_CONF="${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/config"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/tmp"
+export ES_TMPDIR="${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/tmp"
+if test -s "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/config/elasticsearch.yml"; then
     exit 0
 else
     exit 1
