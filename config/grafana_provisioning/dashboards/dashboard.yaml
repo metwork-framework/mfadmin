@@ -8,4 +8,4 @@ providers:
   disableDeletion: false
   updateIntervalSeconds: 60
   options:
-    path: {{MODULE_RUNTIME_HOME}}/tmp/config_auto/grafana_dashboards
+    path: {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/grafana_dashboards

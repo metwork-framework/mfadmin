@@ -2,4 +2,4 @@
 
 "${MFCOM_HOME}/bin/_make_nginx_conf"
 
-printf "admin:%s\\n" "$(openssl passwd -apr1 "${MFADMIN_KIBANA_ADMIN_PASSWORD}")" >"${MODULE_RUNTIME_HOME}/tmp/kibana.passwd"
+printf "admin:%s\\n" "$(openssl passwd -apr1 "${MFADMIN_KIBANA_ADMIN_PASSWORD}")" >"${MFMODULE_RUNTIME_HOME}/tmp/kibana.passwd"

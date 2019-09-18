@@ -1,29 +1,29 @@
 #!/bin/bash
 
-rm -Rf "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_dashboards"
-cp -r "${MODULE_HOME}/config/grafana_dashboards" "${MODULE_RUNTIME_HOME}/tmp/config_auto/"
+rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_dashboards"
+cp -r "${MFMODULE_HOME}/config/grafana_dashboards" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/"
 if test -d /etc/metwork.config.d/mfadmin/grafana_dashboards; then
     N=$(ls /etc/metwork.config.d/mfadmin/grafana_dashboards 2>/dev/null |wc -l)
     if test "${N}" -gt 0; then
-        cp -f /etc/metwork.config.d/mfadmin/grafana_dashboards/* "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_dashboards/"
+        cp -f /etc/metwork.config.d/mfadmin/grafana_dashboards/* "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_dashboards/"
     fi
 fi
-rm -Rf "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning"
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources"
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards"
-cat "${MODULE_HOME}/config/grafana_provisioning/datasources/datasource.yaml" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources/datasource.yaml"
-cat "${MODULE_HOME}/config/grafana_provisioning/dashboards/dashboard.yaml" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards/dashboard.yaml"
+rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards"
+cat "${MFMODULE_HOME}/config/grafana_provisioning/datasources/datasource.yaml" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/datasources/datasource.yaml"
+cat "${MFMODULE_HOME}/config/grafana_provisioning/dashboards/dashboard.yaml" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana_provisioning/dashboards/dashboard.yaml"
 
-cat "${MODULE_HOME}/config/grafana.ini" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"
-
-
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/www"
-cat "${MODULE_HOME}/config/www/index.html" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/www/index.html"
-cat "${MODULE_HOME}/config/www/index.css" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/www/index.css"
-cp -rf "${MODULE_HOME}/config/www/images" "${MODULE_RUNTIME_HOME}/tmp/www/"
+cat "${MFMODULE_HOME}/config/grafana.ini" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"
 
 
-if test -s "${MODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"; then
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/www"
+cat "${MFMODULE_HOME}/config/www/index.html" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/www/index.html"
+cat "${MFMODULE_HOME}/config/www/index.css" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/www/index.css"
+cp -rf "${MFMODULE_HOME}/config/www/images" "${MFMODULE_RUNTIME_HOME}/tmp/www/"
+
+
+if test -s "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"; then
     exit 0
 else
     exit 1

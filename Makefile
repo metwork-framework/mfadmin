@@ -1,5 +1,5 @@
-MODULE=MFADMIN
-MODULE_LOWERCASE=mfadmin
+MFMODULE=MFADMIN
+MFMODULE_LOWERCASE=mfadmin
 
 -include adm/root.mk
 -include $(MFEXT_HOME)/share/main_root.mk

@@ -58,7 +58,7 @@ send_mflog_logs=1
 # duplicate some log messages in JSON to a specific file (for external monitoring tool)
 # If json_file value is:
 # null => the feature is desactivated
-# AUTO => the json_file is @@@MODULE_RUNTIME_HOME@@@/log/json_logs.log if
+# AUTO => the json_file is @@@MFMODULE_RUNTIME_HOME@@@/log/json_logs.log if
 #         [admin]/hostname != null else null (desactivated)
 json_file=AUTO
 

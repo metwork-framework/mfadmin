@@ -10,12 +10,12 @@
   timeout = "10s"
 
 [[inputs.procstat]]
-  pattern = "influxd.run..config.{{MODULE_RUNTIME_HOME}}.tmp.config_auto.influxdb.conf"
-  user = "{{MODULE_RUNTIME_USER}}"
+  pattern = "influxd.run..config.{{MFMODULE_RUNTIME_HOME}}.tmp.config_auto.influxdb.conf"
+  user = "{{MFMODULE_RUNTIME_USER}}"
   process_name = "influxdb"
 
 [[inputs.filecount]]
-  directories = ["{{MODULE_RUNTIME_HOME}}/var/influxdb"]
+  directories = ["{{MFMODULE_RUNTIME_HOME}}/var/influxdb"]
   name = "*"
   recursive = true
   regular_only = true

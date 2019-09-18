@@ -1,34 +1,34 @@
 #!/bin/bash
 
-mkdir -p "${MODULE_RUNTIME_HOME}/var/kibana"
-rm -Rf "${MODULE_RUNTIME_HOME}/tmp/kibana"
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/kibana/optimize"
-rm -Rf "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
-mkdir -p "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
-cp -r "${MODULE_HOME}/config/kibana_dashboards" "${MODULE_RUNTIME_HOME}/tmp/config_auto/"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/kibana"
+rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/kibana/optimize"
+rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
+cp -r "${MFMODULE_HOME}/config/kibana_dashboards" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/"
 if test -d /etc/metwork.config.d/mfadmin/kibana_dashboards; then
     N=$(ls /etc/metwork.config.d/mfadmin/kibana_dashboards 2>/dev/null |wc -l)
     if test "${N}" -gt 0; then
-        cp -f /etc/metwork.config.d/mfadmin/kibana_dashboards/* "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards/"
+        cp -f /etc/metwork.config.d/mfadmin/kibana_dashboards/* "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards/"
     fi
 fi
-cp -Rf "${MODULE_HOME}/opt/logs/opt/kibana/config" "${MODULE_RUNTIME_HOME}/tmp/kibana"
-cp -Rf "${MODULE_HOME}/opt/logs/opt/kibana/src" "${MODULE_RUNTIME_HOME}/tmp/kibana"
-cp -f "${MODULE_HOME}/opt/logs/opt/kibana/package.json" "${MODULE_RUNTIME_HOME}/tmp/kibana"
-cp -f "${MODULE_HOME}/opt/logs/opt/kibana/optimize/.babelcache.json" "${MODULE_RUNTIME_HOME}/tmp/kibana/optimize/"
+cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana/config" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
+cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana/src" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
+cp -f "${MFMODULE_HOME}/opt/logs/opt/kibana/package.json" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
+cp -f "${MFMODULE_HOME}/opt/logs/opt/kibana/optimize/.babelcache.json" "${MFMODULE_RUNTIME_HOME}/tmp/kibana/optimize/"
 for DIR in bin node node_modules optimize/bundles webpackShims; do
-    ln -s "${MODULE_HOME}/opt/logs/opt/kibana/${DIR}" "${MODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
+    ln -s "${MFMODULE_HOME}/opt/logs/opt/kibana/${DIR}" "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
 done
 for DIR in plugins data; do
-    mkdir -p "${MODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
+    mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
 done
 
-cat "${MODULE_HOME}/config/kibana.conf" |envtpl --reduce-multi-blank-lines >"${MODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
-rm -f "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
-ln -s "${MODULE_RUNTIME_HOME}/tmp/kibana/config" "${MODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
+cat "${MFMODULE_HOME}/config/kibana.conf" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
+rm -f "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
+ln -s "${MFMODULE_RUNTIME_HOME}/tmp/kibana/config" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
 
-export KIBANA_HOME="${MODULE_RUNTIME_HOME}/tmp/kibana"
-if test -s "${MODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"; then
+export KIBANA_HOME="${MFMODULE_RUNTIME_HOME}/tmp/kibana"
+if test -s "${MFMODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"; then
     exit 0
 else
     exit 1
