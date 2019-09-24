@@ -3,3 +3,10 @@ BINS=before_start_influxdb before_start_grafana _wait_grafana.py _wait_influxdb.
 include root.mk
 include $(MFEXT_HOME)/share/subdir_root.mk
 include $(MFCOM_HOME)/share/startup_scripts_profiles.mk
+
+all:: $(PREFIX)/share/welcome/index.html
+
+$(PREFIX)/share/welcome/index.html: welcome/index.html
+	rm -Rf $(PREFIX)/share/welcome
+	mkdir -p $(PREFIX)/share/welcome
+	cp -Rf welcome/* $(PREFIX)/share/welcome/
