@@ -1,6 +1,6 @@
 root@mfadmin
 -python3_devtools@mfext
-default@mfcom
+default@mfext
 -metrics@mfadmin
 -logs@mfadmin
 monitoring@mfext

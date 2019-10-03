@@ -204,7 +204,7 @@ hooks.after_start=circus_hooks.after_start_shell
 
 ```
 
-In the above example, a shell script is executed before influxdb (:py:func:`hooks.before_start=circus_hooks.before_start_shell <mfcom:circus_hooks.before_start_shell>`) starts and after influxdb is started (:py:func:`hooks.before_start=circus_hooks.before_start_shell <mfcom:circus_hooks.after_start_shell>`).
+In the above example, a shell script is executed before influxdb (:py:func:`hooks.before_start=circus_hooks.before_start_shell <mfext:circus_hooks.before_start_shell>`) starts and after influxdb is started (:py:func:`hooks.before_start=circus_hooks.before_start_shell <mfext:circus_hooks.after_start_shell>`).
 
 The shell script name is {hook_name}_{whatcher_name}, e.g:
 - before_start_influxdb

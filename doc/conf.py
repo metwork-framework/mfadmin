@@ -212,7 +212,6 @@ intersphinx_mapping = {'mfext': (build_intersphinx_mapping_url(project, 'mfext')
                        'mfsysmon': (build_intersphinx_mapping_url(project, 'mfsysmon'), None),
                        'mfbase': (build_intersphinx_mapping_url(project, 'mfbase'), None),
                        'mfserv': (build_intersphinx_mapping_url(project, 'mfserv'), None),
-                       'mfcom': (build_intersphinx_mapping_url(project, 'mfcom'), None),
                        }
 
 # -- Options for Texinfo output -------------------------------------------

@@ -2,7 +2,7 @@ CONFIGS=config.ini influxdb.conf grafana.ini elasticsearch.conf elasticsearch_jv
 
 include ../adm/root.mk
 include $(MFEXT_HOME)/share/subdir_root.mk
-include $(MFCOM_HOME)/share/config_subdir.mk
+include $(MFEXT_HOME)/opt/misc/share/config_subdir.mk
 
 GRAFANA_DASHBOARDS=$(wildcard grafana_dashboards/*.json)
 KIBANA_DASHBOARDS=$(wildcard kibana_dashboards/*.json)
