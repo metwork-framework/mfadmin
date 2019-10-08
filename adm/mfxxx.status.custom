@@ -2,9 +2,13 @@
 {% block custom %}
 
 if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:-}" != "1" ]; then
-    echo "WARNING: both layers logs@mfadmin and metrics@mfadmin are not loaded"
-    echo "You should consider loading at least one of them"
-    echo "You probably need to install the corresponding rpm"
+    echo_bold "WARNING: both layers logs@mfadmin and metrics@mfadmin are not installed/loaded"
+    echo_bold "=> you should consider installing at least one of them 
+    echo_bold     (or your mfadmin module will do nothing)"
+    echo
+    echo "(hint: use 'yum install metwork-mfadmin-layer-logs' and/or 'yum install metwork-mfadmin-layer-metrics'
+    echo "       as root to do that (or something similar adapted to your linux distribution))" 
+    echo
 fi
 
 if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
