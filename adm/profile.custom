@@ -6,4 +6,16 @@ if test "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1"; then
     export MFADMIN_ADMIN_HOSTNAME=null
     export MFADMIN_ADMIN_HOSTNAME_IP=null
 fi
+if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:-}" != "1" ]; then
+    echo "WARNING: both layers logs@mfadmin and metrics@mfadmin are not loaded"
+    echo "You should consider loading at least one of them"
+    echo "You probably need to install the corresponding rpm"
+else
+    if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1" ]; then
+        echo "layer metrics@mfadmin is loaded"
+    fi
+    if [ "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1" ]; then
+        echo "layer logs@mfadmin is loaded"
+    fi
+fi
 {% endblock %}

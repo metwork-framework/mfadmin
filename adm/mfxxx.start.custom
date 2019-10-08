@@ -1,0 +1,10 @@
+{% extends "mfxxx.start" %}
+{% block custom %}
+
+if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:-}" != "1" ]; then
+    echo "WARNING: both layers logs@mfadmin and metrics@mfadmin are not loaded"
+    echo "You should consider loading at least one of them"
+    echo "You probably need to install the corresponding rpm"
+fi
+
+{% endblock %}
