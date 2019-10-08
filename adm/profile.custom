@@ -9,7 +9,7 @@ fi
 if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:-}" != "1" ]; then
     echo_bold "WARNING: both layers logs@mfadmin and metrics@mfadmin are not installed/loaded"
     echo_bold "=> you should consider installing at least one of them 
-    echo_bold     (or your mfadmin module will do nothing)"
+    echo_bold "   (or your mfadmin module will do nothing)"
     echo
     echo "(hint: use 'yum install metwork-mfadmin-layer-logs' and/or 'yum install metwork-mfadmin-layer-metrics'
     echo "       as root to do that (or something similar adapted to your linux distribution))" 
