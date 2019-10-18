@@ -16,3 +16,6 @@ $(PREFIX)/opt/grafana/bin/grafana-server:
 	$(MAKE) --file=$(MFEXT_HOME)/share/Makefile.standard PREFIX=$(PREFIX) download uncompress
 	mkdir -p $(PREFIX)/opt/grafana/plugins
 	cd build/$(NAME)-$(VERSION) && cp -R * $(PREFIX)/opt/grafana/
+	# FIXME: tmp fix for https://github.com/grafana/grafana/issues/15524
+	sed -i 's/.panel-editor__scroll{min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:0}/.panel-editor__scroll{min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}/g' $(PREFIX)/opt/grafana/public/build/grafana.dark.15bb4924c84358f66b22.css
+	sed -i 's/.panel-editor__scroll{min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:0}/.panel-editor__scroll{min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}/g' $(PREFIX)/opt/grafana/public/build/grafana.light.15bb4924c84358f66b22.css
