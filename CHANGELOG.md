@@ -11,6 +11,9 @@
 - serve kibana and grafana behind the same reverse proxy with a
 
 
+### Bug Fixes
+- tmp fix for #111 (upstream grafana/firefox issue)
+
 
 
 
