@@ -1,0 +1,20 @@
+# release_0.9 CHANGELOG
+
+
+## [Unreleased]
+
+### New Features
+- add warning if both metrics and logs layers are not loaded
+- build mfadmin without mfcom (mfcom layers are now included in mfext)
+- replace MODULE* environment variables names by MFMODULE* (MODULE_HOME becomes MFMODULE_HOME and so on)
+- serve kibana and grafana behind the same reverse proxy with a
+- serve kibana and grafana behind the same reverse proxy with a
+
+
+### Bug Fixes
+- tmp fix for #111 (upstream grafana/firefox issue)
+
+
+
+
+
