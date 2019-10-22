@@ -2,6 +2,18 @@
 
 
 
+## v0.8.1 (2019-10-19)
+
+### New Features
+
+
+### Bug Fixes
+- tmp fix for #111 (upstream grafana/firefox issue)
+
+
+
+
+
 ## v0.8.0 (2019-08-14)
 
 ### New Features
