@@ -15,7 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1545129632995,
+  "id": 6,
+  "iteration": 1571918422641,
   "links": [],
   "panels": [
     {
@@ -119,6 +120,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Maximum number of files by directory (cumulated graph) [not filtered by plugin/step]",
       "tooltip": {
@@ -268,6 +270,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Sum of files processed by hour (cumulated graph)",
       "tooltip": {
@@ -417,6 +420,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Sum of files sizes processed by hour (cumulated graph)",
       "tooltip": {
@@ -567,306 +571,9 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Sum of files processed with error status by hour (cumulated graph)",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "none",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": true,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "influxdb",
-      "fill": 1,
-      "gridPos": {
-        "h": 9,
-        "w": 8,
-        "x": 0,
-        "y": 17
-      },
-      "id": 7,
-      "legend": {
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "show": false,
-        "total": false,
-        "values": false
-      },
-      "lines": false,
-      "linewidth": 1,
-      "links": [],
-      "nullPointMode": "connected",
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": true,
-      "steppedLine": false,
-      "targets": [
-        {
-          "groupBy": [
-            {
-              "params": [
-                "1h"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "plugin"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "step"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "host"
-              ],
-              "type": "tag"
-            }
-          ],
-          "measurement": "number_of_processed_batches",
-          "orderByTime": "ASC",
-          "policy": "$resolution",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "value_sum"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "sum"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$host$/"
-            },
-            {
-              "condition": "AND",
-              "key": "module",
-              "operator": "=",
-              "value": "mfdata"
-            },
-            {
-              "condition": "AND",
-              "key": "plugin",
-              "operator": "=~",
-              "value": "/^$plugin$/"
-            },
-            {
-              "condition": "AND",
-              "key": "step",
-              "operator": "=~",
-              "value": "/^$step$/"
-            }
-          ]
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Number of batches processed by hour (cumulated graph)",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "none",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": true,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "influxdb",
-      "fill": 1,
-      "gridPos": {
-        "h": 9,
-        "w": 8,
-        "x": 8,
-        "y": 17
-      },
-      "id": 6,
-      "legend": {
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "show": false,
-        "total": false,
-        "values": false
-      },
-      "lines": false,
-      "linewidth": 1,
-      "links": [],
-      "nullPointMode": "connected",
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": true,
-      "steppedLine": false,
-      "targets": [
-        {
-          "groupBy": [
-            {
-              "params": [
-                "1h"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "plugin"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "step"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "host"
-              ],
-              "type": "tag"
-            }
-          ],
-          "measurement": "number_of_processed_batches_error",
-          "orderByTime": "ASC",
-          "policy": "$resolution",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "value_sum"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "sum"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$host$/"
-            },
-            {
-              "condition": "AND",
-              "key": "module",
-              "operator": "=",
-              "value": "mfdata"
-            },
-            {
-              "condition": "AND",
-              "key": "plugin",
-              "operator": "=~",
-              "value": "/^$plugin$/"
-            },
-            {
-              "condition": "AND",
-              "key": "step",
-              "operator": "=~",
-              "value": "/^$step$/"
-            }
-          ]
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Number of batches processed with error status by hour (cumulated graph)",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -912,9 +619,9 @@
       "fill": 1,
       "gridPos": {
         "h": 10,
-        "w": 8,
-        "x": 3,
-        "y": 26
+        "w": 24,
+        "x": 0,
+        "y": 17
       },
       "id": 8,
       "legend": {
@@ -1014,6 +721,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Mean duration of individual file processing",
       "tooltip": {
@@ -1054,6 +762,306 @@
     },
     {
       "aliasColors": {},
+      "bars": true,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "influxdb",
+      "fill": 1,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 27
+      },
+      "id": 7,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": false,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": true,
+      "steppedLine": false,
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "1h"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "plugin"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "step"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "host"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "number_of_processed_batches",
+          "orderByTime": "ASC",
+          "policy": "$resolution",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value_sum"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$host$/"
+            },
+            {
+              "condition": "AND",
+              "key": "module",
+              "operator": "=",
+              "value": "mfdata"
+            },
+            {
+              "condition": "AND",
+              "key": "plugin",
+              "operator": "=~",
+              "value": "/^$plugin$/"
+            },
+            {
+              "condition": "AND",
+              "key": "step",
+              "operator": "=~",
+              "value": "/^$step$/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Number of batches processed by hour (cumulated graph)",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "none",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": true,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "influxdb",
+      "fill": 1,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 27
+      },
+      "id": 6,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": false,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": true,
+      "steppedLine": false,
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "1h"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "plugin"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "step"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "host"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "number_of_processed_batches_error",
+          "orderByTime": "ASC",
+          "policy": "$resolution",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value_sum"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$host$/"
+            },
+            {
+              "condition": "AND",
+              "key": "module",
+              "operator": "=",
+              "value": "mfdata"
+            },
+            {
+              "condition": "AND",
+              "key": "plugin",
+              "operator": "=~",
+              "value": "/^$plugin$/"
+            },
+            {
+              "condition": "AND",
+              "key": "step",
+              "operator": "=~",
+              "value": "/^$step$/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Number of batches processed with error status by hour (cumulated graph)",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "none",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
       "bars": false,
       "dashLength": 10,
       "dashes": false,
@@ -1061,9 +1069,9 @@
       "fill": 1,
       "gridPos": {
         "h": 10,
-        "w": 8,
-        "x": 11,
-        "y": 26
+        "w": 24,
+        "x": 0,
+        "y": 36
       },
       "id": 9,
       "legend": {
@@ -1163,6 +1171,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Mean duration of batch file processing",
       "tooltip": {
@@ -1212,7 +1221,7 @@
         "h": 8,
         "w": 24,
         "x": 0,
-        "y": 36
+        "y": 46
       },
       "id": 10,
       "legend": {
@@ -1297,6 +1306,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Maximum memory usage (cumulated graph) [not filtered by step]",
       "tooltip": {
@@ -1346,7 +1356,7 @@
         "h": 8,
         "w": 24,
         "x": 0,
-        "y": 44
+        "y": 54
       },
       "id": 11,
       "legend": {
@@ -1431,6 +1441,7 @@
       ],
       "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Maximum cpu usage (100% = 1core) (cumulated graph) [not filtered by step]",
       "tooltip": {
@@ -1471,7 +1482,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 16,
+  "schemaVersion": 18,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -1479,6 +1490,7 @@
       {
         "allValue": null,
         "current": {
+          "selected": true,
           "tags": [],
           "text": "fullres",
           "value": "fullres"
@@ -1506,15 +1518,18 @@
           }
         ],
         "query": "fullres,medres,lowres",
+        "skipUrlSync": false,
         "type": "custom"
       },
       {
         "allValue": ".*",
         "current": {
+          "selected": true,
           "text": "All",
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -1524,6 +1539,7 @@
         "query": "show tag values FROM \"mem\" with key=\"host\"",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -1534,10 +1550,13 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
+          "tags": [],
           "text": "All",
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -1547,6 +1566,7 @@
         "query": "show tag values FROM \"number_of_processed_files\" with key=\"plugin\"",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -1561,6 +1581,7 @@
           "value": "$__all"
         },
         "datasource": "influxdb",
+        "definition": "",
         "hide": 0,
         "includeAll": true,
         "label": null,
@@ -1570,6 +1591,7 @@
         "query": "show tag values FROM \"number_of_processed_files\" with key=\"step\" where \"plugin\" =~ /^$plugin$/",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -1611,5 +1633,5 @@
   "timezone": "",
   "title": "mfdata",
   "uid": "HGfOhPNmk",
-  "version": 6
+  "version": 1
 }
