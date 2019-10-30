@@ -31,7 +31,6 @@ stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/grafana.log
 numprocesses=1
 {% endif %}
 
-{% if MFADMIN_LAYER_LOGS_LOADED|default('0') == "1" %}
 [watcher:nginx]
 cmd={{MFEXT_HOME}}/opt/openresty/nginx/sbin/nginx
 args=-p {{MFMODULE_RUNTIME_HOME}}/tmp/nginx_tmp_prefix -c {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/nginx.conf
@@ -48,6 +47,7 @@ hooks.after_stop=circus_hooks.after_stop_shell
 working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 async_kill = True
 
+{% if MFADMIN_LAYER_LOGS_LOADED|default('0') == "1" %}
 [watcher:mflog2mfadmin]
 cmd=layer_wrapper
 args=--layers=monitoring@mfext -- jsonlog2elasticsearch --transform-func=jsonlog2elasticsearch_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d {{MFMODULE_RUNTIME_HOME}}/log/json_logs.log
