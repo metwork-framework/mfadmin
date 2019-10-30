@@ -2,6 +2,16 @@
 
 
 
+## v0.9.2 (2019-10-29)
+
+### New Features
+- better mfdata dashboard
+
+
+
+
+
+
 ## v0.9.1 (2019-10-23)
 
 - No interesting change
