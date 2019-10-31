@@ -1,6 +1,17 @@
 # release_0.9 CHANGELOG
 
 
+## [Unreleased]
+
+### New Features
+
+
+### Bug Fixes
+- access to grafana when logs layer is not installed
+
+
+
+
 
 ## v0.9.2 (2019-10-29)
 
