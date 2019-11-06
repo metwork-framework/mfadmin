@@ -1,6 +1,17 @@
 # release_0.9 CHANGELOG
 
 
+## [Unreleased]
+
+### New Features
+
+
+### Bug Fixes
+- fix welcome portal links if they are behind a reverse proxy
+
+
+
+
 
 ## v0.9.3 (2019-10-31)
 
