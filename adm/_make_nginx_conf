@@ -1,5 +1,5 @@
 #!/bin/bash
 
-"${MFEXT_HOME}/opt/misc/bin/_make_nginx_conf"
+"${MFEXT_HOME}/bin/_make_nginx_conf"
 
 printf "admin:%s\\n" "$(openssl passwd -apr1 "${MFADMIN_KIBANA_ADMIN_PASSWORD}")" >"${MFMODULE_RUNTIME_HOME}/tmp/kibana.passwd"
