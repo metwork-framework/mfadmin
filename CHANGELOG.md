@@ -4,6 +4,7 @@
 ## [Unreleased]
 
 ### New Features
+- adaptation to removal of layer misc@mfext
 - better mfdata dashboard
 
 
