@@ -14,7 +14,10 @@ url = "%s/_template/template_mflog" % ES_BASE_URL
 template = {
     "index_patterns": ["mflog-*"],
     "settings": {
-        "number_of_replicas": 1
+        "index.number_of_replicas": 1,
+        "index.refresh_interval": "10s",
+        "index.translog.sync_interval": "1m",
+        "index.translog.durability": "async"
     },
     "mappings": {
         "_doc": {
