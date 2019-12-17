@@ -4,6 +4,7 @@
 ## [Unreleased]
 
 ### New Features
+- improve log templates for better indexing speed
 - adaptation to removal of layer misc@mfext
 - better mfdata dashboard
 
