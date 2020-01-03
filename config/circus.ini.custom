@@ -4,41 +4,29 @@
 
 {% if MFADMIN_LAYER_METRICS_LOADED|default('0') == "1" %}
 [watcher:influxdb]
-cmd=influxd
-args=run -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/influxdb.conf
+cmd=log_proxy_wrapper
+args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/influxdb.log --stderr STDOUT -- influxd run -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/influxdb.conf
 hooks.before_start=circus_hooks.before_start_shell
 hooks.after_start=circus_hooks.after_start_shell
 copy_env = True
 autostart = True
 respawn = True
-stdout_stream.class = FileStream
-stdout_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/influxdb.log
-stderr_stream.class = FileStream
-stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/influxdb.log
 numprocesses=1
 
 [watcher:grafana]
-cmd={{MFADMIN_HOME}}/opt/metrics/opt/grafana/bin/grafana-server
-args=-config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/grafana.ini -homepath {{MFADMIN_HOME}}/opt/metrics/opt/grafana --pidfile {{MFMODULE_RUNTIME_HOME}}/var/grafana.pid
+cmd=log_proxy_wrapper
+args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/grafana.log --stderr STDOUT -- {{MFADMIN_HOME}}/opt/metrics/opt/grafana/bin/grafana-server -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/grafana.ini -homepath {{MFADMIN_HOME}}/opt/metrics/opt/grafana --pidfile {{MFMODULE_RUNTIME_HOME}}/var/grafana.pid
 hooks.before_start=circus_hooks.before_start_shell
 copy_env = True
 autostart = True
 respawn = True
-stdout_stream.class = FileStream
-stdout_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/grafana.log
-stderr_stream.class = FileStream
-stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/grafana.log
 numprocesses=1
 {% endif %}
 
 [watcher:nginx]
-cmd={{MFEXT_HOME}}/opt/openresty/nginx/sbin/nginx
-args=-p {{MFMODULE_RUNTIME_HOME}}/tmp/nginx_tmp_prefix -c {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/nginx.conf
+cmd=log_proxy_wrapper
+args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/nginx_access.log --stderr {{MFMODULE_RUNTIME_HOME}}/log/nginx_error.log -- {{MFEXT_HOME}}/opt/openresty/nginx/sbin/nginx -p {{MFMODULE_RUNTIME_HOME}}/tmp/nginx_tmp_prefix -c {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/nginx.conf
 numprocesses = 1
-stdout_stream.class = FileStream
-stdout_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/nginx.log
-stderr_stream.class = FileStream
-stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/nginx.log
 copy_env = True
 autostart = True
 respawn = True
@@ -48,14 +36,11 @@ working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 async_kill = True
 
 {% if MFADMIN_LAYER_LOGS_LOADED|default('0') == "1" %}
-[watcher:mflog2mfadmin]
-cmd=layer_wrapper
-args=--layers=monitoring@mfext -- jsonlog2elasticsearch --transform-func=jsonlog2elasticsearch_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d {{MFMODULE_RUNTIME_HOME}}/log/json_logs.log
+{% if MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT != "0" %}
+[watcher:mflogs2mfadmin]
+cmd=log_proxy_wrapper
+args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/mflogs2mfadmin.log --stderr STDOUT -- layer_wrapper --layers=monitoring@mfext -- jsonsyslog2elasticsearch --syslog-host=127.0.0.1 --syslog-port={{MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT}} --transform-func=jsonlog2elasticsearch_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d
 numprocesses = 1
-stdout_stream.class = FileStream
-stdout_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/jsonlog2elasticsearch_mflog.log
-stderr_stream.class = FileStream
-stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/jsonlog2elasticsearch_mflog.log
 copy_env = True
 autostart = True
 respawn = True
@@ -63,31 +48,24 @@ hooks.before_start=circus_hooks.before_start_shell
 hooks.after_stop=circus_hooks.after_stop_shell
 working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 async_kill = True
+{% endif %}
 
 [watcher:elasticsearch]
-cmd={{MFMODULE_RUNTIME_HOME}}/tmp/elasticsearch/bin/elasticsearch
-args=
+cmd=log_proxy_wrapper
+args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/elasticsearch.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/elasticsearch/bin/elasticsearch
 hooks.before_start=circus_hooks.before_start_shell
 copy_env = True
 autostart = True
 respawn = True
-stdout_stream.class = FileStream
-stdout_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/elasticsearch.log
-stderr_stream.class = FileStream
-stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/elasticsearch.log
 numprocesses=1
 
 [watcher:kibana]
-cmd={{MFMODULE_RUNTIME_HOME}}/tmp/kibana/bin/kibana
-args=--config {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/config/kibana.yml
+cmd=log_proxy_wrapper
+args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/kibana.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/bin/kibana --config {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/config/kibana.yml
 hooks.before_start=circus_hooks.before_start_shell
 copy_env = True
 autostart = True
 respawn = True
-stdout_stream.class = FileStream
-stdout_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/kibana.log
-stderr_stream.class = FileStream
-stderr_stream.filename = {{MFMODULE_RUNTIME_HOME}}/log/kibana.log
 numprocesses=1
 {% endif %}
 
