@@ -3,6 +3,6 @@
 {% block custom %}
 {% raw %}
 # ElasticSearch cleaning
-30 3,9,15,21 * * * {{RUNTIME_SUFFIX}} {{MFMODULE_HOME}}/bin/cronwrap.sh --lock --low --timeout=3600 -- elasticsearch.clean 2>&1 |log_proxy {{MFMODULE_RUNTIME_HOME}}/log/elasticsearch_clean.log
+30 3,9,15,21 * * * {{MFMODULE_HOME}}/bin/cronwrap.sh --lock --low --timeout=3600 --log-capture-to={{MFMODULE_RUNTIME_HOME}}/log/elasticsearch_clean.log -- elasticsearch.clean
 {% endraw %}
 {% endblock %}
