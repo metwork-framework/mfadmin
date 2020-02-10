@@ -5,7 +5,7 @@
 {% if MFADMIN_LAYER_METRICS_LOADED|default('0') == "1" %}
 [watcher:influxdb]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/influxdb.log --stderr STDOUT -- influxd run -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/influxdb.conf
+args=--stdout influxdb.log --stderr STDOUT -- influxd run -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/influxdb.conf
 hooks.before_start=mfext.circus_hooks.before_start_shell
 hooks.after_start=mfext.circus_hooks.after_start_shell
 copy_env = True
@@ -15,7 +15,7 @@ numprocesses=1
 
 [watcher:grafana]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/grafana.log --stderr STDOUT -- {{MFADMIN_HOME}}/opt/metrics/opt/grafana/bin/grafana-server -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/grafana.ini -homepath {{MFADMIN_HOME}}/opt/metrics/opt/grafana --pidfile {{MFMODULE_RUNTIME_HOME}}/var/grafana.pid
+args=--stdout grafana.log --stderr STDOUT -- {{MFADMIN_HOME}}/opt/metrics/opt/grafana/bin/grafana-server -config {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/grafana.ini -homepath {{MFADMIN_HOME}}/opt/metrics/opt/grafana --pidfile {{MFMODULE_RUNTIME_HOME}}/var/grafana.pid
 hooks.before_start=mfext.circus_hooks.before_start_shell
 copy_env = True
 autostart = True
@@ -25,7 +25,7 @@ numprocesses=1
 
 [watcher:nginx]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/nginx_access.log --stderr {{MFMODULE_RUNTIME_HOME}}/log/nginx_error.log -- {{MFEXT_HOME}}/opt/openresty/nginx/sbin/nginx -p {{MFMODULE_RUNTIME_HOME}}/tmp/nginx_tmp_prefix -c {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/nginx.conf
+args=--stdout nginx_access.log --stderr nginx_error.log -- {{MFEXT_HOME}}/opt/openresty/nginx/sbin/nginx -p {{MFMODULE_RUNTIME_HOME}}/tmp/nginx_tmp_prefix -c {{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/nginx.conf
 numprocesses = 1
 copy_env = True
 autostart = True
@@ -39,7 +39,7 @@ async_kill = True
 {% if MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT != "0" %}
 [watcher:mflogs2mfadmin]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/mflogs2mfadmin.log --stderr STDOUT -- layer_wrapper --layers=monitoring@mfext -- jsonsyslog2elasticsearch --syslog-host=127.0.0.1 --syslog-port={{MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT}} --transform-func=mfext.jsonsyslog2es_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d
+args=--stdout mflogs2mfadmin.log --stderr STDOUT -- layer_wrapper --layers=monitoring@mfext -- jsonsyslog2elasticsearch --syslog-host=127.0.0.1 --syslog-port={{MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT}} --transform-func=mfext.jsonsyslog2es_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d
 numprocesses = 1
 copy_env = True
 autostart = True
@@ -52,7 +52,7 @@ async_kill = True
 
 [watcher:elasticsearch]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/elasticsearch.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/elasticsearch/bin/elasticsearch
+args=--stdout elasticsearch.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/elasticsearch/bin/elasticsearch
 hooks.before_start=mfext.circus_hooks.before_start_shell
 copy_env = True
 autostart = True
@@ -61,7 +61,7 @@ numprocesses=1
 
 [watcher:kibana]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/kibana.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/bin/kibana --config {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/config/kibana.yml
+args=--stdout kibana.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/bin/kibana --config {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/config/kibana.yml
 hooks.before_start=mfext.circus_hooks.before_start_shell
 copy_env = True
 autostart = True
