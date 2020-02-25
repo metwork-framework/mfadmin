@@ -7,16 +7,20 @@ import requests
 from requests.auth import HTTPBasicAuth
 import os
 import datetime
+import requests_unixsocket
 
+MFMODULE_RUNTIME_HOME = os.environ['MFMODULE_RUNTIME_HOME']
 DESCRIPTION = "block until grafana is up (return code: 0) or " \
     "30s timeout (return code: 1)"
-GRAFANA_PORT = int(os.environ['MFADMIN_GRAFANA_PORT'])
-GRAFANA_URL = "http://127.0.0.1:%i/api/admin/stats" % GRAFANA_PORT
+GRAFANA_SOCKET = "%s/tmp/grafana.sock" % MFMODULE_RUNTIME_HOME
+GRAFANA_URL = "http+unix://%s/api/admin/stats" % \
+    GRAFANA_SOCKET.replace('/', '%2F')
 ADMIN_PASSWORD = os.environ['MFADMIN_GRAFANA_ADMIN_PASSWORD']
 
 parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.parse_args()
 
+requests_unixsocket.monkeypatch()
 before = datetime.datetime.now()
 while True:
     elapsed = (datetime.datetime.now() - before).total_seconds()

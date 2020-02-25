@@ -29,21 +29,15 @@ http_port=18086
 ###################
 [grafana]
 
-# Public Grafana HTTP port
-port=15602
-
 # grafana admin password (length must be > 4)
 # (you have to restart the module if you change it)
 admin_password=admin
 
-# options to serve grafana behind a reverse proxy
-# see http://docs.grafana.org/installation/behind_proxy/
-# Example: if you want to serve grafana behind http://foo.bar/grafana_sub_path
-# user (http, foo.bar, /grafana_sub_path/) for the following configuration options
-# Don't change anything if you don't understand what it is about
-server_protocol=http
-server_domain=localhost
-server_sub_path=/grafana
+# If you want to serve grafana behind a reverse proxy
+# set the proxied public url here
+# (null => no reverse proxy and automatic configuration with
+#          root_url = http://{{MFCOM_HOSTNAME_FULL}}:{{MFADMIN_NGINX_PORT}}/grafana)
+reverse_proxy_root_url = null
 
 # smtp options
 # if host = null, the smtp service is disabled
