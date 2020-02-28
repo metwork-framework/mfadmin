@@ -20,59 +20,14 @@
 
 
 
+## Quickstart, installation guide...
 
-
-
-
-## Full list of components
-
-| Name | Version | Layer |
-| --- | --- | --- |
-| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.5.3 | logs |
-| [grafana](https://grafana.com) | 6.6.1 | metrics |
-| [influxdb](https://www.influxdata.com) | 1.7.9-1 | metrics |
-| [kibana](https://www.elastic.co/products/kibana) | 6.5.3 | logs |
-
-*(4 components)*
-
-
-
-
-
-
-
-
-
-
-## Cheatsheet
-
-A cheatsheet for this module is available [here](.metwork-framework/cheatsheet.md)
-
-
-
-## Reference documentation
-
-- (for **master (development)** version), see [this dedicated site](http://metwork-framework.org/pub/metwork/continuous_integration/docs/master/mfadmin/) for reference documentation.
-- (for **latest released stable** version), see [this dedicated site](http://metwork-framework.org/pub/metwork/releases/docs/stable/mfadmin/) for reference documentation.
+Please consult the [reference documentation](http://metwork-framework.org/pub/metwork/continuous_integration/docs/master/mfadmin/).
 
 For very specific use cases, you might be interested in
 [reference documentation for integration branch](http://metwork-framework.org/pub/metwork/continuous_integration/docs/integration/mfadmin/).
 
 And if you are looking for an old released version, you can search [here](http://metwork-framework.org/pub/metwork/releases/docs/).
-
-
-
-## Installation guide
-
-See [this document](.metwork-framework/install_a_metwork_package.md).
-
-
-## Configuration guide
-
-See [this document](.metwork-framework/configure_a_metwork_package.md).
-
-
-
 
 
 ## Contributing guide
