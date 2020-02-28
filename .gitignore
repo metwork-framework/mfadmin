@@ -19,3 +19,4 @@ doc/mfadmin_miscellaneous.rst
 doc/CHANGELOG*.md
 doc/CHANGELOG*.rst
 doc/changelogs.rst
+__pycache__/
