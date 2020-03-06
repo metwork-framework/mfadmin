@@ -22,10 +22,9 @@ cat "${MFMODULE_HOME}/config/www/index.html" |envtpl --reduce-multi-blank-lines 
 cat "${MFMODULE_HOME}/config/www/index.css" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/www/index.css"
 cp -rf "${MFMODULE_HOME}/config/www/images" "${MFMODULE_RUNTIME_HOME}/tmp/www/"
 
-
+rm -f "${MFMODULE_RUNTIME_HOME}/tmp/grafana.sock"
 if test -s "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/grafana.ini"; then
     exit 0
 else
     exit 1
 fi
-
