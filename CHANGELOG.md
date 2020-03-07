@@ -14,6 +14,7 @@
 
 
 ### Bug Fixes
+- clean grafana socket
 - fix welcome portal usage behind a reverse proxy
 - fix welcome portal links if they are behind a reverse proxy
 - access to grafana when logs layer is not installed
