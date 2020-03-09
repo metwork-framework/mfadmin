@@ -1,6 +1,13 @@
 {% extends "mfxxx.init" %}
 {% block custom %}
 
+if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
+  echo -n "- Initializing kibana working directory..."
+  echo_running
+  init_kibana
+  echo_ok
+fi
+
 echo -n "- (pre)Starting mfadmin services..."
 echo_running
 mfadmin.start NOINIT >"${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$" 2>&1

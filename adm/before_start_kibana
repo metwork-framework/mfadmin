@@ -1,34 +1,19 @@
 #!/bin/bash
 
-mkdir -p "${MFMODULE_RUNTIME_HOME}/var/kibana"
-rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
-mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/kibana/optimize"
-rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
-mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards"
-cp -r "${MFMODULE_HOME}/config/kibana_dashboards" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/"
+export KIBANA_HOME="${MFMODULE_RUNTIME_HOME}/var/kibana"
+
 if test -d /etc/metwork.config.d/mfadmin/kibana_dashboards; then
     N=$(ls /etc/metwork.config.d/mfadmin/kibana_dashboards 2>/dev/null |wc -l)
     if test "${N}" -gt 0; then
         cp -f /etc/metwork.config.d/mfadmin/kibana_dashboards/* "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana_dashboards/"
     fi
 fi
-cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana/config" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
-cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana/src" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
-cp -f "${MFMODULE_HOME}/opt/logs/opt/kibana/package.json" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
-cp -f "${MFMODULE_HOME}/opt/logs/opt/kibana/optimize/.babelcache.json" "${MFMODULE_RUNTIME_HOME}/tmp/kibana/optimize/"
-for DIR in bin node node_modules optimize/bundles webpackShims; do
-    ln -s "${MFMODULE_HOME}/opt/logs/opt/kibana/${DIR}" "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
-done
-for DIR in plugins data; do
-    mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
-done
 
-cat "${MFMODULE_HOME}/config/kibana.conf" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
+cat "${MFMODULE_HOME}/config/kibana.conf" |envtpl --reduce-multi-blank-lines >"${KIBANA_HOME}/config/kibana.yml"
 rm -f "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
-ln -s "${MFMODULE_RUNTIME_HOME}/tmp/kibana/config" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
+ln -s "${KIBANA_HOME}/config" "${MFMODULE_RUNTIME_HOME}/tmp/config_auto/kibana"
 
-export KIBANA_HOME="${MFMODULE_RUNTIME_HOME}/tmp/kibana"
-if test -s "${MFMODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"; then
+if test -s "${KIBANA_HOME}/config/kibana.yml"; then
     exit 0
 else
     exit 1

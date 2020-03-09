@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -Rf "${MFMODULE_RUNTIME_HOME}/var/kibana"
+cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana" "${MFMODULE_RUNTIME_HOME}/var/"
+chmod -R u+w "${MFMODULE_RUNTIME_HOME}/var/kibana/" # FIXME: ne pas laisser
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/kibana/data"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/kibana/plugins"

@@ -61,7 +61,7 @@ numprocesses=1
 
 [watcher:kibana]
 cmd=log_proxy_wrapper
-args=--stdout kibana.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/bin/kibana --config {{MFMODULE_RUNTIME_HOME}}/tmp/kibana/config/kibana.yml
+args=--stdout kibana.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/var/kibana/bin/kibana --config {{MFMODULE_RUNTIME_HOME}}/var/kibana/config/kibana.yml
 hooks.before_start=mfext.circus_hooks.before_start_shell
 copy_env = True
 autostart = True

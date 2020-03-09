@@ -2,13 +2,6 @@
 {% block custom %}
 
 {% raw %}
-# Read metrics about influxdb
-[[inputs.influxdb]]
-  urls = [
-    "http://localhost:{{MFADMIN_INFLUXDB_HTTP_PORT}}/debug/vars"
-  ]
-  timeout = "10s"
-
 [[inputs.procstat]]
   pattern = "influxd.run..config.{{MFMODULE_RUNTIME_HOME}}.tmp.config_auto.influxdb.conf"
   user = "{{MFMODULE_RUNTIME_USER}}"
