@@ -36,7 +36,7 @@ admin_password=admin
 # If you want to serve grafana behind a reverse proxy
 # set the proxied public url here
 # (null => no reverse proxy and automatic configuration with
-#          root_url = http://{{MFCOM_HOSTNAME_FULL}}:{{MFADMIN_NGINX_PORT}}/grafana)
+#          root_url = http://{{MFHOSTNAME_FULL}}:{{MFADMIN_NGINX_PORT}}/grafana)
 reverse_proxy_root_url = null
 
 # smtp options
@@ -65,7 +65,7 @@ http_port=15603
 heap_size=1g
 
 # ElasticSearch node name
-node_name={{MFCOM_HOSTNAME}}
+node_name={{MFHOSTNAME}}
 
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/network.host.html
 network_host=0.0.0.0
