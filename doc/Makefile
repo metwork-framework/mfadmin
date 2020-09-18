@@ -10,7 +10,6 @@ BUILDDIR      = _build
 
 RST_FILES=$(shell ls *.md |grep -v tempo.md 2>/dev/null |sed 's/\.md$$/\.rst/g')
 IPYNB_FILES=$(shell ls *.ipynb 2>/dev/null |sed 's/\.ipynb$$/\.mdtemp/g')
-COMMON_DOCFILES=configure_a_metwork_package.rst configure_metwork_repo.rst install_a_metwork_package.rst
 CHANGELOGS_FILES=$(shell ls -r ../CHANGELOG*.md |awk -F '/' '{print $$2;}' |sed 's/\.md$$/\.rst/g')
 CHANGELOGS_RST_TMPL=changelogs.tmpl
 CHANGELOGS_RST_FILE=changelogs.rst
@@ -42,7 +41,7 @@ superclean:
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-html: $(CHANGELOGS_FILES) $(COMMON_DOCFILES) $(IPYNB_FILES) $(RST_FILES) Makefile
+html: $(CHANGELOGS_FILES) $(IPYNB_FILES) $(RST_FILES) Makefile
 	echo $(CHANGELOGS_FILES)
 	rm -f tempo.*
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
