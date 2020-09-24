@@ -1,4 +1,4 @@
-# What is it?
+# What is MFADMIN?
 
 This is the **M**etwork **F**ramework **ADMIN** module. This module hosts off-the-shelf software for storing and visualizing metrics and logs.
 
@@ -24,3 +24,25 @@ And configure them to send their logs/metrics to this **MFADMIN** module (locall
     To do that, you have to use an "extension point" from the **MFSYSMON** module. With this
     feature, you have send your custom logs/metrics to **MFSYSMON** and it will take care
     of communicating with **MFADMIN**.
+
+**MFADMIN** is splitted in two optional layers:
+
+- `metwork-mfadmin-layer-metrics`: for metrics storage ([InfluxDB](https://www.influxdata.com/products/influxdb-overview/)) and visualizing ([Grafana](https://grafana.com)).
+- `metwork-mfadmin-layer-logs`: for logs storage ([ElasticSearch](FIXME)) and visualizing ([Kibana](https://www.elastic.co/fr/kibana)).
+
+Of course, you can install the first layer, the second one or both!
+
+!!! note "What about if I don't install any of these layers?"
+    If you install **MFADMIN** module with a simple `yum install metwork-mfadmin` (or something similar),
+    you get a minimal installation of **MFADMIN** module. So you don't have any extra layer. Your module
+    works but is completly useless. **So be sure to add a layer for metrics, logs or both!**
+
+** The welcome screen of **MFADMIN** with two choices: *metrics ui* or *logs ui* **
+
+![](images/screenshot2.png)
+
+** A "system" dashboard in the *metrics ui* provided with **MFADMIN** (of course, you can build/use your custom dashboards but we provide some interesting dashboards out of the box). **
+![](images/screenshot1.png)
+
+** A "nginx logs" dashboard in the "logs ui" provided with **MFADMIN** (of course, you can build/use your custom dashboards but we provide some interesting dashboards out of the box). **
+![](images/screenshot3.png)
