@@ -1,26 +1,26 @@
-.. index:: dashboards, metrics
-# Create specific dashboards
+# MFADMIN miscellaneous
 
-You can create your own :index:`Grafana dashboards` and :index:`Kibana dashboards`. 
+## Create specific dashboards
 
-When created, it is recommended to [save/export your custom dashboard(s)](#saving-your-own-dashboards).
+You can create your own [Grafana dashboards](../mfadmin_monitoring_plugins#2-grafana-time-series-dashboards) and [Kibana dashboards](../mfadmin_monitoring_plugins#3-kibana-dashboards)
 
-.. seealso::
-    :doc:`mfadmin_monitoring_plugins`
+When created, it is recommended to [save/export your custom dashboard(s)](#23-saving-your-own-dashboards).
+
+See also [Monitoring Metwork plugins](../mfadmin_monitoring_plugins)
 
 
-## Create specific Grafana dashboards
+### Create specific Grafana dashboards
 
 Check the official [Grafana](https://grafana.com/docs/) documentation and the :ref:`mfdata_additional_tutorials:Implement custom monitoring and metrics in a plugin` tutorial.  
 
-## Create specific Kibana dashboards
+### Create specific Kibana dashboards
 
 Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashboard-getting-started.html) documentation and the [Kibana - Building your own dashboards tutorial](https://www.elastic.co/guide/en/kibana/current/tutorial-build-dashboard.html)
 
 
-# Useful links and Tips
+## Useful links and Tips
 
-## Telegraf error (HTTP 403)
+### Telegraf error (HTTP 403)
 
 .. tip::
 	If you do not see any metrics in your Grafana dashboard, check the `telegraf.log` file in the `log` directory of the root MFDATA directory.
@@ -30,7 +30,7 @@ Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashb
     You should try to fix this issue by setting the `HTTP_PROXY`, `HTTPS_PROXY` and/or `NO_PROXY` in the `/etc/default/telegraf` file or the `/etc/profile.d/proxy.sh`, `/etc/profile`, e.g. `NO_PROXY="*"`
 
 .. index:: Influxdb database
-## Querying the InfluxDB database
+### Querying the InfluxDB database
 
 .. tip::
 	You may query the InfluxDB database from the InfluxDB’s command line interface `influx` located in `/opt/metwork-mfadmin-master/opt/monitoring/bin/influx`.
@@ -107,7 +107,7 @@ Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashb
     `Influx Query Language (InfluxQL) reference <https://docs.influxdata.com/influxdb/v1.7/query_language/>`_
 
 
-## Saving your own dashboards
+### Saving your own dashboards
 
 .. important::
 	| When you upgrade MFADMIN Metwork package, the :index:`Grafana dashboards` and :index:`Kibana dashboards`  are overwritten, so that you may lose the custom dashboards you designed.
@@ -123,7 +123,7 @@ In order to do this, you have to store them:
 - in the `/etc/metwork.config.d/mfadmin/grafana_dashboards` for Grafana dashboards
 - in the `/etc/metwork.config.d/mfadmin/kibana_dashboards` for Kibana dashboards
 
-## Saving the InfluxDB database
+### Saving the InfluxDB database
 
 .. important::
 	When you upgrade MFADMIN Metwork package, the InfluxDB database that contains metrics is overwritten.
@@ -135,10 +135,10 @@ In order to do this, you have to store them:
     The name of the MFADMIN Influxdb database is `metrics`
 
 .. index:: data retention, data resolution, metrics retention, metrics resolution
-## Metrics retention (resolution)
+### Metrics retention (resolution)
 
 .. index:: Time-series dashboards, fullres resolution, medres resolution, lowres resolution, statistics aggregator
-### InfluxDB retention policies and statistics aggregator
+#### InfluxDB retention policies and statistics aggregator
 
 In InfluxDB databases, data are kept for a limited time according :index:`retention policies`, i.e., among other things, **how long InfluxDb keeps the data (duration)**.
 
@@ -153,7 +153,7 @@ MFADMIN supplies the following retention policies:
 In the :ref:`Grafana dashboards <mfadmin_monitoring_plugins:Grafana Time-series dashboards>`, you can display time-series metrics with the suitable resolution.
 
 .. index:: elasticsearch.clean, ElasticSearch retention period
-### Elasticsearch retention
+#### Elasticsearch retention
 
 ElasticSearch no longer supports retention period. So, the is no default data retention period. 
 
@@ -175,7 +175,7 @@ The age (lifetime) is configured in the `indices_lifetime` parameter `[elasticse
     Check `tmp/config_auto/crontab` file in the root directory of the `mfadmin` user.
     
 .. index:: json_file, json_minimal_level, exporting log
-## Exporting logs
+### Exporting logs
 
 **This section applies to all MetWork modules.**
 
@@ -186,7 +186,7 @@ In order to save logs in a separate file, you have to check/set the `json_file` 
 For further details, refer to :ref:`MetWork plugins configuration <mfadmin_monitoring_plugins:Configuration>`.
 
 .. index:: circus hooks, before_start hook, after_start hook
-## Circus hooks
+### Circus hooks
 
 Circus provides [hooks](https://circus.readthedocs.io/en/latest/for-devs/writing-hooks/#hooks) used to trigger actions upon watcher events. These hooks are configured in the [circus.ini configuration](https://circus.readthedocs.io/en/latest/for-ops/configuration/) file. 
 
