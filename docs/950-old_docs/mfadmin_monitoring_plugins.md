@@ -1,22 +1,18 @@
-.. index:: monitoring, metrics, Time-series metrics, dashboards
 # Monitoring MetWork plugins
 
-This section shows how to configure MetWork modules so that you can monitor your plugin and display dashboards through the :ref:`tools offered in MFADMIN <mfadmin_intro:How it works?>`:
+This section shows how to configure MetWork modules so that you can monitor your plugin and display dashboards through the [tools offered in MFADMIN](../mfadmin_intro/#2-how-it-works):
 
-.. seealso::
-    | :ref:`mfadmin_miscellaneous:Create specific dashboards`
-    | :doc:`layer_metrics`
-    | :doc:`layer_logs`
+!!! info "See also [Create specific dashboards](../mfadmin_miscellaneous/#1-create-specific-dashboards`)"
 
 ## Configuration
 
-In order to :index:`monitor MetWork plugins`, you have first to:
+In order to monitor MetWork plugins, you have first to:
 
 - install Metwork MFADMIN and MFSYSMON modules
 - configure the `[admin]` section and, optionally the `[log]` section of the `config/config.ini` in the root directory of the MetWork module (i.e. MFDATA, MFSERV, MFBASE,...), 
 
-.. important::
-    | **When you change a Metwork module configuration, you have to restart the corresponding Metwork module service (MFDATA, MFSERV, MFBASE, ...)**, e.g:
+!!! important
+    **When you change a Metwork module configuration, you have to restart the corresponding Metwork module service (MFDATA, MFSERV, MFBASE, ...)**, e.g:
     
     ```bash
     service metwork restart mfdata
@@ -36,15 +32,15 @@ hostname=localhost
 # influxdb_http_port=18086
 ...
 ```
-.. important::
-    If the above `hostname` parameter is not set or set to `null`, **no monitoring** will be available and **no data** will be displayed in the :ref:`Grafana dashboards <mfadmin_monitoring_plugins:Grafana Time-series dashboards>` and :ref:`Kibana dashboards <mfadmin_monitoring_plugins:Kibana dashboards>`.
+!!! important
+    If the above `hostname` parameter is not set or set to `null`, **no monitoring** will be available and **no data** will be displayed in the [Grafana dashboards](#2-grafana-time-series-dashboards) and [Kibana dashboards](#3-kibana-dashboards).
      
-**By setting** `hostname`, **this will enable monitoring and the time-series metrics (by default)**. The metrics will be stored in the :index:`InfluxDB` databases of the :ref:`MFADMIN host <mfadmin_intro:How it works?>`. The corresponding dashboards will be available through :index:`Grafana` on the :ref:`MFADMIN host <mfadmin_intro:How it works?>`.
+**By setting** `hostname`, **this will enable monitoring and the time-series metrics (by default)**. The metrics will be stored in the `InfluxDB` databases of the [MFADMIN host](../mfadmin_intro/#how-it-works). The corresponding dashboards will be available through `Grafana` on the [MFADMIN host](../mfadmin_intro/#how-it-works).
 
 ### Enable monitoring based on standard logs and mflog logs 
 
-.. index:: send_mflog_logs parameter, json_file, json_minimal_level, standard logs, mflog logs 
 Now, if you want to monitor your plugins through [mflog](https://github.com/metwork-framework/mflog) logs, in addition you have to set in the `[log]` section of the `config/config.ini`, the following parameters:
+
 - the `send_mflog_logs` parameter to `1`
 - the `json_file` parameter to `AUTO`
 - the `json_minimal_level` parameter to the desired level
@@ -73,7 +69,7 @@ json_minimal_level=DEBUG
 
 ```
 
-**This will enable the standard logs and mflog logs** to be stored in the :index:`ElasticSearch` database of the :ref:`MFADMIN host <mfadmin_intro:How it works?>`. The corresponding dashboards will be available through :index:`Kibana` on the :ref:`MFADMIN host <mfadmin_intro:How it works?>`.
+**This will enable the standard logs and mflog logs** to be stored in the `ElasticSearch` database of the [MFADMIN host](../mfadmin_intro/#how-it-works). The corresponding dashboards will be available through `Kibana` on the [MFADMIN host](../mfadmin_intro/#how-it-works).
 
 In the above example, `DEBUG` logs will be duplicated (JSON format) in the `log/json_logs.log` file (in the root directory of the MetWork module user, e.g.`mfadmin`).
 
