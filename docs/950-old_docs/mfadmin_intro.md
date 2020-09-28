@@ -31,7 +31,6 @@ MFADMIN is a Metwork module which contains **tools, libraries and dashboards** u
     - [Telegraf StatsD input plugin](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd)
     - [Circus hooks](../mfadmin_miscellaneous/#27-circus-hooks)
 
-
 ## MFADMIN configuration
 
 The configuration of the MFADMIN and its components is stored in the `config/config.ini` file of the root directory of the `mfadmin` user. Check this file for further information.
