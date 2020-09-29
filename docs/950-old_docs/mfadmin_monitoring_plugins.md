@@ -129,7 +129,7 @@ Then, click on the module you want display dashboards.
 ![Grafana resolution dashboards](../images/grafana_resolution_dashboard.jpg)
 
 !!! tip ""
-    You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to [Create specific dashboards](../mfadmin_miscellaneous/#1-create-specific-dashboards) and [Implement custom monitoring and metrics in a plugin](../../../mfdata/mfdata_additional_tutorials/#5-implement-custom-monitoring-and-metrics-in-a-plugin).
+    You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to [Create specific dashboards](../mfadmin_miscellaneous/#1-create-specific-dashboards) and [Implement custom monitoring and metrics in a plugin](../../../mfdata/950-old_docs/mfdata_additional_tutorials/#5-implement-custom-monitoring-and-metrics-in-a-plugin).
 
 
 !!! tip ""

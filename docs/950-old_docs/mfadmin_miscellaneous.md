@@ -194,7 +194,7 @@ For further details, refer to [MetWork plugins configuration](../mfadmin_monitor
 
 ### Circus hooks
 
-Circus provides [hooks](https://circus.readthedocs.io/en/latest/for-devs/writing-hooks/#hooks) used to trigger actions upon watcher events. These hooks are configured in the [circus.ini configuration](https://circus.readthedocs.io/en/latest/for-ops/configuration/) file. 
+Circus provides [hooks](https://circus.readthedocs.io/en/latest/for-devs/writing-hooks/#hooks) used to trigger actions upon watcher events. These hooks are configured in the [circus.ini](https://circus.readthedocs.io/en/latest/for-ops/configuration/) configuration file. 
 
 MFADMIN circus configuration, like the other MetWork modules (MFBASE, MFDATA, MFSERV, ...), implements circus hooks for circus watchers (e.g. `before_start`, `after_start` hooks).
 
