@@ -11,7 +11,7 @@ When created, it is recommended to [save/export your custom dashboard(s)](#23-sa
 
 ### Create specific Grafana dashboards
 
-Check the official [Grafana](https://grafana.com/docs/) documentation and the [Implement custom monitoring and metrics in a plugin](../../../mdata/950-old_docs/mfdata_additional_tutorials#5-implement-custom-monitoring-and-metrics-in-a-plugin) tutorial.
+Check the official [Grafana](https://grafana.com/docs/) documentation and the [Implement custom monitoring and metrics in a plugin](../../../mfdata/950-old_docs/mfdata_additional_tutorials/#5-implement-custom-monitoring-and-metrics-in-a-plugin) tutorial.
 
 ### Create specific Kibana dashboards
 
