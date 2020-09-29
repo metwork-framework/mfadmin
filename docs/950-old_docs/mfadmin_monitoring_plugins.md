@@ -35,7 +35,7 @@ hostname=localhost
 !!! important
     If the above `hostname` parameter is not set or set to `null`, **no monitoring** will be available and **no data** will be displayed in the [Grafana dashboards](#2-grafana-time-series-dashboards) and [Kibana dashboards](#3-kibana-dashboards).
      
-**By setting** `hostname`, **this will enable monitoring and the time-series metrics (by default)**. The metrics will be stored in the `InfluxDB` databases of the [MFADMIN host](../mfadmin_intro/#how-it-works). The corresponding dashboards will be available through `Grafana` on the [MFADMIN host](../mfadmin_intro/#how-it-works).
+**By setting** `hostname`, **this will enable monitoring and the time-series metrics (by default)**. The metrics will be stored in the `InfluxDB` databases of the [MFADMIN host](../mfadmin_intro/#2-how-it-works). The corresponding dashboards will be available through `Grafana` on the [MFADMIN host](../mfadmin_intro/#2-how-it-works).
 
 ### Enable monitoring based on standard logs and mflog logs 
 
@@ -69,7 +69,7 @@ json_minimal_level=DEBUG
 
 ```
 
-**This will enable the standard logs and mflog logs** to be stored in the `ElasticSearch` database of the [MFADMIN host](../mfadmin_intro/#how-it-works). The corresponding dashboards will be available through `Kibana` on the [MFADMIN host](../mfadmin_intro/#how-it-works).
+**This will enable the standard logs and mflog logs** to be stored in the `ElasticSearch` database of the [MFADMIN host](../mfadmin_intro/#2-how-it-works). The corresponding dashboards will be available through `Kibana` on the [MFADMIN host](../mfadmin_intro/#2-how-it-works).
 
 In the above example, `DEBUG` logs will be duplicated (JSON format) in the `log/json_logs.log` file (in the root directory of the MetWork module user, e.g.`mfadmin`).
 
@@ -129,7 +129,7 @@ Then, click on the module you want display dashboards.
 ![Grafana resolution dashboards](../images/grafana_resolution_dashboard.jpg)
 
 !!! tip ""
-    You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to [Create specific dashboards](../mfadmin_miscellaneous/#1-create-specific-dashboards) and [Implement custom monitoring and metrics in a plugin](../../../mfdata_additional_tutorials/#5-implement-custom-monitoring-and-metrics-in-a-plugin).
+    You may want to implement your own dashboard with specific metrics. In order to do this, you may refer to [Create specific dashboards](../mfadmin_miscellaneous/#1-create-specific-dashboards) and [Implement custom monitoring and metrics in a plugin](../../../mfdata/mfdata_additional_tutorials/#5-implement-custom-monitoring-and-metrics-in-a-plugin).
 
 
 !!! tip ""
