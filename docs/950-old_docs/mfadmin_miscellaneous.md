@@ -1,41 +1,44 @@
-.. index:: dashboards, metrics
-# Create specific dashboards
+# MFADMIN miscellaneous
 
-You can create your own :index:`Grafana dashboards` and :index:`Kibana dashboards`. 
+## Create specific dashboards
 
-When created, it is recommended to [save/export your custom dashboard(s)](#saving-your-own-dashboards).
+You can create your own [Grafana dashboards](../mfadmin_monitoring_plugins#2-grafana-time-series-dashboards) and [Kibana dashboards](../mfadmin_monitoring_plugins#3-kibana-dashboards)
 
-.. seealso::
-    :doc:`mfadmin_monitoring_plugins`
+When created, it is recommended to [save/export your custom dashboard(s)](#23-saving-your-own-dashboards).
 
-
-## Create specific Grafana dashboards
-
-Check the official [Grafana](https://grafana.com/docs/) documentation and the :ref:`mfdata_additional_tutorials:Implement custom monitoring and metrics in a plugin` tutorial.  
-
-## Create specific Kibana dashboards
-
-Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashboard-getting-started.html) documentation and the [Kibana - Building your own dashboards tutorial](https://www.elastic.co/guide/en/kibana/current/tutorial-build-dashboard.html)
+!!! info "See also [Monitoring Metwork plugins](../mfadmin_monitoring_plugins)"
 
 
-# Useful links and Tips
+### Create specific Grafana dashboards
 
-## Telegraf error (HTTP 403)
+Check the official [Grafana](https://grafana.com/docs/) documentation and the [Implement custom monitoring and metrics in a plugin](../../../mfdata/950-old_docs/mfdata_additional_tutorials/#5-implement-custom-monitoring-and-metrics-in-a-plugin) tutorial.
 
-.. tip::
-	If you do not see any metrics in your Grafana dashboard, check the `telegraf.log` file in the `log` directory of the root MFDATA directory.
+### Create specific Kibana dashboards
 
-    If you see `[agent] Error writing to output [influxdb]: could not write any address` and/or `net/http: request canceled (Client.Timeout exceeded while awaiting headers)`, you are probably behind a proxy, and this could happen when MFADMIN and MFDATA are not runinng on the same machine.
+Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashboard-getting-started.html) documentation and the [Kibana - Building your own dashboards](https://www.elastic.co/guide/en/kibana/current/tutorial-build-dashboard.html) tutorial
+
+
+## Useful links and Tips
+
+### Telegraf error (HTTP 403)
+
+!!! tip ""
+    If you do not see any metrics in your Grafana dashboard, check the `telegraf.log` file in the `log` directory of the root MFDATA directory.
+
+    If you see
+    `[agent] Error writing to output [influxdb]: could not write any address`
+    and/or
+    `net/http: request canceled (Client.Timeout exceeded while awaiting headers)`
+    you are probably behind a proxy, and this could happen when MFADMIN and MFDATA are not runinng on the same machine.
 
     You should try to fix this issue by setting the `HTTP_PROXY`, `HTTPS_PROXY` and/or `NO_PROXY` in the `/etc/default/telegraf` file or the `/etc/profile.d/proxy.sh`, `/etc/profile`, e.g. `NO_PROXY="*"`
 
-.. index:: Influxdb database
-## Querying the InfluxDB database
+### Querying the InfluxDB database
 
-.. tip::
-	You may query the InfluxDB database from the InfluxDB’s command line interface `influx` located in `/opt/metwork-mfadmin-master/opt/monitoring/bin/influx`.
+!!! tip ""
+    You may query the InfluxDB database from the InfluxDB’s command line interface `influx` located in `/opt/metwork-mfadmin-master/opt/monitoring/bin/influx`.
 
-    Check **Tools 'InfluxDB command line interface (CLI/shell)'** menu from the `InfluxDB documentation <https://docs.influxdata.com/influxdb/>`_.
+    Check **Tools 'InfluxDB command line interface (CLI/shell)'** menu from the [InfluxDB documentation](https://docs.influxdata.com/influxdb/).
 
     The MFADMIN database name is `metrics`. The default port is `18086`.
 
@@ -103,63 +106,68 @@ Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashb
     > select * from filecount
     ```
     
-.. seealso::
-    `Influx Query Language (InfluxQL) reference <https://docs.influxdata.com/influxdb/v1.7/query_language/>`_
+!!! info "See also [Influx Query Language (InfluxQL) reference](https://docs.influxdata.com/influxdb/v1.7/query_language/)"
 
 
-## Saving your own dashboards
+### Saving your own dashboards
 
-.. important::
-	| When you upgrade MFADMIN Metwork package, the :index:`Grafana dashboards` and :index:`Kibana dashboards`  are overwritten, so that you may lose the custom dashboards you designed.
-    | So, it's highly recommended to **export** the dashboards you want to keep, and the **import** the dashboards once the Metwork upgrade is done.
+!!! important
+     When you upgrade MFADMIN Metwork package, the [Grafana dashboards](../mfadmin_monitoring_plugins#2-grafana-time-series-dashboards) and [Kibana dashboards](../mfadmin_monitoring_plugins#3-kibana-dashboards) are overwritten, so that you may lose the custom dashboards you designed.
+	
+	So, it's highly recommended to **export** the dashboards you want to keep, and the **import** the dashboards once the Metwork upgrade is done.
     
-    | In order to export (import) **Grafana dashboards**, check `Grafana documentation <http://docs.grafana.org/reference/export_import/>`_.
-    | In order to export (import) **Kibana dashboards**, check `Kibana documentation <https://www.elastic.co/guide/en/kibana/current/api.html>`_ or use the `/opt/metwork-mfadmin/bin/export_kibana_dashboard.py` script for exporting and the `/opt/metwork-mfadmin/bin/import_kibana_dashboard.py` script for importing.
+	In order to export (import) **Grafana dashboards**, check [Grafana documentation](http://docs.grafana.org/reference/export_import/).
+
+	In order to export (import) **Kibana dashboards**, check [Kibana documentation](https://www.elastic.co/guide/en/kibana/current/api.html)  
+	or use the `/opt/metwork-mfadmin/bin/export_kibana_dashboard.py` script for exporting  
+	and the `/opt/metwork-mfadmin/bin/import_kibana_dashboard.py` script for importing.
 
 
-If you build [custom dashboards](#create-specific-dashboards), you would like to be able to reload them automatically when MFADMIN service is started. 
+If you build [custom dashboards](#1-create-specific-dashboards), you would like to be able to reload them automatically when MFADMIN service is started. 
 
 In order to do this, you have to store them:
+
 - in the `/etc/metwork.config.d/mfadmin/grafana_dashboards` for Grafana dashboards
+
 - in the `/etc/metwork.config.d/mfadmin/kibana_dashboards` for Kibana dashboards
 
-## Saving the InfluxDB database
+### Saving the InfluxDB database
 
-.. important::
+!!! important
 	When you upgrade MFADMIN Metwork package, the InfluxDB database that contains metrics is overwritten.
 
-    So, it's recommended to **backup** the InfluxDB database, and the **restore** it once the Metwork upgrade is done.
+	So, it's recommended to **backup** the InfluxDB database, and the **restore** it once the Metwork upgrade is done.
 
-    In order to backup/restore InfluxDB database, check **Administration 'Backing up and restoring'** menu from the `InfluxDB documentation <https://docs.influxdata.com/influxdb/>`_.
+	In order to backup/restore InfluxDB database, check **Administration 'Backing up and restoring'** menu from the [InfluxDB documentation](https://docs.influxdata.com/influxdb/).
     
-    The name of the MFADMIN Influxdb database is `metrics`
+	The name of the MFADMIN Influxdb database is `metrics`
 
-.. index:: data retention, data resolution, metrics retention, metrics resolution
-## Metrics retention (resolution)
+### Metrics retention (resolution)
 
-.. index:: Time-series dashboards, fullres resolution, medres resolution, lowres resolution, statistics aggregator
-### InfluxDB retention policies and statistics aggregator
+#### InfluxDB retention policies and statistics aggregator
 
-In InfluxDB databases, data are kept for a limited time according :index:`retention policies`, i.e., among other things, **how long InfluxDb keeps the data (duration)**.
+In InfluxDB databases, data are kept for a limited time according to `retention policies`, i.e., among other things, **how long InfluxDb keeps the data (duration)**.
 
-In MFADMIN, Telegraf is configured for emitting new aggregate metrics, such as min, max, mean, sum (basic :index:`statistics aggregator` plugin). This aggregator is configured with a **period**.
+In MFADMIN, Telegraf is configured for emitting new aggregate metrics, such as min, max, mean, sum (basic `statistics aggregator` plugin). This aggregator is configured with a **period**.
 The period is the size of the window of metrics that each aggregate represents. In other words, the emitted aggregate metric will be the aggregated value of the past period seconds. 
 
 MFADMIN supplies the following retention policies:
+
 - **fullres** : data are kept for **24 hours**, statistics aggregation period is **10 seconds**
+
 - **medres** : data are kept for **7 days**, statistics aggregation period is **60 seconds**
+
 - **lowres** : data are kept for **52 weeks**, statistics aggregation period is **1 hour**
 
-In the :ref:`Grafana dashboards <mfadmin_monitoring_plugins:Grafana Time-series dashboards>`, you can display time-series metrics with the suitable resolution.
+In the [Grafana dashboards](../mfadmin_monitoring_plugins#2-grafana-time-series-dashboards), you can display time-series metrics with the suitable resolution.
 
-.. index:: elasticsearch.clean, ElasticSearch retention period
-### Elasticsearch retention
+#### Elasticsearch retention
 
-ElasticSearch no longer supports retention period. So, the is no default data retention period. 
+ElasticSearch no longer supports retention period. So, there is no default data retention period. 
 
 To avoid having an ElasticSearch database growing indefinitely, a MFADMIN `elasticsearch.clean` python script is running at regular intervals in order to delete ElasticSearch indices based on age.
 
-The age (lifetime) is configured in the `indices_lifetime` parameter `[elasticsearch]` section of the :ref:`MFADMIN configuration file <mfadmin_intro:MFADMIN configuration>` file, the default value is 5 days, e.g.:
+The age (lifetime) is configured in the `indices_lifetime` parameter `[elasticsearch]` section of the [MFADMIN configuration file](../mfadmin_intro#3-mfadmin-configuration) file, the default value is 5 days, e.g.:
 
 ```cfg
 [elasticsearch]
@@ -171,24 +179,22 @@ The age (lifetime) is configured in the `indices_lifetime` parameter `[elasticse
 # indices_lifetime = 5
 ```
 
-.. seealso::
-    Check `tmp/config_auto/crontab` file in the root directory of the `mfadmin` user.
+!!! info "See also"
+	Check `tmp/config_auto/crontab` file in the root directory of the `mfadmin` user."
     
-.. index:: json_file, json_minimal_level, exporting log
-## Exporting logs
+### Exporting logs
 
 **This section applies to all MetWork modules.**
 
-Logs are exported in a separate `json` file. This could be useful if you need :index:`monitoring with external tool`.
+Logs are exported in a separate `json` file. This could be useful if you need monitoring with external tool.
 
 In order to save logs in a separate file, you have to check/set the `json_file` and `json_minimal_level`  parameters in the `[log]` section of the `config/config.ini` file stored in the root directory of the MetWork module user.
 
-For further details, refer to :ref:`MetWork plugins configuration <mfadmin_monitoring_plugins:Configuration>`.
+For further details, refer to [MetWork plugins configuration](../mfadmin_monitoring_plugins#1-configuration).
 
-.. index:: circus hooks, before_start hook, after_start hook
-## Circus hooks
+### Circus hooks
 
-Circus provides [hooks](https://circus.readthedocs.io/en/latest/for-devs/writing-hooks/#hooks) used to trigger actions upon watcher events. These hooks are configured in the [circus.ini configuration](https://circus.readthedocs.io/en/latest/for-ops/configuration/) file. 
+Circus provides [hooks](https://circus.readthedocs.io/en/latest/for-devs/writing-hooks/#hooks) used to trigger actions upon watcher events. These hooks are configured in the [circus.ini](https://circus.readthedocs.io/en/latest/for-ops/configuration/) configuration file. 
 
 MFADMIN circus configuration, like the other MetWork modules (MFBASE, MFDATA, MFSERV, ...), implements circus hooks for circus watchers (e.g. `before_start`, `after_start` hooks).
 
@@ -204,11 +210,11 @@ hooks.after_start=circus_hooks.after_start_shell
 
 ```
 
-In the above example, a shell script is executed before influxdb (:py:func:`hooks.before_start=circus_hooks.before_start_shell <mfext:circus_hooks.before_start_shell>`) starts and after influxdb is started (:py:func:`hooks.before_start=circus_hooks.before_start_shell <mfext:circus_hooks.after_start_shell>`).
+In the above example, a shell script is executed before influxdb starts (`hooks.before_start=circus_hooks.before_start_shell`) and after influxdb is started (`hooks.after_start=circus_hooks.after_start_shell`).
 
-The shell script name is {hook_name}_{whatcher_name}, e.g:
-- before_start_influxdb
-- after_start_influxdb 
+The shell script name is `{hook_name}_{watcher_name}`, e.g:  
+- `before_start_influxdb`  
+- `after_start_influxdb` 
 
 You will find the hooks script in the `bin` directory of the installed MetWork module, e.g. `/opt/metwork-mfadmin-master/bin/`
 
