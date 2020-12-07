@@ -15,7 +15,7 @@ Check the official [Grafana](https://grafana.com/docs/) documentation and the [I
 
 ### Create specific Kibana dashboards
 
-Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashboard-getting-started.html) documentation and the [Kibana - Building your own dashboards](https://www.elastic.co/guide/en/kibana/current/tutorial-build-dashboard.html) tutorial
+Check the official [Kibana](https://www.elastic.co/guide/en/kibana/6.5/dashboard-getting-started.html) documentation and the [Kibana - Building your own dashboards](https://www.elastic.co/guide/en/kibana/6.5/tutorial-build-dashboard.html) tutorial
 
 
 ## Useful links and Tips
@@ -118,7 +118,7 @@ Check the official [Kibana](https://www.elastic.co/guide/en/kibana/current/dashb
     
 	In order to export (import) **Grafana dashboards**, check [Grafana documentation](http://docs.grafana.org/reference/export_import/).
 
-	In order to export (import) **Kibana dashboards**, check [Kibana documentation](https://www.elastic.co/guide/en/kibana/current/api.html)  
+	In order to export (import) **Kibana dashboards**, check [Kibana documentation](https://www.elastic.co/guide/en/kibana/6.5/api.html)  
 	or use the `/opt/metwork-mfadmin/bin/export_kibana_dashboard.py` script for exporting  
 	and the `/opt/metwork-mfadmin/bin/import_kibana_dashboard.py` script for importing.
 
