@@ -1,31 +1,22 @@
 # release_0.7 CHANGELOG
 
-
-
 ## v0.7.2 (2019-06-26)
 
 ### New Features
+
 - better mfserv dashboard
 - send mfadmin mflog logs to itself
-
-
-
-
-
 
 ## v0.7.1 (2019-06-12)
 
 ### New Features
+
 - add some smtp options for grafana
-
-
-
-
-
 
 ## v0.7.0 (2019-05-28)
 
 ### New Features
+
 - introduce mflog indices rotation
 - influxdb and grafana update
 - remove "CPU usage single core" from system dashboard overview
@@ -40,12 +31,9 @@
 - Add a dashboard for mfbase
 - dashboards update
 
-
 ### Bug Fixes
+
 - set kibana default index
 - fix building issues with proxy
-
-
-
 
 
