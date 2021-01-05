@@ -3,4 +3,5 @@ root@mfadmin
 default@mfext
 -metrics@mfadmin
 -logs@mfadmin
+-logs_loki@mfadmin
 monitoring@mfext

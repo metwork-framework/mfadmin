@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/promtail"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/promtail"
+cat "${MFMODULE_HOME}/config/loki/promtail-config.yaml" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/config_auto/promtail-config.yaml"

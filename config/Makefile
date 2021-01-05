@@ -8,8 +8,10 @@ GRAFANA_DASHBOARDS=$(wildcard grafana_dashboards/*.json)
 KIBANA_DASHBOARDS=$(wildcard kibana_dashboards/*.json)
 TARGET_GRAFANA_DASHBOARDS=$(addprefix $(MFMODULE_HOME)/config/,$(GRAFANA_DASHBOARDS))
 TARGET_KIBANA_DASHBOARDS=$(addprefix $(MFMODULE_HOME)/config/,$(KIBANA_DASHBOARDS))
+LOKI_CONFIG_FILES=$(wildcard loki/*.yaml)
+TARGET_LOKI_CONFIG_FILES=$(addprefix $(MFMODULE_HOME)/config/,$(LOKI_CONFIG_FILES))
 
-all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS)
+all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(TARGET_LOKI_CONFIG_FILES)
 
 # because of a problem with the subdir_root.mk default rule overriding
 $(PREFIX)/config/%: %
@@ -36,4 +38,8 @@ $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml: grafan
 
 $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml: grafana_provisioning/dashboards/dashboard.yaml
 	mkdir -p `dirname $@`
+	cp -f $< $@
+
+$(MFMODULE_HOME)/config/loki/%.yaml: loki/%.yaml
+	@mkdir -p $(MFMODULE_HOME)/config/loki
 	cp -f $< $@

@@ -89,6 +89,18 @@ http_port=15604
 admin_password=admin
 
 
+############################
+##### LOKI and PROMTAIL#####
+############################
+[loki]
+# Port used by loki daemon
+http_port=13600
+http_alert_manager_port=19093
+
+[promtail]
+# Port used by promtail
+http_port=19080
+
 #################
 ##### NGINX #####
 #################
