@@ -11,4 +11,31 @@ if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:
     echo
 fi
 
+if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
+    _circus_schedule_start_watcher.sh influxdb || RES=1
+    if test "${RES}" = "0"; then
+        mfprogress --timeout=60 --title="- Waiting InfluxDB..." -- repeat.sh influxdb.status || RES=1
+    fi
+    _circus_schedule_start_watcher.sh grafana || RES=1
+    if test "${RES}" = "0"; then
+        mfprogress --timeout=60 --title="- Waiting Grafana..." -- repeat.sh grafana.status || RES=1
+    fi
+fi
+
+if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
+    _circus_schedule_start_watcher.sh elasticsearch || RES=1 
+    if test "${RES}" = "0"; then
+        mfprogress --timeout=60 --title="- Waiting ES..." -- repeat.sh es.status || RES=1
+    fi
+    _circus_schedule_start_watcher.sh kibana mflogs2mfadmin || RES=1
+    if test "${RES}" = "0"; then
+        mfprogress --timeout=60 --title="- Waiting Kibana..." -- repeat.sh kibana.status || RES=1
+    fi
+    _circus_wait_watcher_started.sh mflogs2mfadmin || RES=1
+fi
+_circus_schedule_start_watcher.sh nginx || RES=1
+if test "${RES}" = "0"; then
+    _circus_wait_watcher_started.sh nginx || RES=1
+fi
+
 {% endblock %}
