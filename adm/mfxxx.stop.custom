@@ -1,0 +1,21 @@
+{% extends "mfxxx.stop" %}         
+
+{% block custom %}  
+
+_circus_schedule_stop_watcher.sh nginx
+_circus_wait_watcher_stopped.sh nginx
+
+if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
+    _circus_schedule_stop_watcher.sh grafana
+    _circus_wait_watcher_stopped.sh grafana
+    _circus_schedule_stop_watcher.sh influxdb
+    _circus_wait_watcher_stopped.sh influxdb
+fi
+if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then    
+    _circus_schedule_stop_watcher.sh kibana mflogs2mfadmin
+    _circus_wait_watcher_stopped.sh kibana mflogs2mfadmin
+    _circus_schedule_stop_watcher.sh elasticsearch
+    _circus_wait_watcher_stopped.sh elasticsearch
+fi
+
+{% endblock %}  
