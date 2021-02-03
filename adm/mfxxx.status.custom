@@ -18,6 +18,7 @@ fi
 if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     circus_status_watcher.sh elasticsearch || RES=1
     circus_status_watcher.sh kibana || RES=1
+    circus_status_watcher.sh mflogs2mfadmin || RES=1
 fi
 if test "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" = "1"; then
     circus_status_watcher.sh loki || RES=1
@@ -26,26 +27,10 @@ fi
 
 if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
     if test "${RES}" = "0"; then
-        echo -n "- Waiting/testing grafana service..."
-        echo_running
-        _wait_grafana.py >/dev/null 2>&1
-        if test $? -eq 0; then
-            echo_ok
-        else
-            echo_nok
-            RES=1
-        fi
+        grafana.status || RES=1
     fi
     if test "${RES}" = "0"; then
-        echo -n "- Waiting/testing influxdb service..."
-        echo_running
-        _wait_influxdb.py >/dev/null 2>&1
-        if test $? -eq 0; then
-            echo_ok
-        else
-            echo_nok
-            RES=1
-        fi
+        influxdb.status || RES=1
     fi
 fi
 circus_status_watcher.sh nginx || RES=1
@@ -73,26 +58,10 @@ if test "${RES}" = "0"; then
 fi
 if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     if test "${RES}" = "0"; then
-        echo -n "- Waiting/testing ES service..."
-        echo_running
-        _wait_es.py >/dev/null 2>&1
-        if test $? -eq 0; then
-            echo_ok
-        else
-            echo_nok
-            RES=1
-        fi
+        es.status || RES=1
     fi
     if test "${RES}" = "0"; then
-        echo -n "- Waiting/testing kibana service..."
-        echo_running
-        _wait_kibana.py >/dev/null 2>&1
-        if test $? -eq 0; then
-            echo_ok
-        else
-            echo_nok
-            RES=1
-        fi
+        kibana.status || RES=1
     fi
 fi
 
