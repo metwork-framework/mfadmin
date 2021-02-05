@@ -9,7 +9,7 @@ KIBANA_DASHBOARDS=$(wildcard kibana_dashboards/*.json)
 TARGET_GRAFANA_DASHBOARDS=$(addprefix $(MFMODULE_HOME)/config/,$(GRAFANA_DASHBOARDS))
 TARGET_KIBANA_DASHBOARDS=$(addprefix $(MFMODULE_HOME)/config/,$(KIBANA_DASHBOARDS))
 
-all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS)
+all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(MFMODULE_HOME)/config/vector.toml
 
 # because of a problem with the subdir_root.mk default rule overriding
 $(PREFIX)/config/%: %
