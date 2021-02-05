@@ -11,7 +11,7 @@ TARGET_KIBANA_DASHBOARDS=$(addprefix $(MFMODULE_HOME)/config/,$(KIBANA_DASHBOARD
 LOKI_CONFIG_FILES=$(wildcard loki/*.yaml)
 TARGET_LOKI_CONFIG_FILES=$(addprefix $(MFMODULE_HOME)/config/,$(LOKI_CONFIG_FILES))
 
-all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(TARGET_LOKI_CONFIG_FILES)
+all:: $(MFMODULE_HOME)/config/vector.toml $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(TARGET_LOKI_CONFIG_FILES)
 
 # because of a problem with the subdir_root.mk default rule overriding
 $(PREFIX)/config/%: %

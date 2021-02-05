@@ -36,19 +36,6 @@ working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 async_kill = True
 
 {% if MFADMIN_LAYER_LOGS_LOADED|default('0') == "1" %}
-{% if MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT != "0" %}
-[watcher:mflogs2mfadmin]
-cmd=log_proxy_wrapper
-args=--stdout mflogs2mfadmin.log --stderr STDOUT -- layer_wrapper --layers=monitoring@mfext -- jsonsyslog2elasticsearch --syslog-host=127.0.0.1 --syslog-port={{MFADMIN_JSONSYSLOG2ELASTICSEARCH_MFLOG_PORT}} --transform-func=mfext.jsonsyslog2es_metwork_addon.transform_func 127.0.0.1 {{MFADMIN_ELASTICSEARCH_HTTP_PORT}} mflog-%Y.%m.%d
-numprocesses = 1
-copy_env = True
-autostart = False
-respawn = True
-hooks.before_start=mfext.circus_hooks.before_start_shell
-hooks.after_stop=mfext.circus_hooks.after_stop_shell
-working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
-async_kill = True
-{% endif %}
 
 [watcher:elasticsearch]
 cmd=log_proxy_wrapper
@@ -76,16 +63,7 @@ args=--stdout loki.log --stderr STDOUT -- loki -config.file={{MFMODULE_RUNTIME_H
 hooks.before_start=mfext.circus_hooks.before_start_shell
 hooks.after_start=mfext.circus_hooks.after_start_shell
 copy_env = True
-autostart = True
-respawn = True
-numprocesses=1
-
-[watcher:promtail]
-cmd=log_proxy_wrapper
-args=--stdout promtail.log --stderr STDOUT -- promtail -config.file={{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/promtail-config.yaml
-hooks.before_start=mfext.circus_hooks.before_start_shell
-copy_env = True
-autostart = True
+autostart = False
 respawn = True
 numprocesses=1
 {% endif %}

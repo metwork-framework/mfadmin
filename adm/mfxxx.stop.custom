@@ -12,10 +12,14 @@ if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
     _circus_wait_watcher_stopped.sh influxdb
 fi
 if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then    
-    _circus_schedule_stop_watcher.sh kibana mflogs2mfadmin
-    _circus_wait_watcher_stopped.sh kibana mflogs2mfadmin
+    _circus_schedule_stop_watcher.sh kibana
+    _circus_wait_watcher_stopped.sh kibana
     _circus_schedule_stop_watcher.sh elasticsearch
     _circus_wait_watcher_stopped.sh elasticsearch
+fi
+if test "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" = "1"; then
+    _circus_schedule_stop_watcher.sh loki
+    _circus_wait_watcher_stopped.sh loki
 fi
 
 {% endblock %}  
