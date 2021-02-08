@@ -36,7 +36,6 @@ working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 async_kill = True
 
 {% if MFADMIN_LAYER_LOGS_LOADED|default('0') == "1" %}
-
 [watcher:elasticsearch]
 cmd=log_proxy_wrapper
 args=--stdout elasticsearch.log --stderr STDOUT -- {{MFMODULE_RUNTIME_HOME}}/tmp/elasticsearch/bin/elasticsearch
