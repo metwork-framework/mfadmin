@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import argparse
+import sys
+import os
+import requests
+from mfutil.cli import MFProgress
+
+DESCRIPTION = "test if loki is up (return code: 0)"
+LOKI_PORT = int(os.environ['MFADMIN_LOKI_HTTP_PORT'])
+TIMEOUT = 10
+LOKI_READY_URL = f"http://127.0.0.1:{LOKI_PORT}/ready"
+
+parser = argparse.ArgumentParser(description=DESCRIPTION)
+parser.parse_args()
+
+with MFProgress() as progress:
+    t = progress.add_task("- Testing loki access...", total=TIMEOUT)
+    try:
+        x = requests.get(LOKI_READY_URL, timeout=5)
+        if x.status_code == 200:
+            progress.complete_task(t)
+            sys.exit(0)
+    except Exception:
+        pass
+    progress.complete_task_nok(t)
+    sys.exit(1)

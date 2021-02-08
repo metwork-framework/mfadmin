@@ -1,0 +1,53 @@
+auth_enabled: false
+
+server:
+  http_listen_port: {{MFADMIN_LOKI_HTTP_PORT}}
+
+ingester:
+  lifecycler:
+    address: 127.0.0.1
+    ring:
+      kvstore:
+        store: inmemory
+      replication_factor: 1
+    final_sleep: 0s
+    min_ready_duration: 10s
+  chunk_idle_period: 5m
+  chunk_retain_period: 30s
+
+schema_config:
+  configs:
+    - from: 2020-10-24
+      store: boltdb
+      object_store: filesystem
+      schema: v11
+      index:
+        prefix: index_
+        period: 24h
+
+storage_config:
+  boltdb:
+    directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/boltdb
+  filesystem:
+    directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/chunks
+
+limits_config:
+  enforce_metric_name: false
+  reject_old_samples: true
+  reject_old_samples_max_age: 168h
+
+table_manager:
+  retention_deletes_enabled: true
+  retention_period: {{ MFADMIN_LOKI_LOGS_LIFETIME }}d
+
+ruler:
+  storage:
+    type: local
+    local:
+      directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/rules
+  rule_path: {{MFMODULE_RUNTIME_HOME}}/var/loki/rules-temp
+  alertmanager_url: http://localhost:{{MFADMIN_LOKI_HTTP_ALERT_MANAGER_PORT}}
+  ring:
+    kvstore:
+      store: inmemory
+  enable_api: true

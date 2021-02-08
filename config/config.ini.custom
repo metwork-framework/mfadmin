@@ -89,6 +89,18 @@ http_port=15604
 admin_password=admin
 
 
+################
+##### LOKI #####
+################
+[loki]
+# Port used by loki daemon
+http_port=13600
+http_alert_manager_port=19093
+
+# retention inside loki (in days)
+logs_lifetime = 5
+
+
 #################
 ##### NGINX #####
 #################

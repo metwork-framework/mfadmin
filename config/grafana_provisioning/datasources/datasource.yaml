@@ -27,3 +27,6 @@ datasources:
     interval: Daily
     timeField: "timestamp"
     esVersion: 60
+- name: loki
+  type: loki
+  url: http://127.0.0.1:{{MFADMIN_LOKI_HTTP_PORT}}

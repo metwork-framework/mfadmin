@@ -1,7 +1,7 @@
 {% extends "mfxxx.status" %}
 {% block custom %}
 
-if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:-}" != "1" ]; then
+if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" != "1" ]; then
     echo_bold "WARNING: both layers logs@mfadmin and metrics@mfadmin are not installed/loaded"
     echo_bold "=> you should consider installing at least one of them"
     echo_bold "   (or your mfadmin module will do nothing)"
@@ -18,7 +18,9 @@ fi
 if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     circus_status_watcher.sh elasticsearch || RES=1
     circus_status_watcher.sh kibana || RES=1
-    circus_status_watcher.sh mflogs2mfadmin || RES=1
+fi
+if test "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" = "1"; then
+    circus_status_watcher.sh loki || RES=1
 fi
 
 if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
@@ -58,6 +60,11 @@ if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     fi
     if test "${RES}" = "0"; then
         kibana.status || RES=1
+    fi
+fi
+if test "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" = "1"; then
+    if test "${RES}" = "0"; then
+        loki.status || RES=1
     fi
 fi
 

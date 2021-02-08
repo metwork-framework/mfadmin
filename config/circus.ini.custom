@@ -55,5 +55,17 @@ respawn = True
 numprocesses=1
 {% endif %}
 
+{% if MFADMIN_LAYER_LOGS_LOKI_LOADED|default('0') == "1" %}
+[watcher:loki]
+cmd=log_proxy_wrapper
+args=--stdout loki.log --stderr STDOUT -- loki -config.file={{MFMODULE_RUNTIME_HOME}}/tmp/config_auto/loki-config.yaml
+hooks.before_start=mfext.circus_hooks.before_start_shell
+hooks.after_start=mfext.circus_hooks.after_start_shell
+copy_env = True
+autostart = False
+respawn = True
+numprocesses=1
+{% endif %}
+
 {% endraw %}
 {% endblock %} 
