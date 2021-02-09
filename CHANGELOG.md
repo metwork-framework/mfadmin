@@ -5,6 +5,7 @@
 ### New Features
 
 - grafana update (#187)
+- add loki and promtail (#182)
 
 ### Bug Fixes
 
