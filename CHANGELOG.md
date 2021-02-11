@@ -1,5 +1,11 @@
 # release_1.0 CHANGELOG
 
+## [Unreleased]
+
+### Bug Fixes
+
+- fix some start/stop issues (bp #185) (#186)
+
 ## v1.0.1 (2021-01-26)
 
 - No interesting change
