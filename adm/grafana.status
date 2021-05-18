@@ -34,6 +34,6 @@ with MFProgress() as progress:
         sys.exit(0)
     if r.status_code == 401:
         # maybe the password is not updated
-        os.system("_force_grafana_admin_password.sh")
+        os.system("_force_grafana_admin_password.sh >/dev/null")
     progress.complete_task_nok(t)
     sys.exit(1)
