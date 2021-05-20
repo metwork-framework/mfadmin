@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=logcli
-export VERSION=2.1.0
+export VERSION=2.2.1
 export EXTENSION=zip
 export CHECKTYPE=MD5
-export CHECKSUM=882c9d8ac49b7ff375ad2798f4c2981b
+export CHECKSUM=b1821c2db52d933c7dd78dabbca06b23
 DESCRIPTION=\
 little loki cli client
 WEBSITE=https://grafana.com/oss/loki/
