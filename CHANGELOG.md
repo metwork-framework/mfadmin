@@ -1,5 +1,11 @@
 # release_1.0 CHANGELOG
 
+## v1.0.3 (2021-05-18)
+
+### Bug Fixes
+
+- add missing layer dependency (backport #195) (#197)
+
 ## v1.0.2 (2021-02-11)
 
 ### Bug Fixes
