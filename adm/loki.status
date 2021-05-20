@@ -8,7 +8,7 @@ from mfutil.cli import MFProgress
 
 DESCRIPTION = "test if loki is up (return code: 0)"
 LOKI_PORT = int(os.environ['MFADMIN_LOKI_HTTP_PORT'])
-TIMEOUT = 10
+TIMEOUT = 60
 LOKI_READY_URL = f"http://127.0.0.1:{LOKI_PORT}/ready"
 
 parser = argparse.ArgumentParser(description=DESCRIPTION)
