@@ -8,7 +8,7 @@ from mfutil.cli import MFProgress
 
 DESCRIPTION = "test if influxdb is up (return code: 0)"
 INFLUXDB_PORT = int(os.environ['MFADMIN_INFLUXDB_HTTP_PORT'])
-TIMEOUT = 10
+TIMEOUT = 60
 INFLUXDB_COMMAND = f"timeout {TIMEOUT} influx -port %i -precision rfc3339 " \
     "-execute 'SHOW DATABASES'" % INFLUXDB_PORT
 
