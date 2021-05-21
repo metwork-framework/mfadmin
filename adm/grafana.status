@@ -14,7 +14,7 @@ GRAFANA_SOCKET = "%s/tmp/grafana.sock" % MFMODULE_RUNTIME_HOME
 GRAFANA_URL = "http+unix://%s/api/admin/stats" % \
     GRAFANA_SOCKET.replace('/', '%2F')
 ADMIN_PASSWORD = os.environ['MFADMIN_GRAFANA_ADMIN_PASSWORD']
-TIMEOUT = 10
+TIMEOUT = 60
 
 parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.parse_args()
