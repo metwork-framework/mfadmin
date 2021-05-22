@@ -1,5 +1,12 @@
 # release_1.1 CHANGELOG
 
+## [Unreleased]
+
+### Bug Fixes
+
+- update loki to fix some json decoding issues (backport #203) (#204)
+- update timeouts for xxx.status (backport #202) (#205)
+
 ## v1.1.1 (2021-05-18)
 
 ### Bug Fixes
