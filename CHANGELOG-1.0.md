@@ -1,5 +1,11 @@
 # release_1.0 CHANGELOG
 
+## v1.0.4 (2021-08-17)
+
+### Bug Fixes
+
+- fix grafana password reset (backport #196) (#206)
+
 ## v1.0.3 (2021-05-18)
 
 ### Bug Fixes
