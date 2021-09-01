@@ -14,7 +14,6 @@ echo -e "gpgcheck=0\n\enabled=1\n\metadata_expire=0\n" >>/etc/yum.repos.d/metwor
 
     yum -y localinstall ./rpms/metwork-mfadmin*.rpm
     yum -y install make
-
     su --command="mfadmin.init" - mfadmin
     su --command="mfadmin.start" - mfadmin
     su --command="mfadmin.status" - mfadmin
