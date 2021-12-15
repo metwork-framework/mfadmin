@@ -1,5 +1,11 @@
 # release_1.0 CHANGELOG
 
+## v1.0.5 (2021-12-14)
+
+### Bug Fixes
+
+- security fix to block log4j security hole in elasticsearch (backport #212) (#213)
+
 ## v1.0.4 (2021-08-17)
 
 ### Bug Fixes
