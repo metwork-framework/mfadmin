@@ -4,9 +4,6 @@
 
 ### Bug Fixes
 
-- add missing layer dependency (#195)
-- fix grafana password (#196)
-- update loki to fix some json decoding issues (#203)
-- update timeouts for xxx.status (#202)
+- security fix to block log4j security hole in elasticsearch (#212)
 
 
