@@ -2,3 +2,4 @@ python3@mfext
 monitoring@mfext
 openresty@mfext
 #+python3_circus@mfext
+#+ldap@mfadmin
