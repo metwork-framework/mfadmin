@@ -1,6 +1,6 @@
 | Name | Version | Layer |
 | --- | --- | --- |
-| [aiofiles](None) | 0.8.0 | ldap |
+| [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
 | [aioredis](https://github.com/aio-libs/aioredis-py) | 2.0.1 | ldap |
 | [anyio](https://pypi.org/project/anyio) | 3.5.0 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
@@ -35,7 +35,7 @@
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 5.0.2 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/encode/starlette) | 0.17.1 | ldap |
-| [structlog](None) | 21.5.0 | ldap |
+| [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
 | [typing-extensions](https://github.com/python/typing/blob/master/typing_extensions/README.rst) | 3.7.4.3 | ldap |
