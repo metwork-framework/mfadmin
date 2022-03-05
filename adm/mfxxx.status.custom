@@ -11,6 +11,9 @@ if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:
     echo
 fi
 
+if test "${MFADMIN_LDAP_FLAG:-}" = "1"; then
+    circus_status_watcher.sh ldap || RES=1 
+fi
 if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
     circus_status_watcher.sh influxdb || RES=1
     circus_status_watcher.sh grafana || RES=1

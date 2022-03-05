@@ -115,8 +115,7 @@ async def logout(request: Request, b64url: str = ""):
         b64url = SLASH_B64URL
     url = decode_b64url_or_raise(b64url)
     headers: Dict[str, str] = {
-        "Set-Cookie": "cloudmf_token=; Domain=%s; Path=/; "
-        "Max-Age=0; SameSite=None; Secure" % get_settings().domain
+        "Set-Cookie": "%s=; Path=/; Max-Age=0" % get_settings().cookie_name
     }
     check_redirect_url(url)
     return RedirectResponse(url, status_code=302, headers=headers)
@@ -183,11 +182,10 @@ def sync_lock_check(username: str, password: str, b64url: str):
         else:
             jwt = make_jwt(user)
         headers = {
-            "Set-Cookie": "%s=%s; Domain=%s; Path=/; Max-Age=%i; SameSite=None; Secure"
+            "Set-Cookie": "%s=%s; Path=/; Max-Age=%i"
             % (
                 get_settings().cookie_name,
                 jwt,
-                get_settings().domain,
                 get_settings().jwt_max_age,
             )
         }

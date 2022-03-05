@@ -24,6 +24,19 @@ port=18088
 http_port=18086
 
 
+################
+##### LDAP #####
+################
+[ldap]
+flag=0
+port=27156
+backend=ldap
+bind_who=cn=ovhdev,ou=DPDSI,ou=generiques,dc=meteo,dc=fr
+bind_pass=FIXME
+url=ldap://ldaps.meteo.fr:636
+base=ou=people,dc=meteo,dc=fr
+
+
 ###################
 ##### GRAFANA #####
 ###################
