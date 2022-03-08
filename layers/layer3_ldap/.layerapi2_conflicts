@@ -3,4 +3,6 @@ python2_core@mfext
 scientific_core@mfext 
 java@mfext
 devtools@mfext
-openresty@mfext
+metrics@mfadmin
+logs@mfadmin
+logs_loki@mfadmin
