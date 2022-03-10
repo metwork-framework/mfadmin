@@ -35,6 +35,7 @@ bind_who=cn=ovhdev,ou=DPDSI,ou=generiques,dc=meteo,dc=fr
 bind_pass=FIXME
 url=ldap://ldaps.meteo.fr:636
 base=ou=people,dc=meteo,dc=fr
+starttls=0
 
 
 ###################
