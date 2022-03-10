@@ -28,13 +28,27 @@ http_port=18086
 ##### LDAP #####
 ################
 [ldap]
+
+# if flag=1, use LDAP for authentification 
 flag=0
+
+# internal port for LDAP authentification (not exposed)
 port=27156
-backend=ldap
-bind_who=cn=ovhdev,ou=DPDSI,ou=generiques,dc=meteo,dc=fr
-bind_pass=FIXME
-url=ldap://ldaps.meteo.fr:636
-base=ou=people,dc=meteo,dc=fr
+
+# use this user for connecting to LDAP server (bind operation)
+# (if empty => connect anonymously)
+bind_who=
+
+# bind password (see bind_who key)
+bind_pass=
+
+# ldap url
+url=ldap://yourldapserver:port
+
+# ldap search base
+base=ou=people,dc=example,dc=com
+
+# if starttls=1 => use STARTTLS protocol option
 starttls=0
 
 
