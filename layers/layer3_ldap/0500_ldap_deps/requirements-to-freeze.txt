@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+aiofiles
+jinja2
+python-multipart
+mflog
+pyjwt
+python-ldap
+cachetools
+aioredis
+typer
+asgi-ratelimit
+asgi-ratelimit[redis]
+aredis

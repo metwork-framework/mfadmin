@@ -11,6 +11,10 @@ if [ "${MFADMIN_LAYER_METRICS_LOADED:-}" != "1" -a "${MFADMIN_LAYER_LOGS_LOADED:
     echo
 fi
 
+if test "${MFADMIN_LDAP_FLAG:-}" = "1"; then
+    _circus_schedule_start_watcher.sh ldap || RES=1 
+fi
+
 if test "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" = "1"; then
     _circus_schedule_start_watcher.sh loki || RES=1 
     if test "${RES}" = "0"; then
