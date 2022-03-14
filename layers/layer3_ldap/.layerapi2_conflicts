@@ -1,0 +1,8 @@
+python3@mfext
+python2_core@mfext
+scientific_core@mfext 
+java@mfext
+devtools@mfext
+metrics@mfadmin
+logs@mfadmin
+logs_loki@mfadmin
