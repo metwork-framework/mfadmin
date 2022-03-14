@@ -1,4 +1,4 @@
-CONFIGS=config.ini influxdb.conf grafana.ini elasticsearch.conf elasticsearch_jvm_options.conf elasticsearch_log4j2_properties.conf mflog_override.conf kibana.conf nginx.conf
+CONFIGS=config.ini influxdb.conf grafana.ini elasticsearch.conf elasticsearch_jvm_options.conf elasticsearch_log4j2_properties.conf mflog_override.conf kibana.conf nginx.conf nginx.macros
 
 include ../adm/root.mk
 include $(MFEXT_HOME)/share/subdir_root.mk
@@ -11,7 +11,7 @@ TARGET_KIBANA_DASHBOARDS=$(addprefix $(MFMODULE_HOME)/config/,$(KIBANA_DASHBOARD
 LOKI_CONFIG_FILES=$(wildcard loki/*.yaml)
 TARGET_LOKI_CONFIG_FILES=$(addprefix $(MFMODULE_HOME)/config/,$(LOKI_CONFIG_FILES))
 
-all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(TARGET_LOKI_CONFIG_FILES) $(MFMODULE_HOME)/config/vector.toml
+all:: $(MFMODULE_HOME)/config/circus.ini $(MFMODULE_HOME)/config/telegraf.conf $(MFMODULE_HOME)/config/grafana_provisioning/datasources/datasource.yaml $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml $(TARGET_GRAFANA_DASHBOARDS) $(TARGET_KIBANA_DASHBOARDS) $(TARGET_LOKI_CONFIG_FILES) $(MFMODULE_HOME)/config/vector.toml $(MFMODULE_HOME)/lib/token_check.lua
 
 # because of a problem with the subdir_root.mk default rule overriding
 $(PREFIX)/config/%: %
@@ -21,6 +21,10 @@ $(MFMODULE_HOME)/config/%.ini: %.ini
 	cp -f $< $@
 
 $(MFMODULE_HOME)/config/%.conf: %.conf
+	@mkdir -p $(shell dirname $@)
+	cp -f $< $@
+
+$(MFMODULE_HOME)/config/%.macros: %.macros
 	@mkdir -p $(shell dirname $@)
 	cp -f $< $@
 
@@ -43,3 +47,8 @@ $(MFMODULE_HOME)/config/grafana_provisioning/dashboards/dashboard.yaml: grafana_
 $(MFMODULE_HOME)/config/loki/%.yaml: loki/%.yaml
 	@mkdir -p $(MFMODULE_HOME)/config/loki
 	cp -f $< $@
+
+$(MFMODULE_HOME)/lib/token_check.lua: token_check.lua
+	@mkdir -p $(MFMODULE_HOME)/lib
+	cp -f $< $@
+	

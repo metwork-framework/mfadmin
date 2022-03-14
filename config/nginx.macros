@@ -1,0 +1,22 @@
+{% macro common_ldap() %}
+            {% set cmd = "cat " + MFMODULE_RUNTIME_HOME + "/var/uuid |tr -d '\n'" %}
+            set $jwt_secret_key "{{ cmd|shell() }}";
+            set $jwt_cookie "mfadmin_token";
+            set $jwt_max_lifetime "43200";
+            access_by_lua_block {
+                local base64 = require("ngx.base64")
+                local mfutil = require("mfutil")
+                local token_check = require("token_check")
+                local code, msg, log_msg = token_check.process()
+                if code == 401 then
+                    local b64encoded = base64.encode_base64url(ngx.var.request_uri)
+                    return ngx.redirect("/login?b64url=" .. b64encoded)
+                end
+                if code ~= 200 then
+                    ngx.status = code
+                    ngx.header["Content-Type"] = "text/html"
+                    ngx.say('<html><head></head><body>' .. msg .. ' <a href="/login">Identification</a></body></html>')
+                    ngx.exit(code)
+                end
+            }
+{% endmacro %}

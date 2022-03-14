@@ -21,3 +21,4 @@ doc/CHANGELOG*.rst
 doc/changelogs.rst
 _docs_build
 __pycache__
+layers/layer3_ldap/0500_ldap_deps/src
