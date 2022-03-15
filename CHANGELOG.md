@@ -5,6 +5,7 @@
 ### New Features
 
 - build on centos8 (#216)
+- add ldap support for mfadmin (#217)
 
 ### Bug Fixes
 
