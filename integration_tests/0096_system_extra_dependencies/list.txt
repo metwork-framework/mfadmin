@@ -34,6 +34,7 @@ libpthread.so.0
 libquadmath.so.0
 libresolv.so.2
 librt.so.1
+libsasl2.so.2
 libSM.so.6
 libsmime3.so
 libssl3.so
