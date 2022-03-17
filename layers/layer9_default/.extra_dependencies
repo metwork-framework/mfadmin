@@ -1,0 +1,3 @@
+# not loaded dependencies but packaged by default
+# in the minimal package
+ldap@mfadmin

@@ -1,4 +1,5 @@
 root@mfadmin
+python3@mfext
 -python3_devtools@mfext
 default@mfext
 -metrics@mfadmin

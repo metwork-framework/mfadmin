@@ -1,5 +1,9 @@
 #!/bin/bash
 
-"${MFEXT_HOME}/bin/_make_nginx_conf"
+UUID=$(cat "${MFMODULE_RUNTIME_HOME}/var/uuid" 2>/dev/null)
+if test "${UUID}" = ""; then
+    UUID="unknown"
+fi
+export UUID
 
-printf "admin:%s\\n" "$(openssl passwd -apr1 "${MFADMIN_KIBANA_ADMIN_PASSWORD}")" >"${MFMODULE_RUNTIME_HOME}/tmp/kibana.passwd"
+cat "${MFMODULE_HOME}/config/nginx.conf" |envtpl --reduce-multi-blank-lines --search-paths=${MFADMIN_HOME}/config |sed 's/~~~1/{/g' |sed 's/~~~2/}/g' |grep -v 'FIXME: ugly hack'

@@ -21,5 +21,9 @@ if test "${MFADMIN_LAYER_LOGS_LOKI_LOADED:-}" = "1"; then
     _circus_schedule_stop_watcher.sh loki
     _circus_wait_watcher_stopped.sh loki
 fi
+if test "${MFADMIN_LDAP_FLAG:-}" = "1"; then
+    _circus_schedule_stop_watcher.sh ldap
+    _circus_wait_watcher_stopped.sh ldap
+fi
 
 {% endblock %}  
