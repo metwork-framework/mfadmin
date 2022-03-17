@@ -4,7 +4,7 @@ import ipaddress
 import json
 import os
 import urllib.parse
-from functools import cache
+from functools import lru_cache
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
@@ -57,7 +57,7 @@ templates = Jinja2Templates(directory=os.path.join(DIR, "templates"))
 mflog.set_config()
 
 
-@cache
+@lru_cache()
 def get_auth_controller() -> AuthenticationController:
     auth_backend = make_auth_backend()
     return AuthenticationController(auth_backend)
