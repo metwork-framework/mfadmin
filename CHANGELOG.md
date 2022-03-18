@@ -1,5 +1,11 @@
 # release_1.1 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- add ldap support for mfadmin (backport #217) (#218)
+
 ## v1.1.3 (2021-12-14)
 
 ### Bug Fixes
