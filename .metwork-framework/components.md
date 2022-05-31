@@ -29,7 +29,7 @@
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
 | [pydantic](https://github.com/samuelcolvin/pydantic) | 1.9.0 | ldap |
-| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.3.0 | ldap |
+| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.0 | ldap |
 | [python-multipart](http://github.com/andrew-d/python-multipart) | 0.0.5 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 5.0.2 | ldap |
