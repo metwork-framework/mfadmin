@@ -1,5 +1,11 @@
 # release_2.0 CHANGELOG
 
+## v2.0.1 (2022-06-01)
+
+### New Features
+
+- bump PyJWT from 2.3.0 to 2.4.0 for security reasons (backport #222) (#223)
+
 ## v2.0.0 (2022-04-12)
 
 ### New Features
