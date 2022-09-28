@@ -1,5 +1,11 @@
 # release_2.0 CHANGELOG
 
+## v2.0.2 (2022-09-16)
+
+### Bug Fixes
+
+- create file kibana.passwd used by HTTP Basic Authentication for kibana access (backport #226) (#228)
+
 ## v2.0.1 (2022-06-01)
 
 ### New Features
