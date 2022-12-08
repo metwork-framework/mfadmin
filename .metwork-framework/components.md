@@ -8,7 +8,11 @@
 | [asgiref](https://github.com/django/asgiref/) | 3.5.0 | ldap |
 | [async-timeout](https://github.com/aio-libs/async-timeout) | 4.0.2 | ldap |
 | [cachetools](https://github.com/tkem/cachetools/) | 5.0.0 | ldap |
+<<<<<<< HEAD
 | [certifi](https://certifi.io/) | 2019.3.9 | ldap |
+=======
+| [certifi](https://github.com/certifi/python-certifi) | 2022.9.24 | ldap |
+>>>>>>> e90ad14 (build: update certifi (security update) (#234))
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
 | [distlib](https://bitbucket.org/pypa/distlib) | 0.3.1 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
