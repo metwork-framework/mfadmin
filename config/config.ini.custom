@@ -98,7 +98,7 @@ node_name={{MFHOSTNAME}}
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/network.host.html
 network_host=0.0.0.0
 
-# indices starting with "filebeat-" are destroyed after {indices_lifetime} days
+# indices starting with "mflog-" and "nginx-" are destroyed after {indices_lifetime} days
 # -1 => no cleaning
 indices_lifetime = 5
 
