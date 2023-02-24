@@ -1,5 +1,11 @@
 # release_2.1 CHANGELOG
 
+## v2.1.2 (2023-02-23)
+
+### New Features
+
+- upgrade starlette to 0.25.0 (security) and fastapi to 0.92.0 (backport #243) (#247)
+
 ## v2.1.1 (2023-01-03)
 
 - No interesting change
