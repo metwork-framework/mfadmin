@@ -9,5 +9,6 @@
 ### Bug Fixes
 
 - comment in config.ini for elasticsearch indices lifetime (#238)
+- move kibana.passwd from ~/tmp to ~/var to prevent removal by crontab (#249)
 
 
