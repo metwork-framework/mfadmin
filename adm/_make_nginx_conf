@@ -7,6 +7,6 @@ fi
 export UUID
 
 # make password file for kibana http basic authentication, cf. nginx.conf file
-printf "admin:%s\\n" "$(openssl passwd -apr1 "${MFADMIN_KIBANA_ADMIN_PASSWORD}")" >"${MFMODULE_RUNTIME_HOME}/tmp/kibana.passwd"
+printf "admin:%s\\n" "$(openssl passwd -apr1 "${MFADMIN_KIBANA_ADMIN_PASSWORD}")" >"${MFMODULE_RUNTIME_HOME}/var/kibana.passwd"
 
 cat "${MFMODULE_HOME}/config/nginx.conf" |envtpl --reduce-multi-blank-lines --search-paths=${MFADMIN_HOME}/config |sed 's/~~~1/{/g' |sed 's/~~~2/}/g' |grep -v 'FIXME: ugly hack'
