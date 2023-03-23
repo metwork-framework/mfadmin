@@ -1,5 +1,11 @@
 # release_2.1 CHANGELOG
 
+## [Unreleased]
+
+### Bug Fixes
+
+- move kibana.passwd from ~/tmp to ~/var to prevent removal by crontab (backport #249) (#250)
+
 ## v2.1.2 (2023-02-23)
 
 ### New Features
