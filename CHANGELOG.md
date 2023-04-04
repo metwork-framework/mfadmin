@@ -5,6 +5,7 @@
 ### Bug Fixes
 
 - move kibana.passwd from ~/tmp to ~/var to prevent removal by crontab (backport #249) (#250)
+- metwork version 1.1 hardcoded in _force_grafana_admin_password (… (backport #253) (#256)
 
 ## v2.1.2 (2023-02-23)
 
