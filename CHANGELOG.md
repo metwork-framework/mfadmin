@@ -1,5 +1,11 @@
 # release_1.2 CHANGELOG
 
+## [Unreleased]
+
+### Bug Fixes
+
+- metwork version 1.1 hardcoded in _force_grafana_admin_password (… (backport #253) (#254)
+
 ## v1.2.2 (2022-03-17)
 
 ### New Features
