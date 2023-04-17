@@ -15,7 +15,7 @@
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.5.3 | logs |
 | [fastapi](https://pypi.org/project/fastapi) | 0.92.0 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.8.0 | ldap |
-| [grafana](https://grafana.com) | 7.3.7 | metrics |
+| [grafana](https://grafana.com) | 8.5.22 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.13.0 | ldap |
 | [idna](https://github.com/kjd/idna) | 3.3 | ldap |
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
