@@ -1,5 +1,13 @@
 # release_2.1 CHANGELOG
 
+## v2.1.3 (2023-04-05)
+
+### Bug Fixes
+
+- move kibana.passwd from ~/tmp to ~/var to prevent removal by crontab (backport #249) (#250)
+- metwork version 1.1 hardcoded in _force_grafana_admin_password (… (backport #253) (#256)
+- kibana LDAP authent and HTTP Basic authentication (#245) (backport #258) (#259)
+
 ## v2.1.2 (2023-02-23)
 
 ### New Features
