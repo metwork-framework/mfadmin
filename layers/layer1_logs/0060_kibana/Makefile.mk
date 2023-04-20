@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=kibana
-export VERSION=6.5.3
+export VERSION=6.8.23
 export EXTENSION=tar.gz
 export CHECKTYPE=MD5
-export CHECKSUM=f842362ed05109fef15b668d8b59c0b8
+export CHECKSUM=85bb699984035367a06da3d234695931
 DESCRIPTION=\
 kibana is a log ui for elasticsearch
 WEBSITE=https://www.elastic.co/products/kibana

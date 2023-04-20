@@ -16,7 +16,7 @@ cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana/config" "${MFMODULE_RUNTIME_HOME}/t
 cp -Rf "${MFMODULE_HOME}/opt/logs/opt/kibana/src" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
 cp -f "${MFMODULE_HOME}/opt/logs/opt/kibana/package.json" "${MFMODULE_RUNTIME_HOME}/tmp/kibana"
 cp -f "${MFMODULE_HOME}/opt/logs/opt/kibana/optimize/.babelcache.json" "${MFMODULE_RUNTIME_HOME}/tmp/kibana/optimize/"
-for DIR in bin node node_modules optimize/bundles webpackShims; do
+for DIR in bin node node_modules optimize/bundles webpackShims built_assets; do
     ln -s "${MFMODULE_HOME}/opt/logs/opt/kibana/${DIR}" "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
 done
 for DIR in plugins data; do
