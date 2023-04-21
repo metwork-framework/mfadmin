@@ -5,6 +5,7 @@
 ### New Features
 
 - upgrade starlette to 0.25.0 (security) and fastapi to 0.92.0 (#243)
+- upgrade grafana to 8.5.22 and kibana & elasticsearch to 6.8.23 (#261)
 
 ### Bug Fixes
 
