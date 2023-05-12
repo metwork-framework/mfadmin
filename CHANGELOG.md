@@ -6,6 +6,7 @@
 
 - upgrade starlette to 0.25.0 (security) and fastapi to 0.92.0 (#243)
 - upgrade grafana to 8.5.22 and kibana & elasticsearch to 6.8.23 (#261)
+- upgrade jquery from 3.3.1 to 3.5.1 (security update) (#262)
 
 ### Bug Fixes
 
