@@ -116,6 +116,11 @@ http_port=15604
 # (you have to restart the module if you change it)
 admin_password=admin
 
+# Encryption keys
+# something at least 32 characters
+# can be superseded by OPs
+xpack_security_encryptionkey=541ca694529ab5916456cc7eb9b8cedfbdb9182fbaadd145
+xpack_reporting_encryptionkey=8608cf617b392bd0590a0f97c1745a988192345df5bf8488
 
 ################
 ##### LOKI #####
