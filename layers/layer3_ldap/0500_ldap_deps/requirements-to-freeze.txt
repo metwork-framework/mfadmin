@@ -8,8 +8,8 @@ mflog
 pyjwt
 python-ldap
 cachetools
-aioredis
 typer
 asgi-ratelimit
 asgi-ratelimit[redis]
 aredis
+redis
