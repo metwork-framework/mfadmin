@@ -31,7 +31,7 @@
 | [pydantic](https://github.com/samuelcolvin/pydantic) | 1.9.0 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.0 | ldap |
-| [python-multipart](http://github.com/andrew-d/python-multipart) | 0.0.5 | ldap |
+| [python-multipart](https://pypi.org/project/python-multipart) | 0.0.9 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://pypi.org/project/starlette) | 0.36.3 | ldap |

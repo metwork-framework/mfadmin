@@ -23,7 +23,7 @@ pyasn1-modules==0.2.8
 pydantic==1.9.0
 PyJWT==2.4.0
 python-ldap==3.4.0
-python-multipart==0.0.5
+python-multipart==0.0.9
 setuptools-scm==7.1.0
 sniffio==1.2.0
 starlette==0.36.3
