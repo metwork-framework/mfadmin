@@ -8,7 +8,12 @@ from functools import cache
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
+<<<<<<< HEAD
 import aioredis
+=======
+from redis import asyncio as aioredis
+
+>>>>>>> 65abde0 (feat: upgrade fastapi, starlette, Jinja2 and python-multipart (for security reasons) (#281))
 import jwt
 import mflog
 from fastapi import FastAPI, Form, HTTPException, Request
