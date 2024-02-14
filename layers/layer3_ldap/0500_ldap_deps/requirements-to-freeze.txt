@@ -13,3 +13,4 @@ typer
 asgi-ratelimit
 asgi-ratelimit[redis]
 aredis
+redis
