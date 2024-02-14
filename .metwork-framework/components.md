@@ -1,7 +1,6 @@
 | Name | Version | Layer |
 | --- | --- | --- |
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
-| [aioredis](https://github.com/aio-libs/aioredis-py) | 2.0.1 | ldap |
 | [anyio](https://pypi.org/project/anyio) | 3.5.0 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
@@ -39,7 +38,7 @@
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
-| [typing-extensions](https://github.com/python/typing/blob/master/typing_extensions/README.rst) | 3.7.4.3 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.8.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.4.1 | ldap |
 
