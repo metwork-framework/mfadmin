@@ -1,7 +1,6 @@
 | Name | Version | Layer |
 | --- | --- | --- |
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
-| [aioredis](https://github.com/aio-libs/aioredis-py) | 2.0.1 | ldap |
 | [anyio](https://pypi.org/project/anyio) | 3.5.0 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
@@ -28,10 +27,11 @@
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
-| [pydantic](https://github.com/samuelcolvin/pydantic) | 1.9.0 | ldap |
+| [pydantic](https://github.com/pydantic/pydantic) | 1.10.14 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.0 | ldap |
 | [python-multipart](https://pypi.org/project/python-multipart) | 0.0.9 | ldap |
+| [redis](https://github.com/redis/redis-py) | 4.2.2 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://pypi.org/project/starlette) | 0.36.3 | ldap |

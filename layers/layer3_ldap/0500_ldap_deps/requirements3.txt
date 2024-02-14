@@ -1,5 +1,4 @@
 aiofiles==0.8.0
-aioredis==2.0.1
 anyio==3.5.0
 aredis==1.1.8
 asgi-ratelimit==0.7.0
@@ -20,10 +19,11 @@ MarkupSafe==2.1.0
 mflog==0.1.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pydantic==1.9.0
+pydantic==1.10.14
 PyJWT==2.4.0
 python-ldap==3.4.0
 python-multipart==0.0.9
+redis==4.2.2
 setuptools-scm==7.1.0
 sniffio==1.2.0
 starlette==0.36.3
