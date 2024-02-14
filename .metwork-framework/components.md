@@ -13,13 +13,8 @@
 | [distlib](https://github.com/pypa/distlib) | 0.3.6 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
-<<<<<<< HEAD
-| [fastapi](https://pypi.org/project/fastapi) | 0.95.2 | ldap |
-| [filelock](https://github.com/tox-dev/py-filelock) | 3.8.0 | ldap |
-=======
 | [fastapi](https://pypi.org/project/fastapi) | 0.109.2 | ldap |
 | [filelock](https://pypi.org/project/filelock) | 3.12.3 | ldap |
->>>>>>> 65abde0 (feat: upgrade fastapi, starlette, Jinja2 and python-multipart (for security reasons) (#281))
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.13.0 | ldap |
 | [idna](https://github.com/kjd/idna) | 3.3 | ldap |
@@ -36,14 +31,9 @@
 | [pydantic](https://github.com/samuelcolvin/pydantic) | 1.9.0 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.0 | ldap |
-<<<<<<< HEAD
-| [python-multipart](http://github.com/andrew-d/python-multipart) | 0.0.5 | ldap |
-| [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 5.0.2 | ldap |
-=======
 | [python-multipart](https://pypi.org/project/python-multipart) | 0.0.9 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.2.2 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
->>>>>>> 65abde0 (feat: upgrade fastapi, starlette, Jinja2 and python-multipart (for security reasons) (#281))
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://pypi.org/project/starlette) | 0.36.3 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
