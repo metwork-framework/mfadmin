@@ -8,11 +8,7 @@ mflog
 pyjwt
 python-ldap
 cachetools
-<<<<<<< HEAD
-aioredis
-=======
 redis
->>>>>>> 65abde0 (feat: upgrade fastapi, starlette, Jinja2 and python-multipart (for security reasons) (#281))
 typer
 asgi-ratelimit
 asgi-ratelimit[redis]
