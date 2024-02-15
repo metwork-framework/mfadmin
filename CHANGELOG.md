@@ -1,5 +1,11 @@
 # release_2.2 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- upgrade pydantic and replace aioredis by redis.asyncio to fix ldap functionality (#282)
+
 ## v2.2.0 (2023-11-28)
 
 ### New Features
