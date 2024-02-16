@@ -7,7 +7,7 @@ async-timeout==4.0.2
 cachetools==5.0.0
 certifi==2023.7.22
 click==8.0.4
-distlib==0.3.6
+distlib==0.3.7
 distro==1.6.0
 fastapi==0.109.2
 filelock==3.12.3
@@ -19,7 +19,7 @@ MarkupSafe==2.1.0
 mflog==0.1.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pydantic==1.9.0
+pydantic==1.10.14
 PyJWT==2.4.0
 python-ldap==3.4.0
 python-multipart==0.0.9

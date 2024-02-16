@@ -9,7 +9,7 @@
 | [cachetools](https://github.com/tkem/cachetools/) | 5.0.0 | ldap |
 | [certifi](https://github.com/certifi/python-certifi) | 2023.7.22 | ldap |
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
-| [distlib](https://github.com/pypa/distlib) | 0.3.6 | ldap |
+| [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
 | [fastapi](https://pypi.org/project/fastapi) | 0.109.2 | ldap |
@@ -27,7 +27,7 @@
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
-| [pydantic](https://github.com/samuelcolvin/pydantic) | 1.9.0 | ldap |
+| [pydantic](https://github.com/pydantic/pydantic) | 1.10.14 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.0 | ldap |
 | [python-multipart](https://pypi.org/project/python-multipart) | 0.0.9 | ldap |
