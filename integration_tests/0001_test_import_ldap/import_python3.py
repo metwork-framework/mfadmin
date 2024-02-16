@@ -1,7 +1,7 @@
 import aiofiles
 import anyio
 import aredis
-import asgi_ratelimit
+import ratelimit
 import asgiref
 import async_timeout
 import cachetools
