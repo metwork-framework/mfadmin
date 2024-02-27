@@ -23,8 +23,14 @@ pyasn1-modules==0.2.8
 pydantic==1.9.0
 PyJWT==2.4.0
 python-ldap==3.4.0
+<<<<<<< HEAD
 python-multipart==0.0.5
 setuptools-scm==5.0.2
+=======
+python-multipart==0.0.9
+redis==4.4.4
+setuptools-scm==7.1.0
+>>>>>>> 98230b1 (feat: upgrade redis from 4.2.2 to 4.4.4 (security) (#288))
 sniffio==1.2.0
 starlette==0.25.0
 structlog==21.5.0
