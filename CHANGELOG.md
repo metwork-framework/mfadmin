@@ -1,5 +1,11 @@
 # release_2.2 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- upgrade redis from 4.2.2 to 4.4.4 (security) (#288)
+
 ## v2.2.1 (2024-02-16)
 
 ### New Features
