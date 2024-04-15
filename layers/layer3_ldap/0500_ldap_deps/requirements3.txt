@@ -13,7 +13,7 @@ distro==1.6.0
 fastapi==0.92.0
 filelock==3.8.0
 h11==0.13.0
-idna==3.3
+idna==3.7
 importlib-metadata==3.7.3
 Jinja2==3.0.3
 MarkupSafe==2.1.0
