@@ -1,5 +1,11 @@
 # release_2.2 CHANGELOG
 
+## v2.2.3 (2024-04-15)
+
+### New Features
+
+- bump idna from 3.3 to 3.7 to fix CVE-2024-3651 (#292)
+
 ## v2.2.2 (2024-02-29)
 
 ### New Features
