@@ -1,5 +1,11 @@
 # release_2.2 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- add initscripts, make and crontab as dependencies (backport #296) (#297)
+
 ## v2.2.3 (2024-04-15)
 
 ### New Features
