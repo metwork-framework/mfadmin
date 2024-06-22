@@ -11,5 +11,6 @@
 - bump idna from 3.3 to 3.7 to fix CVE-2024-3651 (#292)
 - add initscripts, make and crontab as dependencies (#296)
 - bump Jinja2 to 3.1.4 (CVE-2024-34064) (#299)
+- upgrade python-ldap from 3.4.0 to 3.4.3 (#301)
 
 
