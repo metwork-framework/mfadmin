@@ -5,6 +5,8 @@
 ### New Features
 
 - add initscripts, make and crontab as dependencies (backport #296) (#297)
+- bump Jinja2 to 3.1.4 (CVE-2024-34064) (#299)
+- upgrade python-ldap from 3.4.0 to 3.4.3 (backport #301) (#302)
 
 ## v2.2.3 (2024-04-15)
 
