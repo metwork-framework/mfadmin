@@ -27,7 +27,7 @@
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
-| [pydantic](https://github.com/pydantic/pydantic) | 1.10.14 | ldap |
+| [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.3 | ldap |
 | [python-multipart](https://pypi.org/project/python-multipart) | 0.0.9 | ldap |
