@@ -13,4 +13,8 @@
 - bump Jinja2 to 3.1.4 (CVE-2024-34064) (#299)
 - upgrade python-ldap from 3.4.0 to 3.4.3 (#301)
 
+### Bug Fixes
+
+- bump pydantic to 1.10.17 for Python 3.12.4 compatibility (#303)
+
 
