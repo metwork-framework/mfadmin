@@ -7,7 +7,7 @@
 | [asgiref](https://github.com/django/asgiref/) | 3.5.0 | ldap |
 | [async-timeout](https://github.com/aio-libs/async-timeout) | 4.0.2 | ldap |
 | [cachetools](https://github.com/tkem/cachetools/) | 5.0.0 | ldap |
-| [certifi](https://github.com/certifi/python-certifi) | 2023.7.22 | ldap |
+| [certifi](https://github.com/certifi/python-certifi) | 2024.7.4 | ldap |
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
