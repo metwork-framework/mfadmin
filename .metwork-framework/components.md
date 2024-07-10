@@ -40,6 +40,6 @@
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.8.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
-| [zipp](https://github.com/jaraco/zipp) | 3.4.1 | ldap |
+| [zipp](https://pypi.org/project/zipp) | 3.19.2 | ldap |
 
 *(41 components)*
