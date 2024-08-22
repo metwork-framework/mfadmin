@@ -12,8 +12,8 @@
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
-| [fastapi](https://pypi.org/project/fastapi) | 0.109.2 | ldap |
-| [filelock](https://pypi.org/project/filelock) | 3.12.3 | ldap |
+| [fastapi](https://github.com/tiangolo/fastapi) | 0.109.2 | ldap |
+| [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.13.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
@@ -30,16 +30,16 @@
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.3 | ldap |
-| [python-multipart](https://pypi.org/project/python-multipart) | 0.0.9 | ldap |
+| [python-multipart](https://github.com/andrew-d/python-multipart) | 0.0.9 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
-| [starlette](https://pypi.org/project/starlette) | 0.36.3 | ldap |
+| [starlette](https://github.com/encode/starlette) | 0.36.3 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.8.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
-| [zipp](https://pypi.org/project/zipp) | 3.19.2 | ldap |
+| [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
 *(41 components)*
