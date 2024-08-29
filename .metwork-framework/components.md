@@ -4,7 +4,7 @@
 | [anyio](https://pypi.org/project/anyio) | 3.5.0 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
-| [asgiref](https://github.com/django/asgiref/) | 3.5.0 | ldap |
+| [asgiref](https://github.com/django/asgiref/) | 3.5.2 | ldap |
 | [async-timeout](https://github.com/aio-libs/async-timeout) | 4.0.2 | ldap |
 | [cachetools](https://github.com/tkem/cachetools/) | 5.0.0 | ldap |
 | [certifi](https://github.com/certifi/python-certifi) | 2024.7.4 | ldap |
