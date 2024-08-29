@@ -38,7 +38,7 @@
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
-| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.8.0 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.10.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
