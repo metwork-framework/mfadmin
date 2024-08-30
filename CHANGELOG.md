@@ -14,6 +14,8 @@
 - upgrade python-ldap from 3.4.0 to 3.4.3 (#301)
 - bump certifi to 2024.7.4 (to fix CVE-2024-39689) (#306)
 - bump zipp from 3.16.2 to 3.19.2 (fix CVE-2024-5569) (#308)
+- upgrade typing-extensions to 3.10.0 (same as in python3_core) (#310)
+- upgrade asgiref to 3.5.2 (compat shiny 1.0.0) (#311)
 
 ### Bug Fixes
 
