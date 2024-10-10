@@ -23,8 +23,9 @@ def make_jwt(
         "uid_number": user.uid_number,
         "email": user.email,
         "display_name": user.display_name,
-        "iat": datetime.datetime.utcnow(),
-        "exp": datetime.datetime.utcnow() + datetime.timedelta(seconds=delta),
+        "iat": datetime.datetime.now(datetime.UTC),
+        "exp": datetime.datetime.now(datetime.UTC) + \
+                datetime.timedelta(seconds=delta),
     }
     if len(limit_to_vhosts) > 0:
         payload["limit_to_vhosts"] = limit_to_vhosts
