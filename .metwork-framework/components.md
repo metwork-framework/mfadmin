@@ -34,7 +34,7 @@
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
-| [starlette](https://github.com/encode/starlette) | 0.36.3 | ldap |
+| [starlette](https://github.com/encode/starlette) | 0.40.0 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
