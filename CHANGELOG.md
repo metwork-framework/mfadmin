@@ -20,5 +20,6 @@
 ### Bug Fixes
 
 - bump pydantic to 1.10.17 for Python 3.12.4 compatibility (#303)
+- replace deprecated utcnow() by now(datetime.UTC) (#312)
 
 
