@@ -16,10 +16,12 @@
 - bump zipp from 3.16.2 to 3.19.2 (fix CVE-2024-5569) (#308)
 - upgrade typing-extensions to 3.10.0 (same as in python3_core) (#310)
 - upgrade asgiref to 3.5.2 (compat shiny 1.0.0) (#311)
+- feat: bump starlette from 0.36.3 to 0.40.0 to fix CVE-2024-47874
 
 ### Bug Fixes
 
 - bump pydantic to 1.10.17 for Python 3.12.4 compatibility (#303)
+- replace deprecated utcnow() by now(datetime.UTC)
 - replace deprecated utcnow() by now(datetime.UTC) (#312)
 
 
