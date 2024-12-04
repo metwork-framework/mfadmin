@@ -12,7 +12,7 @@
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
-| [fastapi](https://github.com/tiangolo/fastapi) | 0.109.2 | ldap |
+| [fastapi](https://github.com/fastapi/fastapi) | 0.115.2 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.13.0 | ldap |
@@ -38,7 +38,7 @@
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
-| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.10.0 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.12.2 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 

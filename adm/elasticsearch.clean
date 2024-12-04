@@ -3,7 +3,7 @@
 import os
 import sys
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from mflog import getLogger
 
 ES_PORT = int(os.environ['MFADMIN_ELASTICSEARCH_HTTP_PORT'])
@@ -34,7 +34,7 @@ def index_age(index):
     if date_parts is None:
         raise Exception("can't calculate index_age(%s)" % index)
     index_date = datetime(*[int(part) for part in date_parts])
-    return (datetime.now(datetime.UTC) - index_date).days
+    return (datetime.now(timezone.utc).replace(tzinfo=None)) - index_date).days
 
 
 if __name__ == '__main__':
