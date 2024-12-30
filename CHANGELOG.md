@@ -17,6 +17,8 @@
 - upgrade typing-extensions to 3.10.0 (same as in python3_core) (#310)
 - upgrade asgiref to 3.5.2 (compat shiny 1.0.0) (#311)
 - feat: bump starlette from 0.36.3 to 0.40.0 to fix CVE-2024-47874
+- bump typing-extensions to 4.12.2 (Python 3.13 compatibility) (#317)
+- bump python-multipart from 0.0.9 to 0.0.19 (fix CVE-2024-53981)
 
 ### Bug Fixes
 
