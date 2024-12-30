@@ -19,7 +19,7 @@
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.7.9-1 | metrics |
-| [Jinja2](https://pypi.org/project/Jinja2) | 3.1.4 | ldap |
+| [Jinja2](https://pypi.org/project/Jinja2) | 3.1.5 | ldap |
 | [kibana](https://www.elastic.co/products/kibana) | 6.8.23 | logs |
 | [logcli](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [loki](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
