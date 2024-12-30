@@ -14,7 +14,7 @@ filelock==3.12.3
 h11==0.13.0
 idna==3.7
 importlib-metadata==3.7.3
-Jinja2==3.1.4
+Jinja2==3.1.5
 MarkupSafe==2.1.0
 mflog==0.1.0
 pyasn1==0.4.8
@@ -22,7 +22,7 @@ pyasn1-modules==0.2.8
 pydantic==1.10.17
 PyJWT==2.4.0
 python-ldap==3.4.3
-python-multipart==0.0.9
+python-multipart==0.0.19
 redis==4.4.4
 setuptools-scm==7.1.0
 sniffio==1.2.0
