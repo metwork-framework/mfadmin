@@ -19,6 +19,7 @@
 - feat: bump starlette from 0.36.3 to 0.40.0 to fix CVE-2024-47874
 - bump typing-extensions to 4.12.2 (Python 3.13 compatibility) (#317)
 - bump python-multipart from 0.0.9 to 0.0.19 (fix CVE-2024-53981)
+- bump Jinja2 to 3.1.5 (CVE-2024-56201 and CVE-2024-56326)  (#321)
 
 ### Bug Fixes
 
