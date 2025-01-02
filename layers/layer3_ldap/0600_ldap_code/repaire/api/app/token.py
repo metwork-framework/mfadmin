@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Any, Dict, List
 
 import jwt
@@ -25,7 +25,7 @@ def make_jwt(
         "display_name": user.display_name,
         "iat": datetime.now(timezone.utc).replace(tzinfo=None),
         "exp": datetime.now(timezone.utc).replace(tzinfo=None) + \
-                datetime.timedelta(seconds=delta),
+                timedelta(seconds=delta),
     }
     if len(limit_to_vhosts) > 0:
         payload["limit_to_vhosts"] = limit_to_vhosts
