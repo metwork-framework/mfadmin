@@ -14,11 +14,7 @@ filelock==3.12.3
 h11==0.13.0
 idna==3.7
 importlib-metadata==3.7.3
-<<<<<<< HEAD
-Jinja2==3.1.4
-=======
 Jinja2==3.1.6
->>>>>>> e7b9d9d (feat: bump Jinja2 to 3.1.6 (CVE-2025-27516) (#325))
 MarkupSafe==2.1.0
 mflog==0.1.0
 pyasn1==0.4.8
