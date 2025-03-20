@@ -7,6 +7,8 @@
 - add initscripts, make and crontab as dependencies (backport #296) (#297)
 - bump Jinja2 to 3.1.4 (CVE-2024-34064) (#299)
 - upgrade python-ldap from 3.4.0 to 3.4.3 (backport #301) (#302)
+- bump Jinja2 to 3.1.5 (CVE-2024-56201 and CVE-2024-56326)  (#321)
+- bump Jinja2 to 3.1.6 (CVE-2025-27516) (#325)
 
 ## v2.2.3 (2024-04-15)
 
