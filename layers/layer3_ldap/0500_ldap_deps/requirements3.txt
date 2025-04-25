@@ -11,7 +11,7 @@ distlib==0.3.7
 distro==1.6.0
 fastapi==0.109.2
 filelock==3.12.3
-h11==0.13.0
+h11==0.16.0
 idna==3.7
 importlib-metadata==3.7.3
 Jinja2==3.1.6
