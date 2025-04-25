@@ -15,7 +15,7 @@
 | [fastapi](https://github.com/fastapi/fastapi) | 0.115.2 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
-| [h11](https://github.com/python-hyper/h11) | 0.13.0 | ldap |
+| [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.7.9-1 | metrics |
