@@ -9,6 +9,7 @@
 - upgrade python-ldap from 3.4.0 to 3.4.3 (backport #301) (#302)
 - bump Jinja2 to 3.1.5 (CVE-2024-56201 and CVE-2024-56326)  (#321)
 - bump Jinja2 to 3.1.6 (CVE-2025-27516) (#325)
+- bump h11 from 0.13.0 to 0.16.0 (fix critical CVE-2025-43859) (backport #331) (#332)
 
 ## v2.2.3 (2024-04-15)
 
