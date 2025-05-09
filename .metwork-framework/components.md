@@ -25,6 +25,7 @@
 | [loki](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | 2.1.0 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
+| [openjdk](https://adoptopenjdk.net) | 11.0.5+10 | java |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
@@ -42,4 +43,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(41 components)*
+*(42 components)*
