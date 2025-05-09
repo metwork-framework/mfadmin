@@ -3,6 +3,7 @@ python3@mfext
 -python3_devtools@mfext
 default@mfext
 -metrics@mfadmin
+-java@mfadmin
 -logs@mfadmin
 -logs_loki@mfadmin
 monitoring@mfext
