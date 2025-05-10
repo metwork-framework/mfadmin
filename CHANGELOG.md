@@ -31,4 +31,3 @@
 - replace deprecated utcnow() by now(datetime.UTC) (#312)
 - fix timedelta call (#323)
 
-
