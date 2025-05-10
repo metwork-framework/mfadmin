@@ -15,22 +15,23 @@
 | [fastapi](https://github.com/fastapi/fastapi) | 0.115.2 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
-| [h11](https://github.com/python-hyper/h11) | 0.13.0 | ldap |
+| [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.7.9-1 | metrics |
-| [Jinja2](https://pypi.org/project/Jinja2) | 3.1.4 | ldap |
+| [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
 | [kibana](https://www.elastic.co/products/kibana) | 6.8.23 | logs |
 | [logcli](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [loki](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | 2.1.0 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
+| [openjdk](https://adoptopenjdk.net) | 11.0.5+10 | java |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
-| [python-ldap](https://www.python-ldap.org/) | 3.4.3 | ldap |
-| [python-multipart](https://github.com/andrew-d/python-multipart) | 0.0.9 | ldap |
+| [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
+| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.19 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
@@ -42,4 +43,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(41 components)*
+*(42 components)*

@@ -17,11 +17,17 @@
 - upgrade typing-extensions to 3.10.0 (same as in python3_core) (#310)
 - upgrade asgiref to 3.5.2 (compat shiny 1.0.0) (#311)
 - feat: bump starlette from 0.36.3 to 0.40.0 to fix CVE-2024-47874
+- bump typing-extensions to 4.12.2 (Python 3.13 compatibility) (#317)
+- bump python-multipart from 0.0.9 to 0.0.19 (fix CVE-2024-53981)
+- bump Jinja2 to 3.1.5 (CVE-2024-56201 and CVE-2024-56326)  (#321)
+- bump Jinja2 to 3.1.6 (CVE-2025-27516) (#325)
+- bump python-ldap from 3.4.3 to 3.4.4 (#328)
+- bump h11 from 0.13.0 to 0.16.0 (fix critical CVE-2025-43859) (#331)
 
 ### Bug Fixes
 
 - bump pydantic to 1.10.17 for Python 3.12.4 compatibility (#303)
 - replace deprecated utcnow() by now(datetime.UTC)
 - replace deprecated utcnow() by now(datetime.UTC) (#312)
-
+- fix timedelta call (#323)
 
