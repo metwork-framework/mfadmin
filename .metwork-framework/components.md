@@ -11,7 +11,7 @@
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
-| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
+| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 8.18.2 | logs |
 | [fastapi](https://github.com/fastapi/fastapi) | 0.115.2 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
@@ -20,12 +20,11 @@
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.7.9-1 | metrics |
 | [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
-| [kibana](https://www.elastic.co/products/kibana) | 6.8.23 | logs |
+| [kibana](https://www.elastic.co/products/kibana) | 8.18.2 | logs |
 | [logcli](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [loki](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | 2.1.0 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
-| [openjdk](https://adoptopenjdk.net) | 11.0.5+10 | java |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
@@ -43,4 +42,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(42 components)*
+*(41 components)*
