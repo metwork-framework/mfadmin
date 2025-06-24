@@ -1,10 +1,9 @@
-#!/bin/bash
-
+#!/bin/bash 
 mkdir -p "${MFMODULE_RUNTIME_HOME}/var/elasticsearch"
 rm -Rf "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch"
 mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch"
 cp -Rf "${MFMODULE_HOME}/opt/logs/opt/elasticsearch/config" "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch"
-for DIR in bin lib modules; do
+for DIR in bin lib jdk modules; do
     ln -s "${MFMODULE_HOME}/opt/logs/opt/elasticsearch/${DIR}" "${MFMODULE_RUNTIME_HOME}/tmp/elasticsearch/${DIR}"
 done
 for DIR in plugins logs; do
