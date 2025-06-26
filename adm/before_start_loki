@@ -1,9 +1,8 @@
 #!/bin/bash
 
-mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/boltdb-shipper-active"
-mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/boltdb-shipper-cache"
-mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/boltdb-shipper-compactor"
-mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/chunks"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/tsdb-index"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/tsdb-cache"
+mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/tsdb-compactor"
 mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/rules"
 mkdir -p "${MFMODULE_RUNTIME_HOME}/var/loki/rules-temp"
 cat "${MFMODULE_HOME}/config/loki/loki-config.yaml" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/config_auto/loki-config.yaml"
