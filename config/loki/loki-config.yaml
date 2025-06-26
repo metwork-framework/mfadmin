@@ -18,23 +18,25 @@ ingester:
 schema_config:
   configs:
     - from: 2020-10-24
-      store: boltdb
+      store: tsdb
       object_store: filesystem
-      schema: v11
+      schema: v13
       index:
         prefix: index_
         period: 24h
 
 storage_config:
-  boltdb:
-    directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/boltdb
-  filesystem:
-    directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/chunks
+  tsdb_shipper:
+    active_index_directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/tsdb-index
+    cache_location: {{MFMODULE_RUNTIME_HOME}}/var/loki/tsdb-cache
+    cache_ttl: 24h
 
 limits_config:
-  enforce_metric_name: false
   reject_old_samples: true
   reject_old_samples_max_age: 168h
+
+compactor:
+  working_directory: {{MFMODULE_RUNTIME_HOME}}/var/loki/tsdb-compactor
 
 table_manager:
   retention_deletes_enabled: true

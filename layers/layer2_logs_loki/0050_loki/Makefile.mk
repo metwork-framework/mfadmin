@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=loki
-export VERSION=2.2.1
+export VERSION=3.5.1
 export EXTENSION=zip
 export CHECKTYPE=MD5
-export CHECKSUM=8aeb71cffcd61c7cf60d75d156347668
+export CHECKSUM=6e12887f00502ee3aab6224d916d9eb0
 DESCRIPTION=\
 Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus.\
 It is designed to be very cost effective and easy to operate.\

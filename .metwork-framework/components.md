@@ -21,8 +21,8 @@
 | [influxdb](https://www.influxdata.com) | 1.11.7 | metrics |
 | [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
 | [kibana](https://www.elastic.co/products/kibana) | 8.18.2 | logs |
-| [logcli](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
-| [loki](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
+| [logcli](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
+| [loki](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
 | [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | 2.1.0 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
