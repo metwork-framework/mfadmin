@@ -20,32 +20,30 @@ template = {
         "index.translog.durability": "async"
     },
     "mappings": {
-        "_doc": {
-            "dynamic_templates": [
-                {
-                    "strings_as_keyword": {
-                        "match_mapping_type": "string",
-                        "mapping": {
-                            "ignore_above": 256,
-                            "type": "keyword"
-                        }
+        "dynamic_templates": [
+            {
+                "strings_as_keyword": {
+                    "match_mapping_type": "string",
+                    "mapping": {
+                        "ignore_above": 256,
+                        "type": "keyword"
                     }
                 }
-            ],
-            "date_detection": False,
-            "properties": {
-                "@timestamp": {
-                    "type": "date"
-                },
-                "timestamp": {
-                    "type": "date"
-                },
-                "event": {
-                    "type": "text"
-                },
-                "pid": {
-                    "type": "integer"
-                }
+            }
+        ],
+        "date_detection": False,
+        "properties": {
+            "@timestamp": {
+                "type": "date"
+            },
+            "timestamp": {
+                "type": "date"
+            },
+            "event": {
+                "type": "text"
+            },
+            "pid": {
+                "type": "integer"
             }
         }
     }
