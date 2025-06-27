@@ -6,5 +6,7 @@
 
 - upgrade elasticsearch and kibana from 6.8.23 to 8.18.2 (#344)
 - upgrade grafana from 8.5.22 to 11.6.3 (#345)
+- upgrade influxdb from 1.7.9 to 1.11.7 (#347)
+- upgrade grafana-loki from 2.2.1 to 3.5.1 (#348)
 
 
