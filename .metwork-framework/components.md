@@ -1,12 +1,10 @@
 | Name | Version | Layer |
 | --- | --- | --- |
-| [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
 | [anyio](https://pypi.org/project/anyio) | 3.5.0 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
 | [asgiref](https://github.com/django/asgiref/) | 3.5.2 | ldap |
 | [async-timeout](https://github.com/aio-libs/async-timeout) | 4.0.2 | ldap |
-| [cachetools](https://github.com/tkem/cachetools/) | 5.0.0 | ldap |
 | [certifi](https://github.com/certifi/python-certifi) | 2024.7.4 | ldap |
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
@@ -42,4 +40,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(41 components)*
+*(39 components)*
