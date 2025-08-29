@@ -8,5 +8,6 @@
 - upgrade grafana from 8.5.22 to 11.6.3 (#345)
 - upgrade influxdb from 1.7.9 to 1.11.7 (#347)
 - upgrade grafana-loki from 2.2.1 to 3.5.1 (#348)
+- bump starlette from 0.40.0 to 0.47.3 (moderate CVE-2025-54121) (#352)
 
 
