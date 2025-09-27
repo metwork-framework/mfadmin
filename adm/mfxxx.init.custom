@@ -13,6 +13,14 @@ else
     echo_bold "=============== DEBUG OUTPUT =================================="
     cat "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
     rm -f "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
+    for F in $(ls ${MFMODULE_RUNTIME_HOME}/log/*.log ${MFMODULE_RUNTIME_HOME}/log/*.stdout ${MFMODULE_RUNTIME_HOME}/log/*.stderr 2>/dev/null); do
+        if test -s "${F}"; then
+            echo "===== 40 last lines of ${F} to debug ====="
+            tail -40 "${F}"
+            echo ""
+            echo ""
+        fi
+    done
     echo_bold "==============================================================="
     exit 1
 fi
