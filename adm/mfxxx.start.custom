@@ -40,7 +40,7 @@ if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     fi
     _circus_schedule_start_watcher.sh kibana || RES=1
     if test "${RES}" = "0"; then
-        mfprogress --timeout=90 --title="- Waiting Kibana..." -- repeat.sh kibana.status || RES=1
+        mfprogress --timeout=60 --title="- Waiting Kibana..." -- repeat.sh kibana.status || RES=1
     fi
 fi
 
