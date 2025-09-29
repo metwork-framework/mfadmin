@@ -21,6 +21,7 @@ for DIR in bin node node_modules optimize/bundles webpackShims built_assets; do
 done
 for DIR in plugins data; do
     mkdir -p "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}"
+    ln -s "${MFMODULE_RUNTIME_HOME}/tmp/kibana/${DIR}" "${MFMODULE_HOME}/opt/logs/opt/kibana/${DIR}"
 done
 
 cat "${MFMODULE_HOME}/config/kibana.conf" |envtpl --reduce-multi-blank-lines >"${MFMODULE_RUNTIME_HOME}/tmp/kibana/config/kibana.yml"
