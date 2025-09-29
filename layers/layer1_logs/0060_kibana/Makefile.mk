@@ -17,3 +17,4 @@ $(PREFIX)/opt/kibana/bin/kibana:
 	rm -Rf $(PREFIX)/opt/kibana
 	mkdir -p $(PREFIX)/opt
 	cd build && cp -Rf $(NAME)-$(VERSION) $(PREFIX)/opt/kibana
+	rm -rf $(PREFIX)/opt/kibana/data $(PREFIX)/opt/kibana/plugins
