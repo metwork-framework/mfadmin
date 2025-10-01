@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -eu
-set -x
 
 cd /src
 
@@ -15,6 +14,7 @@ echo -e "gpgcheck=0\n\enabled=1\n\metadata_expire=0\n" >>/etc/yum.repos.d/metwor
     yum -y install make
 
     su --command="mfadmin.init" - mfadmin
+set -x
     su --command="mfadmin.start" - mfadmin
     su --command="mfadmin.status" - mfadmin
     if test -d "integration_tests"; then chown -R mfadmin integration_tests; cd integration_tests; su --command="cd `pwd`; ./run_integration_tests.sh" - mfadmin; cd ..; fi
