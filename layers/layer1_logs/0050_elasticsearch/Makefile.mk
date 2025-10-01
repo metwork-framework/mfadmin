@@ -24,3 +24,6 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-esql-core
 	#Remove modules/repository-s3 generating errors
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-s3
+	#Also remove other cloud repository modules
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-azure
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-gcs
