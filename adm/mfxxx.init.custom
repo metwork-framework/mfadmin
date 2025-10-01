@@ -13,16 +13,37 @@ else
     echo_bold "=============== DEBUG OUTPUT =================================="
     cat "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
     rm -f "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start.$$"
-    for F in $(ls ${MFMODULE_RUNTIME_HOME}/log/*.log ${MFMODULE_RUNTIME_HOME}/log/*.stdout ${MFMODULE_RUNTIME_HOME}/log/*.stderr 2>/dev/null); do
-        if test -s "${F}"; then
-            echo "===== 40 last lines of ${F} to debug ====="
-            tail -40 "${F}"
-            echo ""
-            echo ""
-        fi
-    done
+#   for F in $(ls ${MFMODULE_RUNTIME_HOME}/log/*.log ${MFMODULE_RUNTIME_HOME}/log/*.stdout ${MFMODULE_RUNTIME_HOME}/log/*.stderr 2>/dev/null); do
+#       if test -s "${F}"; then
+#           echo "===== 40 last lines of ${F} to debug ====="
+#           tail -40 "${F}"
+#           echo ""
+#           echo ""
+#       fi
+#   done
     echo_bold "==============================================================="
-    exit 1
+    mfadmin.start NOINIT >"${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start2.$$" 2>&1
+    mfadmin.status >/dev/null 2>&1
+    if test $? -eq 0; then
+        echo_ok
+        rm -f "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start2.$$"
+    else
+        echo_nok
+        echo_bold "=============== DEBUG OUTPUT 2 =================================="
+        cat "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start2.$$"
+        rm -f "${MFMODULE_RUNTIME_HOME}/tmp/mfadmin_start2.$$"
+        for F in $(ls ${MFMODULE_RUNTIME_HOME}/log/*.log ${MFMODULE_RUNTIME_HOME}/log/*.stdout ${MFMODULE_RUNTIME_HOME}/log/*.stderr 2>/dev/null); do
+            if test -s "${F}"; then
+                echo "===== 40 last lines of ${F} to debug ====="
+                tail -40 "${F}"
+                echo ""
+                echo ""
+            fi
+        done
+        echo_bold "==============================================================="
+        exit 1
+    fi
+#    exit 1
 fi
 
 if test "${MFADMIN_LAYER_METRICS_LOADED:-}" = "1"; then
