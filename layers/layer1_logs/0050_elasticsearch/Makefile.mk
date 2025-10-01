@@ -17,3 +17,10 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	rm -Rf $(PREFIX)/opt/elasticsearch
 	mkdir -p $(PREFIX)/opt
 	cd build && cp -Rf $(NAME)-$(VERSION) $(PREFIX)/opt/elasticsearch
+	#Remove modules/x-pack-ml for a lighter rpm
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-ml
+	#Also remove modules/x-pack-esql and x-pack-esql-core (requiring x-pack-ml)
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-esql
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/x-pack-esql-core
+	#Remove modules/repository-s3 generating errors
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-s3
