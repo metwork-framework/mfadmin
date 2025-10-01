@@ -36,11 +36,11 @@ fi
 if test "${MFADMIN_LAYER_LOGS_LOADED:-}" = "1"; then
     _circus_schedule_start_watcher.sh elasticsearch || RES=1 
     if test "${RES}" = "0"; then
-        mfprogress --timeout=60 --title="- Waiting ES..." -- repeat.sh es.status || RES=1
+        mfprogress --timeout=180 --title="- Waiting ES..." -- repeat.sh es.status || RES=1
     fi
     _circus_schedule_start_watcher.sh kibana || RES=1
     if test "${RES}" = "0"; then
-        mfprogress --timeout=60 --title="- Waiting Kibana..." -- repeat.sh kibana.status || RES=1
+        mfprogress --timeout=180 --title="- Waiting Kibana..." -- repeat.sh kibana.status || RES=1
     fi
 fi
 
