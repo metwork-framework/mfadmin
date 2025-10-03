@@ -10,7 +10,7 @@ from mfutil.cli import MFProgress
 DESCRIPTION = "test if ES is up (return code: 0)"
 ES_PORT = int(os.environ['MFADMIN_ELASTICSEARCH_HTTP_PORT'])
 ES_URL = "http://127.0.0.1:%i/_cluster/health?wait_for_status=yellow" % ES_PORT
-TIMEOUT = 180
+TIMEOUT = 60
 
 parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.parse_args()
