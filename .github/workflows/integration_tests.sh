@@ -14,9 +14,9 @@ echo -e "gpgcheck=0\n\enabled=1\n\metadata_expire=0\n" >>/etc/yum.repos.d/metwor
     yum -y localinstall ./rpms/metwork-mfadmin*.rpm
     yum -y install make
 
-    su --command="mfadmin.init" - mfadmin || echo "mfadmin.init has failed"
-    su --command="mfadmin.start" - mfadmin || echo "mfadmin.start has failed"
-    su --command="mfadmin.status" - mfadmin || echo "mfadmin.status has failed"
+    su --command="mfadmin.init" - mfadmin
+    su --command="mfadmin.start" - mfadmin
+    su --command="mfadmin.status" - mfadmin
     if test -d "integration_tests"; then chown -R mfadmin integration_tests; cd integration_tests; su --command="cd `pwd`; ./run_integration_tests.sh" - mfadmin; cd ..; fi
     su --command="mfadmin.stop" - mfadmin
 
