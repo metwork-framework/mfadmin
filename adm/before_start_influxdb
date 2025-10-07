@@ -1,9 +1,8 @@
 #!/bin/bash
 
-mkdir -p ${MFMODULE_RUNTIME_HOME}/var/influxdb/meta
-mkdir -p ${MFMODULE_RUNTIME_HOME}/var/influxdb/data
-cat ${MFMODULE_HOME}/config/influxdb.conf |envtpl --reduce-multi-blank-lines >${MFMODULE_RUNTIME_HOME}/tmp/config_auto/influxdb.conf
-if test -s ${MFMODULE_RUNTIME_HOME}/tmp/config_auto/influxdb.conf; then
+mkdir -p ${MFMODULE_RUNTIME_HOME}/var/influxdb/engine
+cat ${MFMODULE_HOME}/config/influxdb.conf |envtpl --reduce-multi-blank-lines >${MFMODULE_RUNTIME_HOME}/tmp/config_auto/influxdb/config.toml
+if test -s ${MFMODULE_RUNTIME_HOME}/tmp/config_auto/influxdb/config.toml; then
     exit 0
 else
     exit 1
