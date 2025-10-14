@@ -14,5 +14,6 @@
 
 - disable xpack.screenshotting to avoid permission denied error (#365)
 - remove modules xpack-ml and repository-s3 from elasticsearch (#369)
+- update versions grafana dashboard (#378)
 
 
