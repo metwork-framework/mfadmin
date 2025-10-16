@@ -10,4 +10,10 @@
 - upgrade grafana-loki from 2.2.1 to 3.5.1 (#348)
 - bump starlette from 0.40.0 to 0.47.3 (moderate CVE-2025-54121) (#352)
 
+### Bug Fixes
+
+- disable xpack.screenshotting to avoid permission denied error (#365)
+- remove modules xpack-ml and repository-s3 from elasticsearch (#369)
+- update versions grafana dashboard (#378)
+
 

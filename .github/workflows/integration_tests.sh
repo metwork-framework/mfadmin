@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -eu
-set -x
 
 cd /src
+set -x
 
 
 echo -e "[metwork_${DEP_BRANCH}]" >/etc/yum.repos.d/metwork.repo

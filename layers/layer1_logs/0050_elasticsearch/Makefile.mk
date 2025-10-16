@@ -17,3 +17,8 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	rm -Rf $(PREFIX)/opt/elasticsearch
 	mkdir -p $(PREFIX)/opt
 	cd build && cp -Rf $(NAME)-$(VERSION) $(PREFIX)/opt/elasticsearch
+	#Remove modules/repository-s3 generating errors
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-s3
+	#Also remove other cloud repository modules
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-azure
+	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-gcs
