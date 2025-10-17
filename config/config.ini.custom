@@ -10,7 +10,8 @@
 # You don't have to change this
 endpoint=ipc://{{MFMODULE_RUNTIME_HOME}}/var/circus.socket
 pubsub_endpoint=ipc://{{MFMODULE_RUNTIME_HOME}}/var/circus_pubsub.socket
-
+# Arbiter config setting (default 5 was not enough to prevent "ConflictError: arbiter is already running..." with circus 0.17.2 
+check_delay = 15
 
 ####################
 ##### INFLUXDB #####
