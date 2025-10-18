@@ -10,6 +10,7 @@
 - upgrade grafana-loki from 2.2.1 to 3.5.1 (#348)
 - bump starlette from 0.40.0 to 0.47.3 (moderate CVE-2025-54121) (#352)
 - bump python-ldap from 3.4.4 to 3.4.5 (#380)
+- add check_delay in circus arbiter config setting (#381)
 
 ### Bug Fixes
 
