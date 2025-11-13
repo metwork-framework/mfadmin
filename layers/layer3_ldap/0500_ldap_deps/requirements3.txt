@@ -1,5 +1,5 @@
 aiofiles==0.8.0
-anyio==3.5.0
+anyio==3.7.1
 aredis==1.1.8
 asgi-ratelimit==0.7.0
 asgiref==3.5.2
