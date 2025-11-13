@@ -1,7 +1,7 @@
 | Name | Version | Layer |
 | --- | --- | --- |
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
-| [anyio](https://pypi.org/project/anyio) | 3.5.0 | ldap |
+| [anyio](https://pypi.org/project/anyio) | 3.7.1 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
 | [asgiref](https://github.com/django/asgiref/) | 3.5.2 | ldap |
