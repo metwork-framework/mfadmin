@@ -11,8 +11,13 @@
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
+<<<<<<< HEAD
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
 | [fastapi](https://github.com/fastapi/fastapi) | 0.115.2 | ldap |
+=======
+| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 8.18.2 | logs |
+| [fastapi](https://github.com/fastapi/fastapi) | 0.120.4 | ldap |
+>>>>>>> a91a085 (feat: upgrade starlette from 0.47.3 to 0.49.1 (fix high CVE-2025-62727) (#384))
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
@@ -35,7 +40,11 @@
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
+<<<<<<< HEAD
 | [starlette](https://github.com/encode/starlette) | 0.40.0 | ldap |
+=======
+| [starlette](https://github.com/Kludex/starlette) | 0.49.1 | ldap |
+>>>>>>> a91a085 (feat: upgrade starlette from 0.47.3 to 0.49.1 (fix high CVE-2025-62727) (#384))
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
