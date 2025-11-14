@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- upgrade starlette from 0.47.3 to 0.49.1 (fix high CVE-2025-62727) (#384)
+
 ## v2.3.1 (2025-05-14)
 
 - No interesting change
