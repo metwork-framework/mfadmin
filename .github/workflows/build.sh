@@ -52,7 +52,8 @@ make RELEASE_BUILD=${GITHUB_RUN_NUMBER} rpm >${BUILDLOGS}/make_rpm.log 2>&1 || (
 mkdir rpms
 mv /opt/metwork-mfadmin-${TARGET_DIR}/*.rpm rpms
 
-make clean
  
+
+make clean
 
 echo "bypass=false" >> github_output
