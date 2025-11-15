@@ -50,6 +50,7 @@ if test -d /opt/metwork-mfadmin-${TARGET_DIR}/html_doc; then cp -Rf /opt/metwork
 make test >${BUILDLOGS}/make_test.log 2>&1 || ( tail -200 ${BUILDLOGS}/make_test.log ; exit 1 )
 
 make clean
+df -h 
 
 make RELEASE_BUILD=${GITHUB_RUN_NUMBER} rpm >${BUILDLOGS}/make_rpm.log 2>&1 || ( tail -200 ${BUILDLOGS}/make_rpm.log ; exit 1 )
 
