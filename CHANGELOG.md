@@ -5,6 +5,7 @@
 ### New Features
 
 - upgrade starlette from 0.47.3 to 0.49.1 (fix high CVE-2025-62727) (#384)
+- add check_delay in circus arbiter config setting (backport #381) (#382)
 
 ## v2.3.1 (2025-05-14)
 
