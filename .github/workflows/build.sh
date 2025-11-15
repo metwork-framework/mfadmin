@@ -60,8 +60,4 @@ mv /opt/metwork-mfadmin-${TARGET_DIR}/*.rpm rpms
  
 df -h 
 
-make clean
-
-df -h 
-
 echo "bypass=false" >> github_output
