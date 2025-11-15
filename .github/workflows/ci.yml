@@ -38,27 +38,27 @@ jobs:
         run: |
           df -h
           # Remove Java (JDKs)
-          rm -rf /usr/lib/jvm
+          sudo rm -rf /usr/lib/jvm
           # Remove .NET SDKs
-          rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/share/dotnet
           # Remove Swift toolchain
-          rm -rf /usr/share/swift
+          sudo rm -rf /usr/share/swift
           # Remove Haskell (GHC)
-          rm -rf /usr/local/.ghcup
+          sudo rm -rf /usr/local/.ghcup
           # Remove Julia
-          rm -rf /usr/local/julia*
+          sudo rm -rf /usr/local/julia*
           # Remove Android SDKs
-          rm -rf /usr/local/lib/android
+          sudo rm -rf /usr/local/lib/android
           # Remove Chromium (optional if not using for browser tests)
-          rm -rf /usr/local/share/chromium
+          sudo rm -rf /usr/local/share/chromium
           # Remove Microsoft/Edge and Google Chrome builds
-          rm -rf /opt/microsoft /opt/google
+          sudo rm -rf /opt/microsoft /opt/google
           # Remove Azure CLI
-          rm -rf /opt/az
+          sudo rm -rf /opt/az
           # Remove PowerShell
-          rm -rf /usr/local/share/powershell
+          sudo rm -rf /usr/local/share/powershell
           # Remove CodeQL and other toolcaches
-          rm -rf /opt/hostedtoolcache
+          sudo rm -rf /opt/hostedtoolcache
           docker system prune -af || true
           docker builder prune -af || true
           df -h
