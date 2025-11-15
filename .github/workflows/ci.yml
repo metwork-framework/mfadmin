@@ -62,6 +62,9 @@ jobs:
           BUILDIMAGE=${{ steps.SetVariables.outputs.buildimage }}
           docker pull ${BUILDIMAGE}
           docker run ${DOCKER_RUN_OPTIONS} -e TARGET_DIR=${TARGET_DIR} -e BRANCH=${BRANCH} -e TAG=${TAG} -e DEP_DIR=${DEP_DIR} -e OS_VERSION=${OS_VERSION} --rm ${BUILDIMAGE} /bin/bash -c "${DOCKER_WORKFLOW_SCRIPTS_DIR}/bootstrap_ci.sh"
+      - name: check space
+        run: |
+          df -h
       - name: build
         if: ${{ steps.SetVariables.outputs.branch != 'null' }}
         id: BuildStep
