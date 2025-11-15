@@ -23,6 +23,7 @@ cd /src
 
 
 
+df -h 
 
 mkdir -p "/opt/metwork-mfadmin-${TARGET_DIR}"
 
@@ -40,7 +41,7 @@ if test "${OUTPUT}" != ""; then
     exit 1
 fi
 
- 
+df -h 
 
 if test -d docs; then make docs >${BUILDLOGS}/make_doc.log 2>&1 || ( tail -200 ${BUILDLOGS}/make_doc.log ; exit 1 ); fi
 if test -d doc; then make doc >${BUILDLOGS}/make_doc.log 2>&1 || ( tail -200 ${BUILDLOGS}/make_doc.log ; exit 1 ); fi
@@ -53,7 +54,10 @@ mkdir rpms
 mv /opt/metwork-mfadmin-${TARGET_DIR}/*.rpm rpms
 
  
+df -h 
 
 make clean
+
+df -h 
 
 echo "bypass=false" >> github_output
