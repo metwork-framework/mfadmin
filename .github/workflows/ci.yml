@@ -46,11 +46,6 @@ jobs:
       - name: debug env
         run: |
           env
-      - name: free space 1
-        run: |
-          df -h
-          docker system prune -af
-          df -h
       - name: bootstrap
         if: ${{ steps.SetVariables.outputs.branch != 'null' }}
         run: |
@@ -94,11 +89,6 @@ jobs:
             mkdir -p ${REMOTE}
           scp: |
             '${LOCAL}/*' => ${REMOTE}
-      - name: free space 2
-        run: |
-          df -h
-          docker system prune -af
-          df -h
       - name: integration tests
         if: ${{ steps.SetVariables.outputs.branch != 'null' && steps.BuildStep.outputs.bypass == 'false' }}
         run: |
