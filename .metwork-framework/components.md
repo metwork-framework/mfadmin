@@ -13,8 +13,13 @@
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
 | [fastapi](https://github.com/fastapi/fastapi) | 0.120.4 | ldap |
+<<<<<<< HEAD
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.12.3 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
+=======
+| [filelock](https://github.com/tox-dev/py-filelock) | 3.20.1 | ldap |
+| [grafana](https://grafana.com) | 11.6.3 | metrics |
+>>>>>>> 9dadacd (feat: bump filelock from 3.18.0 to 3.20.1 (fix moderate CVE-2025-68146) (#391))
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
