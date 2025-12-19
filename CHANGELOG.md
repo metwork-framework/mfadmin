@@ -12,6 +12,7 @@
 - bump python-ldap from 3.4.4 to 3.4.5 (#380)
 - add check_delay in circus arbiter config setting (#381)
 - upgrade starlette from 0.47.3 to 0.49.1 (fix high CVE-2025-62727) (#384)
+- bump filelock from 3.18.0 to 3.20.1 (fix moderate CVE-2025-68146) (#391)
 
 ### Bug Fixes
 
