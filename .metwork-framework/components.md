@@ -30,13 +30,8 @@
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
-<<<<<<< HEAD
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
-| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.19 | ldap |
-=======
-| [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.22 | ldap |
->>>>>>> 58d20f7 (feat: bump python-multipart to 0.0.22 (fix high CVE-2026-24486) (#396))
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
