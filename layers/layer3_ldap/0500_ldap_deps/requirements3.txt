@@ -21,13 +21,8 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pydantic==1.10.17
 PyJWT==2.4.0
-<<<<<<< HEAD
 python-ldap==3.4.4
-python-multipart==0.0.19
-=======
-python-ldap==3.4.5
 python-multipart==0.0.22
->>>>>>> 58d20f7 (feat: bump python-multipart to 0.0.22 (fix high CVE-2026-24486) (#396))
 redis==4.4.4
 setuptools-scm==7.1.0
 sniffio==1.2.0
