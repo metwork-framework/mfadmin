@@ -1,5 +1,12 @@
 # release_2.3 CHANGELOG
 
+## v2.3.3 (2026-01-28)
+
+### New Features
+
+- bump filelock from 3.18.0 to 3.20.1 (fix moderate CVE-2025-68146) (backport #391) (#392)
+- bump python-multipart to 0.0.22 (fix high CVE-2026-24486) (#396)
+
 ## v2.3.2 (2025-11-15)
 
 ### New Features
