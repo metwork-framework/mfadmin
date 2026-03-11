@@ -19,6 +19,10 @@ on:
 env:
 
 
+    DOCKER_RUN_OPTIONS: "-v ${{ github.workspace }}:/src -v /buildcache:/buildcache -v /local_sources:/local_sources -e GITHUB_REF -e GITHUB_RUN_NUMBER -e GITHUB_SHA -e GITHUB_REPOSITORY"
+
+
+
     DOCKER_RUN_OPTIONS: "-v ${{ github.workspace }}:/src -e GITHUB_REF -e GITHUB_RUN_NUMBER -e GITHUB_SHA -e GITHUB_REPOSITORY"
 
     WORKFLOW_SCRIPTS_DIR: .github/workflows
@@ -28,6 +32,10 @@ env:
 
 jobs:
   ci_build:
+
+
+    runs-on: [self-hosted, metwork]
+
 
 
     runs-on: ubuntu-latest
@@ -64,6 +72,11 @@ jobs:
           echo "available disk after"
           df -h
 
+
+      - name: clean workspace
+        run: |
+          rm -rf ${{ github.workspace }}
+          mkdir ${{ github.workspace }}
 
       - name: checkout
         uses: actions/checkout@v6
@@ -175,6 +188,11 @@ jobs:
             mkdir -p ${REMOTE}
           scp: |
             '${LOCAL}/*' => ${REMOTE}
+
+      - name: clean cache on failure
+        if: failure()
+        run: |
+          sudo rm -f ${{ steps.BuildStep.outputs.buildcache }}
 
 
 
