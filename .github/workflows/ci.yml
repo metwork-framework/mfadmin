@@ -19,9 +19,7 @@ on:
 env:
 
 
-    DOCKER_RUN_OPTIONS: "-v ${{ github.workspace }}:/src -v /buildcache:/buildcache -v /local_sources:/local_sources -e GITHUB_REF -e GITHUB_RUN_NUMBER -e GITHUB_SHA -e GITHUB_REPOSITORY"
-
-
+    DOCKER_RUN_OPTIONS: "-v ${{ github.workspace }}:/src -e GITHUB_REF -e GITHUB_RUN_NUMBER -e GITHUB_SHA -e GITHUB_REPOSITORY"
 
     WORKFLOW_SCRIPTS_DIR: .github/workflows
     DOCKER_WORKFLOW_SCRIPTS_DIR: /src/.github/workflows
@@ -32,17 +30,40 @@ jobs:
   ci_build:
 
 
-    runs-on: [self-hosted, metwork]
-
-
+    runs-on: ubuntu-latest
 
     steps:
 
-
-      - name: clean workspace
+      - name: Aggressive cleanup
+        #from https://dev.to/mathio/squeezing-disk-space-from-github-actions-runners-an-engineers-guide-3pjg
         run: |
-          rm -rf ${{ github.workspace }}
-          mkdir ${{ github.workspace }}
+          echo "available disk before"
+          df -h
+          # Remove Java (JDKs)
+          sudo rm -rf /usr/lib/jvm
+          # Remove .NET SDKs
+          sudo rm -rf /usr/share/dotnet
+          # Remove Swift toolchain
+          sudo rm -rf /usr/share/swift
+          # Remove Haskell (GHC)
+          sudo rm -rf /usr/local/.ghcup
+          # Remove Julia
+          sudo rm -rf /usr/local/julia*
+          # Remove Android SDKs
+          sudo rm -rf /usr/local/lib/android
+          # Remove Chromium (optional if not using for browser tests)
+          sudo rm -rf /usr/local/share/chromium
+          # Remove Microsoft/Edge and Google Chrome builds
+          sudo rm -rf /opt/microsoft /opt/google
+          # Remove Azure CLI
+          sudo rm -rf /opt/az
+          # Remove PowerShell
+          sudo rm -rf /usr/local/share/powershell
+          # Remove CodeQL and other toolcaches
+          sudo rm -rf /opt/hostedtoolcache
+          echo "available disk after"
+          df -h
+
 
       - name: checkout
         uses: actions/checkout@v6
@@ -154,11 +175,6 @@ jobs:
             mkdir -p ${REMOTE}
           scp: |
             '${LOCAL}/*' => ${REMOTE}
-
-      - name: clean cache on failure
-        if: failure()
-        run: |
-          sudo rm -f ${{ steps.BuildStep.outputs.buildcache }}
 
 
 
