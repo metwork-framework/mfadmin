@@ -29,8 +29,13 @@
 | [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
 | [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
+<<<<<<< HEAD
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.4.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
+=======
+| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
+| [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
+>>>>>>> e38aec1 (feat: bump PyJWT from 2.4.0 to 2.12.1 (fix high CVE-2026-32597) (#401))
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.22 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
