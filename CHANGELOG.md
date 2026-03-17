@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- bump PyJWT from 2.4.0 to 2.12.1 (fix high CVE-2026-32597) (#401)
+
 ## v2.3.3 (2026-01-28)
 
 ### New Features
