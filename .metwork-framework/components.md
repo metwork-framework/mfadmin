@@ -1,10 +1,7 @@
 | Name | Version | Layer |
 | --- | --- | --- |
-<<<<<<< HEAD
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
-=======
 | [annotated-doc](https://github.com/fastapi/annotated-doc) | 0.0.4 | ldap |
->>>>>>> 284a676 (feat: bump pyasn1 from 0.6.2 to 0.6.3 (fix high CVE-2026-30922) (#403))
 | [anyio](https://pypi.org/project/anyio) | 3.7.1 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
@@ -29,15 +26,10 @@
 | [loki](https://grafana.com/oss/loki/) | 2.2.1 | logs_loki |
 | [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | 2.1.0 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
-<<<<<<< HEAD
 | [openjdk](https://adoptopenjdk.net) | 11.0.5+10 | java |
-| [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
-| [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
-=======
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
 | [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
->>>>>>> 284a676 (feat: bump pyasn1 from 0.6.2 to 0.6.3 (fix high CVE-2026-30922) (#403))
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
@@ -54,4 +46,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(42 components)*
+*(45 components)*
