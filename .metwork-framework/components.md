@@ -1,5 +1,6 @@
 | Name | Version | Layer |
 | --- | --- | --- |
+| [annotated-doc](https://github.com/fastapi/annotated-doc) | 0.0.4 | ldap |
 | [anyio](https://pypi.org/project/anyio) | 3.7.1 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
@@ -23,14 +24,16 @@
 | [loki](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
 | [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | 2.1.0 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
-| [pyasn1-modules](https://github.com/etingof/pyasn1-modules) | 0.2.8 | ldap |
-| [pyasn1](https://github.com/etingof/pyasn1) | 0.4.8 | ldap |
+| [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
+| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
+| [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.22 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
+| [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 0.49.1 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
@@ -40,4 +43,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(39 components)*
+*(42 components)*
