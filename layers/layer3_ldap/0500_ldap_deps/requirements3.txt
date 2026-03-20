@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 aiofiles==0.8.0
-=======
 annotated-doc==0.0.4
->>>>>>> 284a676 (feat: bump pyasn1 from 0.6.2 to 0.6.3 (fix high CVE-2026-30922) (#403))
 anyio==3.7.1
 aredis==1.1.8
 asgi-ratelimit==0.7.0
