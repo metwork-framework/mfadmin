@@ -5,6 +5,7 @@
 ### New Features
 
 - bump PyJWT from 2.4.0 to 2.12.1 (fix high CVE-2026-32597) (#401)
+- bump pyasn1 from 0.6.2 to 0.6.3 (fix high CVE-2026-30922) (backport #403) (#404)
 
 ## v2.3.3 (2026-01-28)
 
