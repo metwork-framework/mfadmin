@@ -17,6 +17,7 @@
 - bump python-multipart to 0.0.22 (fix high CVE-2026-24486) (#396)
 - bump PyJWT from 2.4.0 to 2.12.1 (fix high CVE-2026-32597) (#401)
 - bump pyasn1 from 0.6.2 to 0.6.3 (fix high CVE-2026-30922) (#403)
+- bump python-multipart to 0.0.26 (moderate CVE-2026-40347) (#406)
 
 ### Bug Fixes
 
