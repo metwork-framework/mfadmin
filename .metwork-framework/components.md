@@ -27,7 +27,8 @@
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
 | [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
-| [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
+| [pydantic](https://github.com/pydantic/pydantic) | 2.12.4 | ldap |
+| [pydantic_core](https://github.com/pydantic/pydantic-core) | 2.41.5 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.26 | ldap |
@@ -39,8 +40,8 @@
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
-| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.12.2 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.15.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(42 components)*
+*(43 components)*
