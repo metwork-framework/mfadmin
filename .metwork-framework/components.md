@@ -16,7 +16,7 @@
 | [grafana](https://grafana.com) | 11.6.3 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
-| [importlib_metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
+| [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.11.7 | metrics |
 | [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
 | [kibana](https://www.elastic.co/products/kibana) | 8.18.2 | logs |
