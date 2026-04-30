@@ -15,7 +15,7 @@
 | [grafana](https://grafana.com) | 11.6.3 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
-| [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
+| [importlib_metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.11.7 | metrics |
 | [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
 | [kibana](https://www.elastic.co/products/kibana) | 8.18.2 | logs |
@@ -31,14 +31,12 @@
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.19 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
-| [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 0.49.1 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
-| [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.15.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(40 components)*
+*(38 components)*
