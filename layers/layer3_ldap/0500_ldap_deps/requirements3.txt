@@ -25,12 +25,10 @@ python-ldap==3.4.5
 python-multipart==0.0.26
 redis==4.4.4
 setuptools==81.0.0
-setuptools-scm==7.1.0
 sniffio==1.2.0
 starlette==0.49.1
 structlog==21.5.0
 toml==0.10.2
-typer==0.4.0
 typing-extensions==4.12.2
 uvicorn==0.17.5
 zipp==3.19.2

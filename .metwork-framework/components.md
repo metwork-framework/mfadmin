@@ -32,15 +32,13 @@
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.26 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
-| [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 0.49.1 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
-| [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.12.2 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(42 components)*
+*(40 components)*
