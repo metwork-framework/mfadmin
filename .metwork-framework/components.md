@@ -30,7 +30,7 @@
 | [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
-| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.26 | ldap |
+| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.29 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
