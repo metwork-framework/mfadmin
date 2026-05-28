@@ -15,7 +15,7 @@
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.20.3 | ldap |
 | [grafana](https://grafana.com) | 11.6.3 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
-| [idna](https://pypi.org/project/idna) | 3.7 | ldap |
+| [idna](https://pypi.org/project/idna) | 3.16 | ldap |
 | [importlib_metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.11.7 | metrics |
 | [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
