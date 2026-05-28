@@ -24,7 +24,7 @@ pyasn1-modules==0.4.1
 pydantic==1.10.17
 PyJWT==2.12.1
 python-ldap==3.4.4
-python-multipart==0.0.22
+python-multipart==0.0.29
 redis==4.4.4
 setuptools==81.0.0
 setuptools-scm==7.1.0
