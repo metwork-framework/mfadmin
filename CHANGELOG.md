@@ -20,6 +20,7 @@
 - bump python-multipart to 0.0.26 (moderate CVE-2026-40347) (#406)
 - bump python-multipart to 0.0.29 (fix high CVE-2026-42561) (#412)
 - bump idna from 3.11 to 3.16 (fix moderate CVE-2026-45409) (#414)
+- bump starlette to 1.2.1 (CVE-2026-48710) and update all packages (#416)
 
 ### Bug Fixes
 
