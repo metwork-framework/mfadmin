@@ -15,11 +15,11 @@ class Settings(BaseSettings):
     ldap_cacert_file: str = "/etc/pki/tls/certs/ca-bundle.crt"
     ldap_starttls: int = 1
     ldap_timeout: int = 10
-    ldap_bind_who = "cn=ovhdev,ou=DPDSI,ou=generiques,dc=meteo,dc=fr"
-    ldap_bind_pass = "XXXXXX"
-    ldap_base = "ou=people,dc=meteo,dc=fr"
-    redis_url = "redis://127.0.0.1"
-    redis_key_expiry_seconds = 24 * 60 * 60  # 24 hours in seconds
+    ldap_bind_who: str = "cn=ovhdev,ou=DPDSI,ou=generiques,dc=meteo,dc=fr"
+    ldap_bind_pass: str = "XXXXXX"
+    ldap_base: str = "ou=people,dc=meteo,dc=fr"
+    redis_url: str = "redis://127.0.0.1"
+    redis_key_expiry_seconds: int = 24 * 60 * 60  # 24 hours in seconds
     force_same_ip: bool = False
     ratelimit_redis_host: Optional[str] = None  # None => no rate limiting
     ratelimit_redis_port: int = 6379
