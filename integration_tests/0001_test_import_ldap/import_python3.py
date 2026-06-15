@@ -22,6 +22,8 @@ import pyasn1
 import pyasn1_modules
 import pydantic
 import pydantic_core
+import pydantic_settings
+import dotenv
 import jwt
 import ldap
 import multipart

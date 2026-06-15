@@ -28,9 +28,11 @@
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
 | [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
+| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.14.1 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 2.13.4 | ldap |
 | [pydantic_core](https://github.com/pydantic/pydantic) | 2.46.4 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
+| [python-dotenv](https://pypi.org/project/python-dotenv) | 1.2.2 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.29 | ldap |
 | [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
@@ -44,4 +46,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.34.2 | ldap |
 | [zipp](https://pypi.org/project/zipp) | 3.21.0 | ldap |
 
-*(43 components)*
+*(45 components)*
