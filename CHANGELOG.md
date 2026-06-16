@@ -21,11 +21,14 @@
 - bump python-multipart to 0.0.29 (fix high CVE-2026-42561) (#412)
 - bump idna from 3.11 to 3.16 (fix moderate CVE-2026-45409) (#414)
 - bump starlette to 1.2.1 (CVE-2026-48710) and update all packages (#416)
+- add pydantic-settings for BaseSettings moved from pydantic
+- bump PyJWT from 2.12.1 to 2.13.0 (fix high CVE-2026-48526) (#420)
 
 ### Bug Fixes
 
 - disable xpack.screenshotting to avoid permission denied error (#365)
 - remove modules xpack-ml and repository-s3 from elasticsearch (#369)
 - update versions grafana dashboard (#378)
+- fix non annotated attributes (compatbility pydantic 2)
 
 
