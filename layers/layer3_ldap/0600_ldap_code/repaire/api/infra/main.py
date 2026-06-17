@@ -81,14 +81,13 @@ async def login(request: Request, b64url: str = "", previous_result: str = ""):
         b64url = SLASH_B64URL
     else:
         decode_b64url_or_raise(b64url)
-    context = {"request": request, "b64url": b64url, "previous_result": previous_result}
-    return templates.TemplateResponse("login.html", context)
+    context = {"b64url": b64url, "previous_result": previous_result}
+    return templates.TemplateResponse(request, "login.html", context)
 
 
 @app.get("/404", response_class=HTMLResponse)
 async def notfound(request: Request):
-    context = {"request": request}
-    return templates.TemplateResponse("404.html", context)
+    return templates.TemplateResponse(request, "404.html")
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -106,8 +105,8 @@ async def index(request: Request):
             raise HTTPException(400, "can't decode token")
         if user is None:
             raise Exception("user is None (impossible)")
-    context = {"request": request, "user": user, "token": token}
-    return templates.TemplateResponse("index.html", context)
+    context = {"user": user, "token": token}
+    return templates.TemplateResponse(request, "index.html", context)
 
 
 @app.get("/logout")
