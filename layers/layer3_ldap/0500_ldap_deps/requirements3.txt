@@ -25,7 +25,6 @@ pydantic==1.10.17
 PyJWT==2.12.1
 python-ldap==3.4.4
 python-multipart==0.0.29
-<<<<<<< HEAD
 redis==4.4.4
 setuptools==81.0.0
 setuptools-scm==7.1.0
@@ -37,15 +36,3 @@ typer==0.4.0
 typing-extensions==4.12.2
 uvicorn==0.17.5
 zipp==3.19.2
-=======
-redis==7.1.1
-setuptools==82.0.1
-six==1.17.0
-sniffio==1.3.1
-starlette==1.3.1
-structlog==23.1.0
-typing-extensions==4.15.0
-typing-inspection==0.4.2
-uvicorn==0.34.2
-zipp==3.21.0
->>>>>>> 2155814 (feat: bump starlette from 1.2.1 to 1.3.1 (fix high CVE-2026-54283) (#426))
