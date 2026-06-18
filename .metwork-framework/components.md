@@ -39,7 +39,7 @@
 | [setuptools](https://pypi.org/project/setuptools) | 82.0.1 | ldap |
 | [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.3.1 | ldap |
-| [starlette](https://github.com/Kludex/starlette) | 1.2.1 | ldap |
+| [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 23.1.0 | ldap |
 | [typing-inspection](https://github.com/pydantic/typing-inspection) | 0.4.2 | ldap |
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.15.0 | ldap |
