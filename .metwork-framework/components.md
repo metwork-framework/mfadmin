@@ -34,6 +34,7 @@
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.12.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.29 | ldap |
+<<<<<<< HEAD
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
@@ -45,5 +46,17 @@
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.12.2 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
+=======
+| [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
+| [setuptools](https://pypi.org/project/setuptools) | 82.0.1 | ldap |
+| [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
+| [sniffio](https://github.com/python-trio/sniffio) | 1.3.1 | ldap |
+| [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
+| [structlog](https://pypi.org/project/structlog) | 23.1.0 | ldap |
+| [typing-inspection](https://github.com/pydantic/typing-inspection) | 0.4.2 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.15.0 | ldap |
+| [uvicorn](https://www.uvicorn.org/) | 0.34.2 | ldap |
+| [zipp](https://pypi.org/project/zipp) | 3.21.0 | ldap |
+>>>>>>> 2155814 (feat: bump starlette from 1.2.1 to 1.3.1 (fix high CVE-2026-54283) (#426))
 
 *(45 components)*
