@@ -2,6 +2,7 @@
 | --- | --- | --- |
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
 | [annotated-doc](https://github.com/fastapi/annotated-doc) | 0.0.4 | ldap |
+| [annotated-types](https://github.com/annotated-types/annotated-types) | 0.7.0 | ldap |
 | [anyio](https://pypi.org/project/anyio) | 3.7.1 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
@@ -13,7 +14,7 @@
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
 | [elasticsearch](https://www.elastic.co/products/elasticsearch) | 6.8.23 | logs |
-| [fastapi](https://github.com/fastapi/fastapi) | 0.120.4 | ldap |
+| [fastapi](https://github.com/fastapi/fastapi) | 0.133.1 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.20.1 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
@@ -30,20 +31,23 @@
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
 | [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
-| [pydantic](https://github.com/pydantic/pydantic) | 1.10.17 | ldap |
+| [pydantic](https://github.com/pydantic/pydantic) | 2.7.4 | ldap |
+| [pydantic_core](https://github.com/pydantic/pydantic-core) | 2.18.4 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.13.0 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.29 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
+| [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 21.5.0 | ldap |
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
+| [typing-inspection](https://github.com/pydantic/typing-inspection) | 0.4.2 | ldap |
 | [typing_extensions](https://pypi.org/project/typing_extensions) | 4.12.2 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
-*(45 components)*
+*(49 components)*
