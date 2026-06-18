@@ -30,5 +30,6 @@
 - remove modules xpack-ml and repository-s3 from elasticsearch (#369)
 - update versions grafana dashboard (#378)
 - fix non annotated attributes (compatbility pydantic 2)
+- adaptation to starlette 1 breaking change (#424)
 
 
