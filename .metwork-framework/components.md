@@ -35,12 +35,20 @@
 | [pydantic](https://github.com/pydantic/pydantic) | 2.7.4 | ldap |
 | [pydantic_core](https://github.com/pydantic/pydantic-core) | 2.18.4 | ldap |
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.13.0 | ldap |
+<<<<<<< HEAD
 | [python-dotenv](https://github.com/theskumar/python-dotenv) | 1.0.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.29 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
+=======
+| [python-dotenv](https://pypi.org/project/python-dotenv) | 1.2.2 | ldap |
+| [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
+| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.30 | ldap |
+| [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
+| [setuptools](https://pypi.org/project/setuptools) | 82.0.1 | ldap |
+>>>>>>> 27e56c8 (feat: python-multipart from 0.0.29 to 0.0.30 (fix high CVE-2026-53539) (#433))
 | [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
