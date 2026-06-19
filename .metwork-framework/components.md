@@ -34,7 +34,7 @@
 | [PyJWT](https://github.com/jpadilla/pyjwt) | 2.13.0 | ldap |
 | [python-dotenv](https://pypi.org/project/python-dotenv) | 1.2.2 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
-| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.29 | ldap |
+| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.30 | ldap |
 | [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 82.0.1 | ldap |
 | [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
