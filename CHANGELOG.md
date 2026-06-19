@@ -23,6 +23,7 @@
 - bump starlette to 1.2.1 (CVE-2026-48710) and update all packages (#416)
 - add pydantic-settings for BaseSettings moved from pydantic
 - bump PyJWT from 2.12.1 to 2.13.0 (fix high CVE-2026-48526) (#420)
+- bump starlette from 1.2.1 to 1.3.1 (fix high CVE-2026-54283) (#426)
 
 ### Bug Fixes
 
