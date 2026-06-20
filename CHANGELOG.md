@@ -11,6 +11,7 @@
 - bump starlette from 0.49.1 to 1.3.1 (fix high CVE-2026-54283) (#428)
 - bump fastapi from 0.120.4 to 0.133.1 (compat. starlette 1.3.1) (#429)
 - add pydantic-settings for BaseSettings moved from pydantic (backport #418) (#430)
+- python-multipart from 0.0.29 to 0.0.30 (fix high CVE-2026-53539) (backport #433) (#434)
 
 ### Bug Fixes
 
