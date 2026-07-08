@@ -11,7 +11,7 @@
 | [click](https://pypi.org/project/click) | 8.3.3 | ldap |
 | [distlib](https://github.com/pypa/distlib) | 0.4.0 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.9.0 | ldap |
-| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 8.18.2 | logs |
+| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 8.19.18 | logs |
 | [fastapi](https://github.com/fastapi/fastapi) | 0.136.3 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.29.1 | ldap |
 | [grafana](https://grafana.com) | 11.6.3 | metrics |
