@@ -20,7 +20,7 @@
 | [importlib_metadata](https://pypi.org/project/importlib_metadata) | 8.6.1 | ldap |
 | [influxdb](https://www.influxdata.com) | 1.11.7 | metrics |
 | [Jinja2](https://pypi.org/project/Jinja2) | 3.1.6 | ldap |
-| [kibana](https://www.elastic.co/products/kibana) | 8.18.2 | logs |
+| [kibana](https://www.elastic.co/products/kibana) | 8.19.16 | logs |
 | [logcli](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
 | [loki](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
 | [MarkupSafe](https://pypi.org/project/MarkupSafe) | 3.0.2 | ldap |
