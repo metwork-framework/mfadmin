@@ -27,6 +27,7 @@
 - python-multipart from 0.0.29 to 0.0.30 (fix high CVE-2026-53539) (#433)
 - bump pydantic-settings to 2.14.2 (fix moderate GHSA-4xgf-cpjx-pc3j) (#436)
 - bump python-multipart to 0.0.31 (fix low CVE-2026-53540) (#437)
+- bump elasticsearch from 8.18.2 to 8.19.18 (#443)
 
 ### Bug Fixes
 
