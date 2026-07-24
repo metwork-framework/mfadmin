@@ -29,7 +29,7 @@
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.0 | ldap |
 | [openjdk](https://adoptopenjdk.net) | 11.0.5+10 | java |
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
-| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
+| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.4 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
 | [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.3.4 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 2.7.4 | ldap |
