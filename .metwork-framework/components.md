@@ -26,7 +26,7 @@
 | [MarkupSafe](https://pypi.org/project/MarkupSafe) | 3.0.2 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.1 | ldap |
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
-| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
+| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.4 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
 | [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.14.2 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 2.13.4 | ldap |
