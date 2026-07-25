@@ -25,7 +25,6 @@
 | [loki](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
 | [MarkupSafe](https://pypi.org/project/MarkupSafe) | 3.0.2 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.1 | ldap |
-| [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
 | [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.4 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
 | [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.14.2 | ldap |
@@ -36,7 +35,6 @@
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.31 | ldap |
 | [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
-| [setuptools](https://pypi.org/project/setuptools) | 82.0.1 | ldap |
 | [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.3.1 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
@@ -46,4 +44,4 @@
 | [uvicorn](https://www.uvicorn.org/) | 0.34.2 | ldap |
 | [zipp](https://pypi.org/project/zipp) | 3.21.0 | ldap |
 
-*(45 components)*
+*(43 components)*

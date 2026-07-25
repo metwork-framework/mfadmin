@@ -17,7 +17,6 @@ import importlib_metadata
 import jinja2
 import markupsafe
 import mflog
-import packaging
 import pyasn1
 import pyasn1_modules
 import pydantic
@@ -28,7 +27,6 @@ import jwt
 import ldap
 import multipart
 import redis
-import setuptools
 import six
 import sniffio
 import starlette
