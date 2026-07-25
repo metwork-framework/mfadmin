@@ -1,5 +1,11 @@
 # release_2.3 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- bump pyasn1 from 0.6.3 to 0.6.4 (fix 3 high CVE-2026-59884/5/6) (#445)
+
 ## v2.3.4 (2026-06-20)
 
 ### New Features
