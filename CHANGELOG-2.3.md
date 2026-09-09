@@ -1,5 +1,23 @@
 # release_2.3 CHANGELOG
 
+## v2.3.4 (2026-06-20)
+
+### New Features
+
+- bump PyJWT from 2.4.0 to 2.12.1 (fix high CVE-2026-32597) (#401)
+- bump pyasn1 from 0.6.2 to 0.6.3 (fix high CVE-2026-30922) (backport #403) (#404)
+- bump python-multipart to 0.0.29 (fix high CVE-2026-42561) (#412)
+- bump PyJWT from 2.12.1 to 2.13.0 (fix high CVE-2026-48526) (backport #420) (#425)
+- bump starlette from 0.49.1 to 1.3.1 (fix high CVE-2026-54283) (#428)
+- bump fastapi from 0.120.4 to 0.133.1 (compat. starlette 1.3.1) (#429)
+- add pydantic-settings for BaseSettings moved from pydantic (backport #418) (#430)
+- python-multipart from 0.0.29 to 0.0.30 (fix high CVE-2026-53539) (backport #433) (#434)
+
+### Bug Fixes
+
+- adaptation to starlette 1 breaking change (backport #424) (#427)
+- fix non annotated attributes (compatibility pydantic 2) (backport #419) (#431)
+
 ## v2.3.3 (2026-01-28)
 
 ### New Features
