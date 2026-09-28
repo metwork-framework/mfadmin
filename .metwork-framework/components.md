@@ -3,7 +3,7 @@
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
 | [annotated-doc](https://github.com/fastapi/annotated-doc) | 0.0.4 | ldap |
 | [annotated-types](https://github.com/annotated-types/annotated-types) | 0.7.0 | ldap |
-| [anyio](https://pypi.org/project/anyio) | 3.7.1 | ldap |
+| [anyio](https://pypi.org/project/anyio) | 4.15.1 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
 | [asgiref](https://github.com/django/asgiref/) | 3.5.2 | ldap |
@@ -48,7 +48,7 @@
 | [toml](https://github.com/uiri/toml) | 0.10.2 | ldap |
 | [typer](https://github.com/tiangolo/typer) | 0.4.0 | ldap |
 | [typing-inspection](https://github.com/pydantic/typing-inspection) | 0.4.2 | ldap |
-| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.12.2 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.16.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.17.5 | ldap |
 | [zipp](https://github.com/jaraco/zipp) | 3.19.2 | ldap |
 
