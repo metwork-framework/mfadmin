@@ -3,7 +3,7 @@
 | [aiofiles](https://pypi.org/project/aiofiles) | 0.8.0 | ldap |
 | [annotated-doc](https://github.com/fastapi/annotated-doc) | 0.0.4 | ldap |
 | [annotated-types](https://github.com/annotated-types/annotated-types) | 0.7.0 | ldap |
-| [anyio](https://pypi.org/project/anyio) | 4.15.1 | ldap |
+| [anyio](https://pypi.org/project/anyio) | 4.14.2 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
 | [asgiref](https://github.com/django/asgiref/) | 3.5.2 | ldap |
