@@ -34,7 +34,7 @@
 | [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.3.4 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 2.7.4 | ldap |
 | [pydantic_core](https://github.com/pydantic/pydantic-core) | 2.18.4 | ldap |
-| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.13.0 | ldap |
+| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.15.1 | ldap |
 | [python-dotenv](https://github.com/theskumar/python-dotenv) | 1.0.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.30 | ldap |
