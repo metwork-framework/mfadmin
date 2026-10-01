@@ -31,27 +31,16 @@
 | [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
 | [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.4 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
-<<<<<<< HEAD
 | [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.3.4 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 2.7.4 | ldap |
 | [pydantic_core](https://github.com/pydantic/pydantic-core) | 2.18.4 | ldap |
-| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.13.0 | ldap |
+| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.15.1 | ldap |
 | [python-dotenv](https://github.com/theskumar/python-dotenv) | 1.0.1 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.4 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.30 | ldap |
 | [redis](https://github.com/redis/redis-py) | 4.4.4 | ldap |
 | [setuptools-scm](https://github.com/pypa/setuptools_scm/) | 7.1.0 | ldap |
 | [setuptools](https://pypi.org/project/setuptools) | 81.0.0 | ldap |
-=======
-| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.14.2 | ldap |
-| [pydantic](https://github.com/pydantic/pydantic) | 2.13.4 | ldap |
-| [pydantic_core](https://github.com/pydantic/pydantic) | 2.46.4 | ldap |
-| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.15.1 | ldap |
-| [python-dotenv](https://pypi.org/project/python-dotenv) | 1.2.2 | ldap |
-| [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
-| [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.31 | ldap |
-| [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
->>>>>>> 12ff5e8 (feat: bump PyJWT from 2.13.0 to 2.15.1 (fix 3 high CVE) (#457))
 | [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.2.0 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
