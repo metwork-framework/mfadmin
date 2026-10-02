@@ -6,6 +6,7 @@
 
 - bump pyasn1 from 0.6.3 to 0.6.4 (fix 3 high CVE-2026-59884/5/6) (#445)
 - bump anyio from 3.7.1 to 4.14.2 (fix critical CVE-2026-63374) (backport #452) (#453)
+- bump PyJWT from 2.13.0 to 2.15.1 (fix 3 high CVE) (#457)
 
 ## v2.3.4 (2026-06-20)
 
