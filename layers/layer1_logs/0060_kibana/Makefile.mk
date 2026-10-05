@@ -17,7 +17,3 @@ $(PREFIX)/opt/kibana/bin/kibana:
 	rm -Rf $(PREFIX)/opt/kibana
 	mkdir -p $(PREFIX)/opt
 	cd build && cp -Rf $(NAME)-$(VERSION) $(PREFIX)/opt/kibana
-
-clean::
-	rm -f $(PREFIX)/opt/kibana/bin/kibana
-	rm -f $(PREFIX)/share/metwork_packages/kibana.yaml
