@@ -2,7 +2,7 @@
 | --- | --- | --- |
 | [annotated-doc](https://github.com/fastapi/annotated-doc) | 0.0.4 | ldap |
 | [annotated-types](https://github.com/annotated-types/annotated-types) | 0.7.0 | ldap |
-| [anyio](https://pypi.org/project/anyio) | 3.7.1 | ldap |
+| [anyio](https://pypi.org/project/anyio) | 4.15.1 | ldap |
 | [aredis](https://github.com/NoneGG/aredis) | 1.1.8 | ldap |
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
 | [asgiref](https://github.com/django/asgiref/) | 3.8.1 | ldap |
@@ -25,13 +25,12 @@
 | [loki](https://grafana.com/oss/loki/) | 3.5.1 | logs_loki |
 | [MarkupSafe](https://pypi.org/project/MarkupSafe) | 3.0.2 | ldap |
 | [mflog](https://github.com/metwork-framework/mflog) | 0.1.1 | ldap |
-| [packaging](https://pypi.org/project/packaging) | 26.0 | ldap |
-| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.3 | ldap |
+| [pyasn1](https://github.com/pyasn1/pyasn1) | 0.6.4 | ldap |
 | [pyasn1_modules](https://github.com/pyasn1/pyasn1-modules) | 0.4.1 | ldap |
 | [pydantic-settings](https://github.com/pydantic/pydantic-settings) | 2.14.2 | ldap |
 | [pydantic](https://github.com/pydantic/pydantic) | 2.13.4 | ldap |
 | [pydantic_core](https://github.com/pydantic/pydantic) | 2.46.4 | ldap |
-| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.13.0 | ldap |
+| [PyJWT](https://github.com/jpadilla/pyjwt) | 2.15.1 | ldap |
 | [python-dotenv](https://pypi.org/project/python-dotenv) | 1.2.2 | ldap |
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.31 | ldap |
@@ -42,8 +41,8 @@
 | [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
 | [structlog](https://pypi.org/project/structlog) | 23.1.0 | ldap |
 | [typing-inspection](https://github.com/pydantic/typing-inspection) | 0.4.2 | ldap |
-| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.15.0 | ldap |
+| [typing_extensions](https://pypi.org/project/typing_extensions) | 4.16.0 | ldap |
 | [uvicorn](https://www.uvicorn.org/) | 0.34.2 | ldap |
 | [zipp](https://pypi.org/project/zipp) | 3.21.0 | ldap |
 
-*(45 components)*
+*(43 components)*
