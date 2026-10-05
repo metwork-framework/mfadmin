@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=elasticsearch
-export VERSION=8.19.18
+export VERSION=8.19.19
 export EXTENSION=tar.gz
 export CHECKTYPE=MD5
-export CHECKSUM=dc3aef85c211a5a628527104da748b80
+export CHECKSUM=09334bbe85d86e48c275c31986995bc0
 DESCRIPTION=\
 Elasticsearch is a distributed, RESTful search and analytics engine
 WEBSITE=https://www.elastic.co/products/elasticsearch
@@ -22,3 +22,8 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	#Also remove other cloud repository modules
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-azure
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-gcs
+
+clean::
+	rm -f $(PREFIX)/opt/elasticsearch/bin/elasticsearch
+	rm -f $(PREFIX)/share/metwork_packages/elasticsearch.yaml
+
