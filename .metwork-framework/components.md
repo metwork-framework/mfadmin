@@ -35,7 +35,6 @@
 | [python-ldap](https://www.python-ldap.org/) | 3.4.5 | ldap |
 | [python-multipart](https://github.com/Kludex/python-multipart) | 0.0.31 | ldap |
 | [redis](https://github.com/redis/redis-py) | 7.1.1 | ldap |
-| [setuptools](https://pypi.org/project/setuptools) | 82.0.1 | ldap |
 | [six](https://github.com/benjaminp/six) | 1.17.0 | ldap |
 | [sniffio](https://github.com/python-trio/sniffio) | 1.3.1 | ldap |
 | [starlette](https://github.com/Kludex/starlette) | 1.3.1 | ldap |
