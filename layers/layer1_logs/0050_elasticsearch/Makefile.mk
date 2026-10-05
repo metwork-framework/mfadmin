@@ -23,7 +23,3 @@ $(PREFIX)/opt/elasticsearch/bin/elasticsearch:
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-azure
 	rm -rf $(PREFIX)/opt/elasticsearch/modules/repository-gcs
 
-clean::
-	rm -f $(PREFIX)/opt/elasticsearch/bin/elasticsearch
-	rm -f $(PREFIX)/share/metwork_packages/elasticsearch.yaml
-
