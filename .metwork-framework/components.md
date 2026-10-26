@@ -8,9 +8,8 @@
 | [asgi-ratelimit](https://github.com/abersheeran/asgi-ratelimit) | 0.7.0 | ldap |
 | [asgiref](https://github.com/django/asgiref/) | 3.5.2 | ldap |
 | [async-timeout](https://github.com/aio-libs/async-timeout) | 4.0.2 | ldap |
-<<<<<<< HEAD
 | [cachetools](https://github.com/tkem/cachetools/) | 5.0.0 | ldap |
-| [certifi](https://github.com/certifi/python-certifi) | 2024.7.4 | ldap |
+| [certifi](https://github.com/certifi/python-certifi) | 2026.10.23 | ldap |
 | [click](https://palletsprojects.com/p/click/) | 8.0.4 | ldap |
 | [distlib](https://github.com/pypa/distlib) | 0.3.7 | ldap |
 | [distro](https://github.com/python-distro/distro) | 1.6.0 | ldap |
@@ -18,16 +17,6 @@
 | [fastapi](https://github.com/fastapi/fastapi) | 0.133.1 | ldap |
 | [filelock](https://github.com/tox-dev/py-filelock) | 3.20.1 | ldap |
 | [grafana](https://grafana.com) | 8.5.22 | metrics |
-=======
-| [certifi](https://github.com/certifi/python-certifi) | 2026.10.23 | ldap |
-| [click](https://pypi.org/project/click) | 8.3.3 | ldap |
-| [distlib](https://github.com/pypa/distlib) | 0.4.0 | ldap |
-| [distro](https://github.com/python-distro/distro) | 1.9.0 | ldap |
-| [elasticsearch](https://www.elastic.co/products/elasticsearch) | 8.19.23 | logs |
-| [fastapi](https://github.com/fastapi/fastapi) | 0.136.3 | ldap |
-| [filelock](https://github.com/tox-dev/py-filelock) | 4.2.4 | ldap |
-| [grafana](https://grafana.com) | 11.6.3 | metrics |
->>>>>>> c13f73c (feat: bump filelock from 3.29.1 to 4.2.4 (fix high CVE-2026-112940) (#465))
 | [h11](https://github.com/python-hyper/h11) | 0.16.0 | ldap |
 | [idna](https://pypi.org/project/idna) | 3.7 | ldap |
 | [importlib-metadata](https://github.com/python/importlib_metadata) | 3.7.3 | ldap |
