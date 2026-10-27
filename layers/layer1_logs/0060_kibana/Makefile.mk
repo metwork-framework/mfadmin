@@ -2,10 +2,10 @@ include ../../../adm/root.mk
 include $(MFEXT_HOME)/share/package.mk
 
 export NAME=kibana
-export VERSION=8.19.18
+export VERSION=8.19.23
 export EXTENSION=tar.gz
 export CHECKTYPE=MD5
-export CHECKSUM=a669e0cbaaea335cfc2ea7ca86627841
+export CHECKSUM=58a64619aa99a9e78544a8e0fa4c126c
 DESCRIPTION=\
 kibana is a log ui for elasticsearch
 WEBSITE=https://www.elastic.co/products/kibana
@@ -17,3 +17,4 @@ $(PREFIX)/opt/kibana/bin/kibana:
 	rm -Rf $(PREFIX)/opt/kibana
 	mkdir -p $(PREFIX)/opt
 	cd build && cp -Rf $(NAME)-$(VERSION) $(PREFIX)/opt/kibana
+
